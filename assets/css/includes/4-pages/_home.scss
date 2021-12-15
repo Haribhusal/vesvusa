@@ -1,0 +1,251 @@
+.insize {
+  max-width: 600px;
+}
+.owl-thumbs {
+}
+.owl-thumbs .owl-thumb-item {
+  height: 150px;
+  width: 100%;
+  max-width: 150px;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+.owl-thumbs .owl-thumb-item img {
+  max-width: 100%;
+  height: auto;
+}
+.owl-dots {
+  position: absolute;
+  bottom: 170px;
+  left: 0;
+  right: 0;
+}
+
+.hero {
+  position: relative;
+  .owl-carousel {
+    position: relative;
+    z-index: 1;
+  }
+
+  .imagewrapper {
+    .heroImg {
+      position: relative !important;
+      z-index: 9999 !important;
+      height: 400px;
+      object-fit: contain;
+      object-position: center center;
+    }
+  }
+
+  .sliderItem {
+    position: relative;
+    z-index: 9;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      content: "";
+      background-color: $p;
+    }
+  }
+  .actionTrigger {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    .actionItems {
+      .item {
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.catalog,
+.menswear,
+.shinyCollection,
+.video {
+  .imageCatalog {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      content: "";
+      background-color: rgba($p, 0.6);
+      top: 0;
+      left: 0;
+    }
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .info {
+      position: absolute;
+      max-width: 70%;
+      z-index: 9;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.featuring {
+  .bgColor {
+    background-color: #d3bb64;
+  }
+  .left {
+    width: 50px;
+  }
+  .right {
+    position: relative;
+    .xzoom {
+      height: 500px;
+      width: 400px;
+      object-position: center center;
+      object-fit: cover;
+      box-shadow: none !important;
+    }
+
+    .xzoom-thumbs {
+      margin-bottom: 0px;
+      position: absolute;
+      width: 50px;
+      right: calc(100% + 20px);
+      bottom: 0px;
+      .xzoom-gallery {
+        margin: 0px;
+        margin-top: 10px !important;
+        border: none;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+  .sizes {
+    .size {
+      margin-bottom: 10px;
+
+      span {
+        font-size: 20px;
+        border: 1px solid #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+  .colors {
+    .green {
+      background-color: green;
+      height: 40px;
+      display: block;
+      width: 40px;
+    }
+    .red {
+      background-color: red;
+      height: 40px;
+      display: block;
+      width: 40px;
+    }
+  }
+}
+
+.shinyCollection,
+.looksAndTheme,
+.news {
+  .owl-carousel {
+    position: relative;
+    .owl-next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+      background-color: $p !important;
+      transform: translateY(-50%);
+    }
+    .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+      background-color: $p !important;
+      transform: translateY(-50%);
+    }
+  }
+  .actionwrapper {
+    position: relative;
+    z-index: 99;
+    transform: rotate(-90deg);
+  }
+}
+
+.brands {
+  .brandwrapper {
+    margin-bottom: 25px;
+    figure {
+      margin-bottom: 0;
+    }
+  }
+}
+.news {
+  article {
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(#fff, 0.1);
+    .meta {
+      opacity: 0.4;
+    }
+    .info {
+      padding: 30px;
+      .heading {
+        .title {
+          transition: all 0.5s ease;
+        }
+      }
+    }
+    figure {
+      img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+        object-position: center center;
+        border-radius: 0px;
+      }
+    }
+    &:hover {
+      border: 1px solid rgba(#fff, 0);
+      box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.3);
+      .heading {
+        .title {
+          color: $a;
+        }
+      }
+    }
+  }
+}

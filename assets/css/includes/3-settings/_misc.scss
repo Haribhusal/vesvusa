@@ -1,0 +1,13 @@
+::selection {
+  color: #fff;
+  background-color: $a;
+}
+
+.bg_rotate_icon {
+  border: 1px solid #fff;
+  .btn_rotate {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    transform-origin: center center;
+  }
+}

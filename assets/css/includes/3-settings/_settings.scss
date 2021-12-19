@@ -126,3 +126,11 @@ figure {
     transform: rotate(360deg);
   }
 }
+
+.link {
+  span {
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}

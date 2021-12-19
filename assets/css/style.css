@@ -166,6 +166,10 @@ figure {
   }
 }
 
+.link span:hover {
+  color: #fff !important;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -260,6 +264,7 @@ body {
 }
 
 .header {
+  position: relative;
   background-color: #2f3131;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -291,6 +296,77 @@ body {
 
 .header .navbar .nav-link:hover {
   color: #fff;
+}
+
+.header .slideBar {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  height: 100vh;
+  -webkit-box-shadow: -10px -20px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px -20px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .slideBar .container {
+  padding: 30px;
+}
+
+.header .slideBar .container .close {
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  top: 15px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.header .slideBar .container .close i {
+  color: #2f3131;
+}
+
+.header .linkswrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.header .linkswrapper .linkitem {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.header .linkswrapper .linkitem:hover {
+  background-color: #fff;
+  color: #2f3131;
+}
+
+.header .linkswrapper .linkitem i {
+  font-size: 30px;
 }
 
 .font_p {

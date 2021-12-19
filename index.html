@@ -15,7 +15,7 @@
   <title>vesvusa</title>
 </head>
 
-<body data-scroll-container>
+<body data-scroll-container tabindex='-1'>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -54,29 +54,59 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="las la-shopping-bag"></i></a>
             </li>
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="las la-user"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link accountToggle" href="#"><i class="las la-user"></i></a>
             </li>
+
           </ul>
           </form>
         </div>
       </div>
     </nav>
+    <div class="slideBar" tabindex='-1'>
+
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Account
+            </h5>
+          </div>
+          <a href="#" class="link">Signout</a>
+        </div>
+        <div class="linkswrapper mt-4">
+          <div class="linkitem">
+            <i class="las la-money-check"></i>
+            <span class="d-block label"> Orders</span>
+          </div>
+          <div class="linkitem">
+            <i class="las la-shield-alt"></i>
+            <span class="d-block label">Login & Security</span>
+          </div>
+
+          <div class="linkitem">
+            <i class="las la-file-invoice-dollar"></i>
+            <span class="d-block label"> Payments</span>
+          </div>
+          <div class="linkitem">
+            <i class="las la-address-card"></i>
+            <span class="d-block label"> Profile</span>
+          </div>
+          <div class="linkitem">
+            <i class="las la-sms"></i>
+            <span class="d-block label"> Message</span>
+          </div>
+          <div class="linkitem">
+            <i class="las la-mobile"></i>
+            <span class="d-block label">Devices</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </header>
   <main>
     <section class="hero" data-scroll-section>
@@ -1382,6 +1412,14 @@
   <script src="assets/js/main.js"></script>
   <script>
     $(document).ready(function () {
+
+
+      $('.accountToggle').click(function () {
+        $('.slideBar').fadeToggle();
+      });
+      $('.close').click(function () {
+        $('.slideBar').fadeToggle();
+      });
       $('.xzoom, .xzoom-gallery').xzoom({
         zoomWidth: 300,
         zoomHeight: 300,

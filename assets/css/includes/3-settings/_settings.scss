@@ -78,3 +78,51 @@ figure {
     }
   }
 }
+
+.customradiobig {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  .form-check {
+    position: relative;
+    margin: 0;
+    min-width: 100px;
+    padding: 0px !important;
+    label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid #fff;
+      width: 100%;
+      height: 30px;
+      padding: 0 10px;
+      text-align: center;
+      cursor: pointer;
+      line-height: 30px;
+      transform: translate(-50%, -50%);
+    }
+  }
+  input {
+    display: none;
+    &:checked + label {
+      background-color: #fff;
+      color: $p;
+    }
+  }
+}
+
+.gap_small {
+  gap: 7px;
+}
+
+.spinner {
+  animation: spin 1000ms linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

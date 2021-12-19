@@ -1,0 +1,62 @@
+.productPage {
+  overflow: hidden;
+  .xactive {
+    box-shadow: none !important;
+    border: 1px solid $a !important;
+  }
+  .lookspage {
+    overflow: hidden;
+  }
+  .xzoom {
+    max-width: 500px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  .xzoom-thumbs {
+    display: flex;
+    gap: 15px;
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      object-position: center center;
+      margin: 0px;
+      border: none;
+    }
+  }
+}
+
+.adswrapper {
+  background-color: #fff;
+  position: relative;
+  .adsMark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    opacity: 0.8;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    padding: 10px 15px;
+  }
+  .info {
+    color: $p;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    bottom: 0;
+    padding: 20px !important;
+    .btn {
+      width: auto !important;
+      background-color: $a !important;
+      display: inline-block !important;
+      color: #fff !important;
+    }
+  }
+}

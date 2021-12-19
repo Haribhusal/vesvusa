@@ -134,3 +134,71 @@ figure {
     }
   }
 }
+
+.auth {
+  .content {
+    width: 90%;
+  }
+}
+
+.devices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  .device {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    position: relative;
+    .btn_remove {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      line-height: 30px;
+      background-color: $p;
+      background-color: rgba(255, 255, 255, 0.06);
+      // border: 1px solid red;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        color: $p !important;
+      }
+    }
+  }
+}
+
+.loyalty {
+  .tabwrapper {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .nav {
+    border: none;
+    gap: 20px;
+
+    .nav-link {
+      background-color: rgba(255, 255, 255, 0.06);
+      border: none;
+      border-radius: 0px;
+      border: 1px solid transparent;
+      border-bottom-color: transparent !important;
+      color: #fff;
+      position: relative;
+      bottom: -1px;
+      &:hover {
+        color: #fff !important;
+      }
+    }
+    .active {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 0;
+    }
+  }
+}

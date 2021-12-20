@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="vendors/locomotive-scroll.css" />
   <link rel="stylesheet" type="text/css" href="vendors/xzoom.min.css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>vesvusa</title>
@@ -20,7 +21,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/images/vesvusa-logo.png" class="img-fluid" alt="" />
+          <img src="assets/images/vesvusa-icon-logo.png" style="filter: brightness(0) invert(1); height: 60px;
+" class="img-fluid" alt="" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,13 +46,13 @@
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="las la-search flipX"></i></a>
+              <a class="nav-link searchToggle" href="#"><i class="las la-search flipX"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="las la-bell"></i></a>
+              <a class="nav-link notificationToggle" href="#"><i class="las la-bell"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="las la-heart"></i></a>
+              <a class="nav-link favouritesToggle" href="#"><i class="las la-heart"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link cartToggle" href="#"><i class="las la-shopping-bag"></i>
@@ -81,9 +83,17 @@
           <a href="#" class="link">Signout</a>
         </div>
         <div class="linkswrapper mt-4">
+          <a href="#" class="linkitem loginToggle">
+            <i class="las la-sign-in-alt"></i>
+            <span class="d-block label"> Login</span>
+
+          </a>
+          <a href="#" class="linkitem signupToggle">
+            <i class="las la-user-plus"></i>
+            <span class="d-block label"> Signup</span>
+
+          </a>
           <a href="#" class="linkitem">
-
-
             <i class="las la-money-check"></i>
             <span class="d-block label"> Orders</span>
 
@@ -280,6 +290,323 @@
       </div>
     </div>
 
+    <div class="favourites_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Favourites
+            </h5>
+          </div>
+        </div>
+        <div class="cartwrapper mt-4 w-100">
+          <div class="actions mb-3 d-flex gap">
+            <form action="">
+              <input type="text" class="form-control" placeholder="Search Products">
+            </form>
+            <div class="filter">
+              <div class="dropdown">
+                <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter | All
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class="checkout w-100 mt-3">
+
+          <a href="#">
+            <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
     <div class="search_sidebar">
       <div class="container">
         <div class="close">
@@ -291,24 +618,289 @@
               Search History
             </h5>
           </div>
-          <a href="#" class="link">Go To Cart</a>
+
         </div>
-        <div class="searchHistory">
+        <div class="searchbar mt-3 w-100">
+          <div class="row">
+            <div class="col-sm-12">
+              <form action="" class="searchform d-flex gap_small">
+                <input type="text" class="form-control" placeholder="Search Products">
+                <button class="btn_search">
+                  <i class="las la-search flipX"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="searchHistory w-100">
+          <hr />
+          <div class="heading mt-4 d-flex justify-content-between">
+            <h6 class="title text-uppercase spacedText">
+              Recent Searches
+            </h6>
+            <a href="#">Clear Search</a>
+          </div>
+          <hr />
           <div class="item">
-            sas
+            <a href="#">Notification Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
           </div>
         </div>
 
-        <div class="checkout w-100 mt-3">
-
-          <a href="#">
-            <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
-          </a>
-        </div>
 
       </div>
     </div>
 
+    <div class="notification_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Notifications
+            </h5>
+          </div>
+          <a href="#">Mark all as read</a>
+
+        </div>
+
+        <div class="searchHistory w-100 notification">
+
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="login_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Login
+            </h5>
+          </div>
+          <div class="signupToggle">Register</div>
+        </div>
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Username / Email / Phone Number</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter username/phone/email">
+              <span class="text-danger"><small>Invalid Username/Email/Mobile</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Enter Password">
+              <span class="text-success"><small>Success</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <input type="checkbox" id="rem">
+              <label for="rem">
+                <small>Remember Me</small>
+              </label>
+            </div>
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="signup_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Register
+            </h5>
+          </div>
+          <div class="loginToggle">Login</div>
+        </div>
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Full Name</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter your Name">
+              <span class="text-danger"><small>Provide Name</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Email</small>
+              </label>
+              <input type="email" class="form-control" placeholder="Enter Email">
+              <span class="text-danger"><small>Provide Valid Email</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Mobile Number</small>
+              </label>
+              <input type="tel" class="form-control" placeholder="Enter your Mobile">
+              <span class="text-danger"><small>Provide Valid Mobile Number</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Enter Password">
+              <span class="text-danger"><small>Password must contains one uppercase and one number</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Confirm Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Confirm Password">
+              <span class="text-danger"><small>Passwords don't match</small></span>
+            </div>
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
   </header>
   <main>
     <section class="hero" data-scroll-section>
@@ -1619,7 +2211,7 @@
 
 
 
-
+      // account sidebar
 
       $('.accountToggle').click(function () {
         $('.slideBar').show();
@@ -1629,6 +2221,7 @@
 
 
       });
+      // cart sidebar
 
       $('.cartToggle').click(function () {
         $('.sidebar_cart').show();
@@ -1638,6 +2231,64 @@
         $('.sidebar_cart').hide();
 
       });
+
+      // search sidebar
+      $('.searchToggle').click(function () {
+        $('.search_sidebar').show();
+      });
+      $('.close').click(function () {
+
+        $('.search_sidebar').hide();
+
+      });
+
+      // notification sidebar
+      $('.notificationToggle').click(function () {
+        $('.notification_sidebar').show();
+      });
+      $('.close').click(function () {
+
+        $('.notification_sidebar').hide();
+
+      });
+
+      // favourites sidebar
+      $('.favouritesToggle').click(function () {
+        $('.favourites_sidebar').show();
+      });
+      $('.close').click(function () {
+
+        $('.favourites_sidebar').hide();
+
+      });
+
+
+      // login sidebar
+      $('.loginToggle').click(function () {
+        $('.login_sidebar').show();
+      });
+      $('.close').click(function () {
+
+        $('.login_sidebar').hide();
+
+      });
+
+
+
+
+      // signup sidebar
+      $('.signupToggle').click(function () {
+        $('.signup_sidebar').show();
+      });
+      $('.close').click(function () {
+
+        $('.signup_sidebar').hide();
+
+      });
+
+
+
+
 
 
       $('.xzoom, .xzoom-gallery').xzoom({

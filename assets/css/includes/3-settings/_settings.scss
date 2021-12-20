@@ -45,8 +45,6 @@ figure {
     object-position: center center;
   }
 }
-.xzoom-source {
-}
 
 .xzoom-lens {
   box-shadow: none;
@@ -240,6 +238,21 @@ figure {
     &:hover {
       background-color: $a;
       color: #fff;
+    }
+  }
+}
+
+article {
+  .share-icons {
+    a {
+      display: block;
+      color: $p;
+      text-align: center;
+      line-height: 30px;
+      font-size: 20px;
+      height: 30px;
+      width: 30px;
+      background-color: #fff;
     }
   }
 }

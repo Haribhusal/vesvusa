@@ -201,15 +201,338 @@
     }
   }
 
-  .activeAccount {
-    display: block;
-    animation: fadeInRight 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  .favourites_sidebar {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(#fff, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    box-shadow: -10px -20px 30px rgba(#000, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+    .actions {
+      a {
+        background-color: #fff;
+        display: block;
+        color: $p;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      justify-content: center;
+      flex-direction: column;
+      .close {
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        top: 15px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        i {
+          color: $p;
+        }
+      }
+    }
   }
 
-  .activeCart {
-    display: block;
-    animation: fadeInRight 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  .login_sidebar {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(#fff, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    box-shadow: -10px -20px 30px rgba(#000, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+    .actions {
+      a {
+        background-color: #fff;
+        display: block;
+        color: $p;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      justify-content: center;
+      flex-direction: column;
+      .close {
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        top: 15px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        i {
+          color: $p;
+        }
+      }
+    }
   }
+
+  .signup_sidebar {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(#fff, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    box-shadow: -10px -20px 30px rgba(#000, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+    .actions {
+      a {
+        background-color: #fff;
+        display: block;
+        color: $p;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      justify-content: center;
+      flex-direction: column;
+      .close {
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        top: 15px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        i {
+          color: $p;
+        }
+      }
+    }
+  }
+
+  .search_sidebar {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(#fff, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    box-shadow: -10px -20px 30px rgba(#000, 0.2);
+    max-width: 400px;
+    width: 100%;
+    .searchHistory {
+      height: 500px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      /* width */
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $p;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $a;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $a;
+      }
+
+      .item {
+        a {
+          display: block;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgba($p, 0.1);
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    .searchbar {
+      .btn_search {
+        background-color: $a;
+        border: none;
+        color: #fff;
+        width: 50px;
+
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $p;
+        }
+      }
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      justify-content: center;
+      flex-direction: column;
+      .close {
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        top: 15px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        i {
+          color: $p;
+        }
+      }
+    }
+  }
+
+  .notification_sidebar {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(#fff, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    box-shadow: -10px -20px 30px rgba(#000, 0.2);
+    max-width: 400px;
+    width: 100%;
+    .notification {
+      height: 500px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      /* width */
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $p;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $a;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $a;
+      }
+
+      .item {
+        padding: 10px;
+        border: 1px solid rgba($p, 0.2);
+        background-color: rgba($p, 0.1);
+        margin-bottom: 10px;
+        a {
+          display: block;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+
+    .searchbar {
+      .btn_search {
+        background-color: $a;
+        border: none;
+        color: #fff;
+        width: 50px;
+
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $p;
+        }
+      }
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      justify-content: center;
+      flex-direction: column;
+      .close {
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        top: 15px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        i {
+          color: $p;
+        }
+      }
+    }
+  }
+
   .linkswrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

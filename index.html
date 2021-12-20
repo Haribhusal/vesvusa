@@ -140,7 +140,7 @@
         <div class="cartwrapper mt-4 w-100">
           <div class="actions mb-3 d-flex gap">
             <form action="">
-              <input type="text" class="form-control" placeholder="Search Cart Products">
+              <input type="text" class="form-control" placeholder="Search Products">
             </form>
             <div class="filter">
               <div class="dropdown">
@@ -167,7 +167,7 @@
             <div class="info">
               <div class="titlewrapper">
                 <a href="#">
-                  <h5 class="title">Product Name</h5>
+                  <h5 class="title">Product Name 1</h5>
                 </a>
                 <div class="meta d-flex gap">
                   <div class="category small ">
@@ -179,23 +179,30 @@
                     Rs. 23000
                   </div>
                 </div>
-                <div class="quantity mt-2">
-                  <input type="number" placeholder="Quantity" value="1">
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
                 </div>
-                <div class="action mt-2">
+
+                <div class="action removeCartItem mt-2" id="1">
                   <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
+          <div class="cartItem mb-3 d-flex align-items-center gap" data-id="2">
             <figure>
               <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
             </figure>
             <div class="info">
               <div class="titlewrapper">
                 <a href="#">
-                  <h5 class="title">Product Name</h5>
+                  <h5 class="title">Product Name 2</h5>
                 </a>
                 <div class="meta d-flex gap">
                   <div class="category small ">
@@ -207,23 +214,30 @@
                     Rs. 23000
                   </div>
                 </div>
-                <div class="quantity mt-2">
-                  <input type="number" placeholder="Quantity" value="1">
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
                 </div>
-                <div class="action mt-2">
+
+                <div class="action  removeCartItem mt-2" id="2">
                   <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
+          <div class="cartItem mb-3 d-flex align-items-center gap" data-id="3">
             <figure>
               <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
             </figure>
             <div class="info">
               <div class="titlewrapper">
                 <a href="#">
-                  <h5 class="title">Product Name</h5>
+                  <h5 class="title">Product Name 3</h5>
                 </a>
                 <div class="meta d-flex gap">
                   <div class="category small ">
@@ -235,44 +249,56 @@
                     Rs. 23000
                   </div>
                 </div>
-                <div class="quantity mt-2">
-                  <input type="number" placeholder="Quantity" value="1">
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
                 </div>
-                <div class="action mt-2">
+
+                <div class="action mt-2 removeCartItem" id="3">
                   <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    <i class="las la-tag"></i>
-                    Maxi
-                  </div>
-                  <div class="category small">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
-                  </div>
-                </div>
-                <div class="quantity mt-2">
-                  <input type="number" placeholder="Quantity" value="1">
-                </div>
-                <div class="action mt-2">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
-                </div>
-              </div>
-            </div>
+
+
+
+
+        </div>
+        <div class="checkout w-100 mt-3">
+
+          <a href="#">
+            <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="search_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Search History
+            </h5>
+          </div>
+          <a href="#" class="link">Go To Cart</a>
+        </div>
+        <div class="searchHistory">
+          <div class="item">
+            sas
           </div>
         </div>
+
         <div class="checkout w-100 mt-3">
 
           <a href="#">
@@ -1589,6 +1615,11 @@
   <script>
     $(document).ready(function () {
 
+      // remove class active
+
+
+
+
 
       $('.accountToggle').click(function () {
         $('.slideBar').show();
@@ -1603,6 +1634,7 @@
         $('.sidebar_cart').show();
       });
       $('.close').click(function () {
+
         $('.sidebar_cart').hide();
 
       });
@@ -1616,6 +1648,44 @@
         scroll: false,
         Xoffset: 20
       });
+    });
+  </script>
+  <script>
+    $('.removeCartItem').click(function () {
+      // var id = $(this).attr('id');
+      $(this).parent().parent().parent().remove();
+      // $.ajax({
+      //   url: 'removeCartItem.php',
+      //   type: 'POST',
+      //   data: {
+      //     id: id
+      //   },
+      //   success: function (response) {
+      //     if (response == 'success') {
+      //       location.reload();
+      //     }
+      //   }
+      // });
+    });
+  </script>
+  <script>
+    // add item to cart
+    $('.quantitywrapper .increase').click(function () {
+      var $input = $(this).parent().find('input');
+      var count = parseInt($input.val()) + 1;
+      count = count < 10 ? count : 10;
+      $input.val(count);
+      $input.change();
+      return false;
+    }); // remove item from cart
+    $('.quantitywrapper .decrease').click(function () {
+      var $input = $(this).parent().find('input');
+      var
+        count = parseInt($input.val()) - 1;
+      count = count > 0 ? count : 0;
+      $input.val(count);
+      $input.change();
+      return false;
     });
   </script>
 </body>

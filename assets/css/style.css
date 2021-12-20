@@ -241,6 +241,54 @@ figure {
   border-bottom: 0;
 }
 
+.dropdown-menu-dark .dropdown-item.active,
+.dropdown-menu-dark .dropdown-item:active {
+  background-color: #2f3131;
+}
+
+.quantitywrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quantitywrapper input {
+  width: 30px;
+  border: none;
+  display: inline-block !important;
+  text-align: center !important;
+  padding: 0px !important;
+  color: #fff;
+  background-color: rgba(47, 49, 49, 0.6);
+}
+
+.quantitywrapper input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.quantitywrapper input::-webkit-outer-spin-button, .quantitywrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantitywrapper .act {
+  height: 30px;
+  width: 30px;
+  background-color: #2f3131;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.quantitywrapper .act:hover {
+  background-color: #930c0c;
+  color: #fff;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

@@ -202,3 +202,44 @@ figure {
     }
   }
 }
+
+.dropdown-menu-dark .dropdown-item.active,
+.dropdown-menu-dark .dropdown-item:active {
+  background-color: $p;
+}
+
+.quantitywrapper {
+  display: flex;
+  input {
+    width: 30px;
+    border: none;
+    display: inline-block !important;
+    text-align: center !important;
+    padding: 0px !important;
+    color: #fff;
+    background-color: rgba($p, 0.6);
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  .act {
+    height: 30px;
+    width: 30px;
+    background-color: $p;
+    color: #fff;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background-color: $a;
+      color: #fff;
+    }
+  }
+}

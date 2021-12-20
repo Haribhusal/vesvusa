@@ -171,11 +171,140 @@ figure {
   }
 }
 
+.conversations {
+  .nav {
+    gap: 0px !important;
+    box-shadow: 0px 10px 30px rgba(#000, 0.2);
+    position: sticky;
+    top: 30px;
+
+    .nav-item {
+      width: 100%;
+      .nav-link {
+        display: block;
+        text-align: left;
+        width: 100%;
+        border: none;
+      }
+      .active {
+        background-color: $p;
+      }
+    }
+  }
+}
 .loyalty {
+  .messagesBody {
+    box-shadow: 0px 10px 30px rgba(#000, 0.2);
+
+    background-color: rgba(255, 255, 255, 0.06);
+    .heading {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 20px;
+      z-index: 99;
+      position: sticky;
+      top: 0px;
+      background-color: $p;
+    }
+    .body {
+      padding: 20px;
+      display: flex;
+      position: relative;
+      flex-direction: column-reverse;
+
+      .messagebody_inner {
+        height: 70vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        padding-bottom: 100px;
+      }
+
+      .reply {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        flex: 1;
+        right: 0;
+        z-index: 99;
+        width: 100% !important;
+        .boxwrapper {
+          width: 100%;
+          background-color: $p;
+          flex: 1;
+          padding: 20px;
+          textarea {
+            background-color: $p;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            &:focus {
+              border: 1px solid #fff !important;
+              box-shadow: none;
+              outline: none;
+            }
+          }
+        }
+        .btn_reply {
+          border: none;
+          width: 100px;
+          background-color: rgba(255, 255, 255, 0.3);
+          height: 50px !important;
+          color: #fff;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+      .message {
+        background-color: $p;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
+      .sender {
+        width: 75%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-right: auto;
+        background-color: transparent;
+      }
+      .receiver {
+        width: 75%;
+        margin-left: auto;
+      }
+    }
+  }
   .tabwrapper {
     background-color: rgba(255, 255, 255, 0.06);
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .referItemSingle {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .btn_submit {
+    background-color: #fff;
+    color: $p;
+    padding: 10px !important;
+    display: inline-block !important;
+  }
+  .copy {
+    margin-top: 15px;
+    button {
+      border: none;
+      background-color: $p;
+      padding: 3px 10px;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: #fff;
+        color: $p;
+      }
+    }
   }
   .nav {
     border: none;

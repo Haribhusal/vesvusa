@@ -210,10 +210,174 @@ figure {
   color: #2f3131 !important;
 }
 
+.conversations .nav {
+  gap: 0px !important;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
+.conversations .nav .nav-item {
+  width: 100%;
+}
+
+.conversations .nav .nav-item .nav-link {
+  display: block;
+  text-align: left;
+  width: 100%;
+  border: none;
+}
+
+.conversations .nav .nav-item .active {
+  background-color: #2f3131;
+}
+
+.loyalty .messagesBody {
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.loyalty .messagesBody .heading {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #2f3131;
+}
+
+.loyalty .messagesBody .body {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.loyalty .messagesBody .body .messagebody_inner {
+  height: 70vh;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  overflow-x: hidden;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.loyalty .messagesBody .body .reply {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  right: 0;
+  z-index: 99;
+  width: 100% !important;
+}
+
+.loyalty .messagesBody .body .reply .boxwrapper {
+  width: 100%;
+  background-color: #2f3131;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+}
+
+.loyalty .messagesBody .body .reply .boxwrapper textarea {
+  background-color: #2f3131;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.loyalty .messagesBody .body .reply .boxwrapper textarea:focus {
+  border: 1px solid #fff !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.loyalty .messagesBody .body .reply .btn_reply {
+  border: none;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 50px !important;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.loyalty .messagesBody .body .message {
+  background-color: #2f3131;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.loyalty .messagesBody .body .sender {
+  width: 75%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: auto;
+  background-color: transparent;
+}
+
+.loyalty .messagesBody .body .receiver {
+  width: 75%;
+  margin-left: auto;
+}
+
 .loyalty .tabwrapper {
   background-color: rgba(255, 255, 255, 0.06);
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.loyalty .referItemSingle {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.loyalty .btn_submit {
+  background-color: #fff;
+  color: #2f3131;
+  padding: 10px !important;
+  display: inline-block !important;
+}
+
+.loyalty .copy {
+  margin-top: 15px;
+}
+
+.loyalty .copy button {
+  border: none;
+  background-color: #2f3131;
+  padding: 3px 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.loyalty .copy button:hover {
+  background-color: #fff;
+  color: #2f3131;
 }
 
 .loyalty .nav {

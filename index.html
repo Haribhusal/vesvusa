@@ -934,10 +934,9 @@
                 Submit
               </button>
             </div>
-            <div id="countdown">
-            
-                <li><span id="seconds"></span>Seconds</li>
-             
+            <div class="timeOutCounter">
+              <div class="timer active"></div>
+              <div class="border"></div>
             </div>
             <div class="my-4 resendOTP">
               <form action="">
@@ -2380,10 +2379,15 @@
         $('.signup_sidebar').hide();
       });
 
+      $('.timeOutCounter').hide();
       $(".btn_sent_otp").click(function () {
+        $('.timeOutCounter').show();
+
         var elem = $(".resendOTP");
         setTimeout(function () {
           elem.show();
+          $('.timeOutCounter').addClass('d-none');
+
         }, 30000);
       });
 

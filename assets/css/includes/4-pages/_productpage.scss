@@ -60,3 +60,111 @@
     }
   }
 }
+
+.selection {
+  color: #fff !important;
+  width: 100%;
+  background-color: rgba(#fff, 0.2) !important;
+}
+
+.select2-container {
+  .select2-results__option {
+    background-color: #40444b !important;
+  }
+}
+
+.select2-selection__rendered {
+  color: #fff !important;
+  width: 100% !important;
+}
+.select2-container--default .select2-selection--single {
+  background-color: rgba($color: #fff, $alpha: 0.3) !important;
+  border: 1px solid $p !important;
+  padding: 0px !important;
+  height: auto !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  height: auto;
+  line-height: 25px !important;
+  padding: 5px 15px;
+}
+.select2-hidden-accessible {
+  height: 100%;
+}
+.select2-container .select2-selection--single {
+  height: 100%;
+}
+
+.select2-dropdown {
+  background-color: $p;
+  color: #fff;
+  border: 1px solid $p;
+  box-shadow: 0px 10px 30px rgba($color: #000000, $alpha: 0.3);
+}
+.select2-container--default .select2-results__option--selected {
+  background-color: $p;
+}
+.select2-search__field {
+  background-color: rgba($color: #fff, $alpha: 0.3);
+  border: none !important;
+  padding: 0px !important;
+
+  color: #fff;
+
+  &:focus {
+    border-color: $p !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    outline: none !important;
+  }
+  &::placeholder {
+    color: #fff !important;
+  }
+}
+
+.select2-results {
+  background-color: $p !important;
+}
+
+// .select2-search .select2-search--dropdown {
+//   padding: 10px 15px !important;
+// }
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: $p !important;
+  color: white;
+}
+.select2-selection {
+  color: #fff;
+  position: relative !important;
+  &:focus {
+    border-color: $p !important;
+  }
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 50% !important;
+  right: 10px;
+  transform: translateY(-50%) !important;
+}
+
+.productPage {
+  .form-range {
+    background-color: $p;
+  }
+
+  .form-control {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: rgba($color: #fff, $alpha: 0.3) !important;
+    &::placeholder {
+      color: #fff;
+      opacity: 0.4;
+    }
+  }
+}

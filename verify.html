@@ -93,19 +93,52 @@
                     </div>
                   </div>
                 </div>
+
+
                 <div class="row">
                   <div class="col-sm-6">
-                    <button type="submit" class="btn  btn_p btn_hovered btn_bordered">Verify Now</button>
+                    <button class="btn btn_p btn_hovered btn_bordered btn_sent_otp">Verify Now</button>
                   </div>
                 </div>
-                <hr class="mt-4" />
-                <div class="row">
-                  <div class="col-sm-12">
-                    <a href="#" class="small link text-muted">Trouble verifying your account? <span
-                        class="text-uppercase text-bold">Click here
-                        get verification code again</span></a>
+
+
+
+
+
+                <!-- resend Verification -->
+
+                <div class="my-3">
+
+
+
+                  <div class="timeOutCounter">
+                    <div class="timer active"></div>
+                    <div class="border"></div>
                   </div>
+
                 </div>
+
+
+                <div class="my-4 resendOTP">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <a href="#" class="small link text-muted">Trouble verifying your account? <span
+                          class="text-uppercase text-bold">Click here
+                          get verification code again</span></a>
+                    </div>
+                  </div>
+                  <form action="">
+                    <div class="form-group ">
+                      <label for="">
+                        <small>Didn't get an OTP?</small>
+                      </label>
+                      <button class="btn btn_small btn_bordered">Resend OTP</button>
+                    </div>
+                  </form>
+                </div>
+
+
+
               </form>
             </div>
           </div>
@@ -234,6 +267,8 @@
 
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/main.js"></script>
+
+
   <script>
     $(document).ready(function () {
 
@@ -252,6 +287,24 @@
         scroll: false,
         Xoffset: 20
       });
+    });
+  </script>
+
+
+  <script>
+    // resend OTP
+    $('.timeOutCounter').hide();
+    $(".btn_sent_otp").click(function (e) {
+      e.preventDefault();
+
+      $('.timeOutCounter').show();
+
+      var elem = $(".resendOTP");
+      setTimeout(function () {
+        elem.show();
+        $('.timeOutCounter').addClass('d-none');
+
+      }, 30000);
     });
   </script>
 </body>

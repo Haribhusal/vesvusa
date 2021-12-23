@@ -817,11 +817,16 @@
               <input type="password" class="form-control" placeholder="Enter Password">
               <span class="text-success"><small>Success</small></span>
             </div>
-            <div class="form-group mb-2">
-              <input type="checkbox" id="rem">
-              <label for="rem">
-                <small>Remember Me</small>
-              </label>
+            <div class="form-group mb-2 d-flex gap justify-content-between">
+              <div class="left">
+                <input type="checkbox" id="rem">
+                <label for="rem">
+                  <small>Remember Me</small>
+                </label>
+              </div>
+              <div class="right small">
+                <a href="#" class="forgetTrigger">Forget Password?</a>
+              </div>
             </div>
             <div class="form-group mb-2 mt-4">
               <button class="btn btn_bordered">
@@ -894,6 +899,55 @@
               <button class="btn btn_bordered">
                 Submit
               </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="forgetPassword d-block">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Forget Password?
+            </h5>
+            <p class="text-muted">
+              Enter your Phone Number and we'll send you a verification code on your mobile to reset your password.
+            </p>
+          </div>
+        </div>
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Phone Number</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered btn_sent_otp">
+                Submit
+              </button>
+            </div>
+            <div id="countdown">
+            
+                <li><span id="seconds"></span>Seconds</li>
+             
+            </div>
+            <div class="my-4 resendOTP">
+              <form action="">
+                <div class="form-group ">
+                  <label for="">
+                    <small>Didn't get an OTP?</small>
+                  </label>
+                  <button class="btn btn_small btn_bordered">Resend OTP</button>
+                </div>
+              </form>
             </div>
           </form>
         </div>
@@ -2082,6 +2136,7 @@
         </div>
       </div>
     </section>
+
     <section class="brandcollection menswear py-5" data-scroll-section>
       <div class="container">
         <div class="row">
@@ -2317,23 +2372,20 @@
         $('.login_sidebar').hide();
 
       });
-
-
-
-
       // signup sidebar
       $('.signupToggle').click(function () {
         $('.signup_sidebar').show();
       });
       $('.close').click(function () {
-
         $('.signup_sidebar').hide();
-
       });
 
-
-
-
+      $(".btn_sent_otp").click(function () {
+        var elem = $(".resendOTP");
+        setTimeout(function () {
+          elem.show();
+        }, 30000);
+      });
 
       $('.xzoom, .xzoom-gallery').xzoom({
         zoomWidth: 300,

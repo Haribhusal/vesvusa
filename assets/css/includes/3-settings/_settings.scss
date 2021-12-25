@@ -389,3 +389,170 @@ article {
 .slider.slider-horizontal {
   width: 100% !important;
 }
+
+.cartPage {
+  .btn_coupon {
+    padding: 0px !important;
+    font-size: 14px;
+    width: auto !important;
+    min-width: 100px;
+    background-color: $a;
+  }
+  .cart_summary_content {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 15px 0;
+    .cart_summary_item {
+      padding: 7px 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .total {
+      padding: 10px 30px;
+    }
+  }
+  .cartItem {
+    .remove {
+      background-color: $a;
+      height: 30px;
+      width: 30px;
+      border-radius: 30px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+    }
+  }
+  .calcs {
+    margin-bottom: 0px !important;
+    input {
+      max-width: 50px;
+    }
+  }
+  .cartwrapper {
+    .cartItem {
+      background-color: rgba(255, 255, 255, 0.06);
+      padding: 15px;
+    }
+  }
+}
+
+.shippingPage {
+  .addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    .addNew {
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      &:hover {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+      i.las {
+        background-color: $a;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+      }
+    }
+    .address {
+      position: relative;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.06);
+      padding: 20px;
+      .default {
+        position: absolute;
+        right: -40px;
+        font-size: 12px;
+        padding: 5px 15px;
+        top: 15px;
+        transform: rotate(45deg);
+        background-color: $p;
+        width: 150px;
+        text-align: center;
+        display: none;
+      }
+      label {
+        display: flex;
+        gap: 30px;
+      }
+      input {
+      }
+    }
+    .customradio {
+      input {
+        display: none;
+        &:checked {
+          ~ .default {
+            background-color: $a;
+            color: #fff;
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-content {
+  background-color: $p;
+  .btn-close {
+    background-color: $a;
+  }
+  .modal-header {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .modal-body {
+    input,
+    select {
+      background-color: rgba(#fff, 0.1);
+      color: #fff;
+    }
+    select {
+      color: $a;
+    }
+  }
+}
+
+.paymentMethodPage {
+  .paymentMethods {
+    .address {
+      text-align: center;
+      background-color: #fff;
+      padding: 0px !important;
+      label {
+        text-align: center;
+        width: 100% !important;
+        padding: 15px;
+        cursor: pointer;
+        flex: 1;
+      }
+      img {
+        height: 60px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.agreeTerms {
+  a {
+    color: $a;
+  }
+}
+
+.actionPage {
+  .btn {
+    width: auto !important;
+  }
+}

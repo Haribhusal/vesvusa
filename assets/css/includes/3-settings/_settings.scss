@@ -469,6 +469,31 @@ article {
       overflow: hidden;
       background-color: rgba(255, 255, 255, 0.06);
       padding: 20px;
+      .edit {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        visibility: hidden;
+        pointer-events: none;
+        i {
+          background-color: $a;
+          line-height: 20px;
+          cursor: pointer;
+          padding: 5px;
+          border-top-left-radius: 10px;
+        }
+      }
+      &:hover {
+        .edit {
+          opacity: 1;
+          bottom: 0;
+          right: 0;
+          visibility: visible;
+          pointer-events: auto;
+        }
+      }
       .default {
         position: absolute;
         right: -40px;
@@ -554,5 +579,22 @@ article {
 .actionPage {
   .btn {
     width: auto !important;
+  }
+}
+
+.confirmationDetails,
+.orderDetailFull {
+  .table {
+    color: #fff !important;
+    tr {
+      border-bottom: 1px solid rgba(#fff, 0.05);
+    }
+  }
+  .table > :not(caption) > * > * {
+    border: none;
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #fff !important;
   }
 }

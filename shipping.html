@@ -84,13 +84,14 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-
             <div class="addresses">
               <div class="address">
+                <div class="edit" data-bs-toggle="modal" data-bs-target="#addAddress">
+                  <i class="las la-edit"></i>
+                </div>
                 <label for="add1" class="customradio">
                   <input type="radio" checked id="add1" name="address">
                   <div class="default">Selected</div>
-
                   <div class="addressWrapper">
                     <div class="item">
                       <small class="text-muted me-2">Address:</small>
@@ -115,12 +116,13 @@
                   </div>
                 </label>
               </div>
-
               <div class="address">
+                <div class="edit" data-bs-toggle="modal" data-bs-target="#addAddress">
+                  <i class="las la-edit"></i>
+                </div>
                 <label for="add2" class="customradio">
                   <input type="radio" id="add2" name="address">
                   <div class="default">Selected</div>
-
                   <div class="addressWrapper">
                     <div class="item">
                       <small class="text-muted me-2">Address:</small>
@@ -145,26 +147,19 @@
                   </div>
                 </label>
               </div>
-
-
               <div class="address addNew d-flex justify-content-center align-items-center text-center"
                 data-bs-toggle="modal" data-bs-target="#addAddress">
                 <div class="wrapp ">
-
                   <i class="las la-plus"></i>
                   <h5 class="title">Add New Address</h5>
-
                 </div>
               </div>
-
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="actionPage mt-3">
-
-
               <a href="payment.html" class="btn btn_bordered">
                 Go To Payment
               </a>
@@ -409,6 +404,8 @@
       return false;
     });
   </script>
+
+
 
 
   <script>

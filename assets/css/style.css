@@ -563,6 +563,33 @@ article .share-icons a {
   padding: 20px;
 }
 
+.shippingPage .addresses .address .edit {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.shippingPage .addresses .address .edit i {
+  background-color: #c73535;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-top-left-radius: 10px;
+}
+
+.shippingPage .addresses .address:hover .edit {
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .shippingPage .addresses .address .default {
   position: absolute;
   right: -40px;
@@ -644,6 +671,23 @@ article .share-icons a {
 
 .actionPage .btn {
   width: auto !important;
+}
+
+.confirmationDetails .table, .orderDetailFull .table {
+  color: #fff !important;
+}
+
+.confirmationDetails .table tr, .orderDetailFull .table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.confirmationDetails .table > :not(caption) > * > *, .orderDetailFull .table > :not(caption) > * > * {
+  border: none;
+}
+
+.confirmationDetails .card, .orderDetailFull .card {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #fff !important;
 }
 
 /*

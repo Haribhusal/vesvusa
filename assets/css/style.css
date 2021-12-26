@@ -673,19 +673,23 @@ article .share-icons a {
   width: auto !important;
 }
 
-.confirmationDetails .table, .orderDetailFull .table {
+.confirmationDetails .table,
+.orderDetailFull .table {
   color: #fff !important;
 }
 
-.confirmationDetails .table tr, .orderDetailFull .table tr {
+.confirmationDetails .table tr,
+.orderDetailFull .table tr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.confirmationDetails .table > :not(caption) > * > *, .orderDetailFull .table > :not(caption) > * > * {
+.confirmationDetails .table > :not(caption) > * > *,
+.orderDetailFull .table > :not(caption) > * > * {
   border: none;
 }
 
-.confirmationDetails .card, .orderDetailFull .card {
+.confirmationDetails .card,
+.orderDetailFull .card {
   background-color: rgba(255, 255, 255, 0.06);
   color: #fff !important;
 }
@@ -1144,6 +1148,68 @@ body {
 }
 
 .header .login_sidebar .container .close i {
+  color: #2f3131;
+}
+
+.header .forget_sidebar {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  display: none;
+  height: 100vh;
+  -webkit-box-shadow: -10px -20px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px -20px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.header .forget_sidebar .actions a {
+  background-color: #fff;
+  display: block;
+  color: #2f3131;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.header .forget_sidebar .container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .forget_sidebar .container .close {
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  top: 15px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.header .forget_sidebar .container .close i {
   color: #2f3131;
 }
 

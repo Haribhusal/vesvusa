@@ -57,25 +57,135 @@
             <li class="nav-item">
               <a class="nav-link accountToggle" href="#"><i class="las la-user"></i></a>
             </li>
-
           </ul>
           </form>
         </div>
       </div>
     </nav>
-
   </header>
   <main class="py-5">
-    <section class=" cartPage shippingPage paymentMethodPage py-5">
+    <section class="  cartPage shippingPage paymentMethodPage py-5">
       <div class="container">
-
         <div class="row">
           <div class="col-sm-8">
+
+            <div class="cart_summary">
+              <div class="titlewrapper">
+                <h5 class="title text-uppercase spacedText ">Products</h5>
+              </div>
+            </div>
+            <div class="products header m-0 p-0">
+              <div class="cartwrapper  w-100" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+                <div class="cartItem  d-flex align-items-center gap">
+                  <figure>
+                    <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+                  </figure>
+                  <div class="info">
+                    <div class="titlewrapper">
+                      <a href="#">
+                        <h5 class="title">Product Name 1</h5>
+                      </a>
+                      <div class="meta d-flex gap">
+                        <div class="category small ">
+                          <i class="las la-tag"></i>
+                          Maxi
+                        </div>
+                        <div class="category small">
+                          <i class="las la-wallet"></i>
+                          Rs. 23000
+                        </div>
+                      </div>
+                      <div class="quantitywrapper mt-2">
+                        <div class="decrease act">
+                          <i class="las la-minus"></i>
+                        </div>
+                        <input type="number" value="1">
+                        <div class="increase act">
+                          <i class="las la-plus"></i>
+                        </div>
+                      </div>
+                      <div class="action removeCartItem mt-2" id="1">
+                        <a href="#" class="link"><i class="las la-trash"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cartItem d-flex align-items-center gap" data-id="2">
+                  <figure>
+                    <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+                  </figure>
+                  <div class="info">
+                    <div class="titlewrapper">
+                      <a href="#">
+                        <h5 class="title">Product Name 2</h5>
+                      </a>
+                      <div class="meta d-flex gap">
+                        <div class="category small ">
+                          <i class="las la-tag"></i>
+                          Maxi
+                        </div>
+                        <div class="category small">
+                          <i class="las la-wallet"></i>
+                          Rs. 23000
+                        </div>
+                      </div>
+                      <div class="quantitywrapper mt-2">
+                        <div class="decrease act">
+                          <i class="las la-minus"></i>
+                        </div>
+                        <input type="number" value="1">
+                        <div class="increase act">
+                          <i class="las la-plus"></i>
+                        </div>
+                      </div>
+                      <div class="action  removeCartItem mt-2" id="2">
+                        <a href="#" class="link"><i class="las la-trash"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cartItem d-flex align-items-center gap" data-id="3">
+                  <figure>
+                    <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+                  </figure>
+                  <div class="info">
+                    <div class="titlewrapper">
+                      <a href="#">
+                        <h5 class="title">Product Name 3</h5>
+                      </a>
+                      <div class="meta d-flex gap">
+                        <div class="category small ">
+                          <i class="las la-tag"></i>
+                          Maxi
+                        </div>
+                        <div class="category small">
+                          <i class="las la-wallet"></i>
+                          Rs. 23000
+                        </div>
+                      </div>
+                      <div class="quantitywrapper mt-2">
+                        <div class="decrease act">
+                          <i class="las la-minus"></i>
+                        </div>
+                        <input type="number" value="1">
+                        <div class="increase act">
+                          <i class="las la-plus"></i>
+                        </div>
+                      </div>
+                      <div class="action mt-2 removeCartItem" id="3">
+                        <a href="#" class="link"><i class="las la-trash"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="row">
               <div class="col-sm-12 d-flex align-items-center">
                 <div class="content">
                   <div class="titlewrapper">
-                    <h3 class="title text-uppercase spacedText">Choose Payment Method</h3>
+                    <h5 class="title text-uppercase spacedText mt-3">Choose Payment Method</h5>
                     <p class="text-muted">
                       <small>
                         you can pay with your digital payment method.
@@ -112,25 +222,16 @@
                 </label>
               </div>
             </div>
+
           </div>
           <div class="col-sm-4">
             <div class="rightwrapper">
-
-
               <div class="cart_summary">
                 <div class="titlewrapper">
-                  <h3 class="title text-uppercase spacedText">Cart Summary</h3>
+                  <h5 class="title text-uppercase spacedText">Cart Summary</h5>
                 </div>
               </div>
               <div class="cart_summary_content">
-                <div class="cart_summary_item d-flex gap">
-                  <div class="title flex1">Red Dress X 2</div>
-                  <div class="value flex1"> Rs. 400</div>
-                </div>
-                <div class="cart_summary_item d-flex gap">
-                  <div class="title flex1">Black Tshirt X 2</div>
-                  <div class="value flex1"> Rs. 800</div>
-                </div>
                 <div class="cart_summary_item d-flex gap">
                   <div class="title flex1">Subtotal</div>
                   <div class="value flex1">Rs. 1200</div>
@@ -139,7 +240,6 @@
                   <div class="title flex1">Shipping</div>
                   <div class="value flex1">Rs. 200</div>
                 </div> -->
-
                 <div class="cart_summary_item d-flex gap">
                   <div class="title flex1">
                     <div class="label">
@@ -153,70 +253,35 @@
                   <div class="title flex1">Total</div>
                   <div class="value flex1">Rs. 1000</div>
                 </div>
-
               </div>
-
               <div class="couponmanagement">
                 <div class="applyCoupon mt-3 d-flex gap_small">
                   <input type="text" class="form-control" placeholder="Coupon Code">
                   <button class="btn btn_coupon">Apply</button>
                 </div>
-
                 <div class="info my-3">
                   <p class="text-danger small mb-0 p-3" style="border: 1px solid red;">
                     The coupon code you provided is invalid. Please enter valid code.
                   </p>
                 </div>
-
                 <div class="info my-3">
                   <p class="text-success small mb-0 p-3" style="border: 1px solid green;">
                     Coupon Applied Successfully.
                   </p>
                 </div>
-
               </div>
-
               <div class="proceed">
                 <div class="proceed_btn">
                   <a href="shipping.html">
-
                     <button class="btn btn_proceed btn_bordered">Proceed to Checkout</button>
                   </a>
                 </div>
               </div>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group agreeTerms my-3">
-              <label for="agree">
-                <input type="checkbox" checked id="agree" name="agree">
-                <small>I agreed to the <span><a href="#">Terms & Conditions</a></span>, <span><a href="#">Return
-                      Policy</a></span>, <span><a href="#">Privacy Policy</a></span></small>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="actionPage mt-3 d-flex gap">
-              <a href="confirmation.html" class="btn btn_bordered">
-                Place Order
-              </a>
-              <a href="catalog.html" class="btn btn_bordered">
-                Return Shop
-              </a>
             </div>
           </div>
         </div>
     </section>
   </main>
-
   <footer class=" siteFooter" data-scroll-section>
     <section class="upper py-5" data-scroll-section>
       <div class="container">

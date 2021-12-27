@@ -468,6 +468,19 @@ article .share-icons a {
   width: 100% !important;
 }
 
+.cartPage .header {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.cartPage .header .cartwrapper {
+  height: auto !important;
+}
+
+.cartPage .cartItem {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 .cartPage .btn_coupon {
   padding: 0px !important;
   font-size: 14px;

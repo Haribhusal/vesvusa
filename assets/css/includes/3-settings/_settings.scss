@@ -607,3 +607,54 @@ article {
     color: #fff !important;
   }
 }
+
+.myOrders {
+  .order {
+    background-color: rgba(#000, 0.2);
+
+    .tags {
+      .tag {
+        background-color: rgba(#fff, 0.1);
+        color: rgb(156, 156, 156);
+        padding: 3px 10px;
+        display: inline-block;
+        border-radius: 100px;
+        margin-right: 5px;
+        font-size: 12px;
+        &:hover {
+          i {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+    figure {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+}
+
+.myOrders {
+  .form-control {
+    background-color: $p;
+    border: 1px solid rgba(#fff, 0.2) !important;
+    color: #fff;
+  }
+  .btn_search {
+    border: 1px solid rgba(#fff, 0.2) !important;
+
+    // border: 1px solid #fff;
+    background-color: rgba(#fff, 0.05) !important;
+    color: #fff;
+    &:hover {
+      background-color: rgba(#fff, 1) !important;
+
+      color: $p !important;
+    }
+  }
+}

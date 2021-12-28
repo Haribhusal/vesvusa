@@ -707,6 +707,50 @@ article .share-icons a {
   color: #fff !important;
 }
 
+.myOrders .order {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.myOrders .order .tags .tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #9c9c9c;
+  padding: 3px 10px;
+  display: inline-block;
+  border-radius: 100px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.myOrders .order .tags .tag:hover i {
+  color: #fff !important;
+}
+
+.myOrders .order figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.myOrders .form-control {
+  background-color: #2f3131;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff;
+}
+
+.myOrders .btn_search {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #fff;
+}
+
+.myOrders .btn_search:hover {
+  background-color: white !important;
+  color: #2f3131 !important;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

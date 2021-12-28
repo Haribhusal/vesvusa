@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/locomotive-scroll.css" />
+  <link rel="stylesheet" type="text/css" href="vendors/xzoom.min.css" media="all" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>vesvusa</title>
+</head>
+
+<body data-scroll-container tabindex='-1'>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/text.png" class="img-fluid" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav leftmenu px-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Today</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kid</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="las la-search flipX"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="las la-bell"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="las la-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="las la-shopping-bag"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link accountToggle" href="#"><i class="las la-user"></i></a>
+            </li>
+
+          </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main class="py-5">
+
+    <section class="auth myOrders py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 d-flex align-items-center">
+            <div class="content">
+              <div class="heading d-flex justify-content-between align-items-center">
+                <div class="titlewrapper">
+                  <h3 class="title text-uppercase spacedText">My Orders</h3>
+                  <p class="text-muted">
+                    <small>
+                      You can view your purchase history here..
+                    </small>
+                  </p>
+
+                </div>
+                <div class="actions">
+                  <form action="">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Search Orders">
+                      <button style="width: auto;" class="btn btn_small btn_search">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+              <div class="myOrders">
+                <div class="order mb-3">
+                  <a href="#">
+                    <article class="d-flex">
+                      <figure class="flex2">
+                        <img src="assets/images/model1.png" class="img-fludi" alt="">
+                      </figure>
+                      <div class="info p-4 flex6">
+                        <div class="heading d-flex justify-content-between">
+                          <div class="left">
+                            <h5 class="title">#42342379</h5>
+                            <p class="text-muted mb-0">6 Products</p>
+                          </div>
+                          <div class="right d-flex gap">
+                            <div class="info d-flex text-muted">
+                              <i class="las la-wallet"></i>
+                              <div class="value ms-2">
+                                Rs. 23000 - <small>Pending</small>
+                              </div>
+                            </div>
+                            <div class="info d-flex text-muted">
+                              <i class="las la-truck"></i>
+                              <div class="value ms-2">
+                                Delivered
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="purchaseBody">
+                          <p class="text-muted">
+                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
+                          </p>
+
+                          <ul class="tags mb-0">
+                            <li class="tag">
+                              <i class="las la-calendar"></i>
+                              <span class="value">23 June 2020</span>
+                            </li>
+                            <li class="tag">
+                              <i class="las la-tags"></i>
+                              <span class="value">Fashion, Beauty, Makeup</span>
+                            </li>
+                            <li class="tag">
+                              <i class="las la-percent"></i>
+                              <span class="value">Save 10%</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="order mb-3">
+                  <a href="#">
+                    <article class="d-flex">
+                      <figure class="flex2">
+                        <img src="assets/images/model1.png" class="img-fludi" alt="">
+                      </figure>
+                      <div class="info p-4 flex6">
+                        <div class="heading d-flex justify-content-between">
+                          <div class="left">
+                            <h5 class="title">#42342379</h5>
+                            <p class="text-muted mb-0">6 Products</p>
+                          </div>
+                          <div class="right d-flex gap">
+                            <div class="info d-flex text-muted">
+                              <i class="las la-wallet"></i>
+                              <div class="value ms-2">
+                                Rs. 23000 - <small>Pending</small>
+                              </div>
+                            </div>
+                            <div class="info d-flex text-muted">
+                              <i class="las la-truck"></i>
+                              <div class="value ms-2">
+                                Delivered
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="purchaseBody">
+                          <p class="text-muted">
+                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
+                          </p>
+
+                          <ul class="tags mb-0">
+                            <li class="tag">
+                              <i class="las la-calendar"></i>
+                              <span class="value">23 June 2020</span>
+                            </li>
+                            <li class="tag">
+                              <i class="las la-tags"></i>
+                              <span class="value">Fashion, Beauty, Makeup</span>
+                            </li>
+                            <li class="tag">
+                              <i class="las la-percent"></i>
+                              <span class="value">Save 10%</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="order mb-3">
+                  <a href="#">
+                    <article class="d-flex">
+                      <figure class="flex2">
+                        <img src="assets/images/model1.png" class="img-fludi" alt="">
+                      </figure>
+                      <div class="info p-4 flex6">
+                        <div class="heading d-flex justify-content-between">
+                          <div class="left">
+                            <h5 class="title">#42342379</h5>
+                            <p class="text-muted mb-0">6 Products</p>
+                          </div>
+                          <div class="right d-flex gap">
+                            <div class="info d-flex text-muted">
+                              <i class="las la-wallet"></i>
+                              <div class="value ms-2">
+                                Rs. 23000 - <small>Pending</small>
+                              </div>
+                            </div>
+                            <div class="info d-flex text-muted">
+                              <i class="las la-truck"></i>
+                              <div class="value ms-2">
+                                Delivered
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="purchaseBody">
+                          <p class="text-muted">
+                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
+                          </p>
+
+                          <ul class="tags mb-0">
+                            <li class="tag">
+                              <i class="las la-calendar"></i>
+                              <span class="value">23 June 2020</span>
+                            </li>
+                            <li class="tag">
+                              <i class="las la-tags"></i>
+                              <span class="value">Fashion, Beauty, Makeup</span>
+                            </li>
+                            <li class="tag">
+                              <i class="las la-percent"></i>
+                              <span class="value">Save 10%</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="siteFooter" data-scroll-section>
+    <section class="upper py-5" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/images/text.png" class="img-fluid" alt="">
+              </a>
+              <p class="text-muted mt-3 me-4">
+                Vesvusa is fashion luxury brand with moto of beauty, fashion and lifestyle.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menuwrapper">
+              <h4 class="title text-bold bold">Help</h4>
+              <ul>
+                <li><a href="#" class="link">Contact Us</a></li>
+                <li><a href="#" class="link">Return Inf</a></li>
+                <li><a href="#" class="link">Terms & Conditions</a></li>
+                <li><a href="#" class="link">Sizing Guide</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menuwrapper">
+              <h4 class="title text-bold bold">Shop</h4>
+              <ul>
+                <li><a href="#" class="link">Women</a></li>
+                <li><a href="#" class="link">Men</a></li>
+                <li><a href="#" class="link">Sleepwear</a></li>
+                <li><a href="#" class="link">Shoes</a></li>
+                <li><a href="#" class="link">Makeup</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="wrapper">
+              <div class="newsletter">
+                <h4 class="title text-bold bold">Newsletter</h4>
+                <p class="text-muted">
+                  Subscribe to our newsletter and get 10% off your first purchase
+                </p>
+                <form action="#" class="form-inline d-flex ">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                  </div>
+                  <button type="submit" class="btn_subscribe">Subscribe</button>
+                </form>
+              </div>
+              <div class="socials my-3 d-flex">
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-instagram"></i>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-youtube"></i>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lower py-3" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-left">
+            <div class="textwrapper">
+              <p class="text-muted">
+                © 2021 Vesvusa. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="textwrapper">
+              <a href="#" class="text-muted">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right">
+            <div class="textwrapper ">
+              <a href="#" class="text-muted">
+                Designed by Techcare Softwares
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+    crossorigin="anonymous"></script>
+  <script nomodule
+    src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="vendors/color-thief.umd.js"></script>
+  <script type="text/javascript" src="vendors/xzoom.min.js"></script>
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+
+
+      $('.accountToggle').click(function () {
+        $('.slideBar').fadeToggle();
+      });
+      $('.close').click(function () {
+        $('.slideBar').fadeToggle();
+      });
+      $('.xzoom, .xzoom-gallery').xzoom({
+        zoomWidth: 300,
+        zoomHeight: 300,
+        title: false,
+        tint: "#2f3131",
+        scroll: false,
+        Xoffset: 20
+      });
+    });
+  </script>
+</body>
+
+</html>

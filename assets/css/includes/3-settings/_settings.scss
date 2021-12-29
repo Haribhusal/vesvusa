@@ -610,7 +610,64 @@ article {
 
 .myOrders {
   .order {
-    background-color: rgba(#000, 0.2);
+    transition: all 0.5s ease;
+    border-bottom: 1px solid rgba(#fff, 0.05);
+    &:last-child {
+      border-bottom: none !important;
+    }
+    &:hover {
+      box-shadow: 0px 10px 30px rgba(#000, 0.2);
+      border-color: transparent !important;
+    }
+    .toggleItems {
+      display: none;
+    }
+
+    .activeToggleItems {
+      display: block;
+    }
+    // background-color: rgba(#fff, 0.03);
+    .items {
+      background-color: rgba(#fff, 0.1);
+      display: none;
+      .tablewrapper {
+        background-color: rgba(#fff, 0.05);
+      }
+      table {
+        td {
+          border: none !important;
+        }
+        tr {
+          border: none !important;
+        }
+      }
+      .item {
+        border-bottom: 1px solid rgba(#fff, 0.1) !important;
+        padding: 10px 0;
+        &:last-child {
+          border-bottom: none !important;
+        }
+      }
+    }
+    .actions {
+      .action {
+        text-align: center;
+        i {
+          font-size: 20px;
+          height: 40px;
+          width: 40px;
+          background-color: rgba(#fff, 0.1);
+          line-height: 40px;
+          border-radius: 40px !important;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          color: #fff;
+          &:hover {
+            background-color: $a;
+          }
+        }
+      }
+    }
 
     .tags {
       .tag {
@@ -657,4 +714,8 @@ article {
       color: $p !important;
     }
   }
+}
+
+.rotateIcon {
+  transform: rotate(90deg);
 }

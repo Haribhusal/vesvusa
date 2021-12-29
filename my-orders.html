@@ -71,7 +71,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 d-flex align-items-center">
-            <div class="content">
+            <div class="content w-100">
               <div class="heading d-flex justify-content-between align-items-center">
                 <div class="titlewrapper">
                   <h3 class="title text-uppercase spacedText">My Orders</h3>
@@ -94,19 +94,26 @@
 
 
               <div class="myOrders">
-                <div class="order mb-3">
-                  <a href="#">
-                    <article class="d-flex">
-                      <figure class="flex2">
-                        <img src="assets/images/model1.png" class="img-fludi" alt="">
-                      </figure>
-                      <div class="info p-4 flex6">
-                        <div class="heading d-flex justify-content-between">
-                          <div class="left">
+                <div class="order ">
+                  <article class="d-flex flex-column">
+                    <div class="info p-4 flex6">
+                      <div class="heading align-items-center gap d-flex justify-content-between">
+                        <div class="left flex3">
+                          <div class="inf">
                             <h5 class="title">#42342379</h5>
-                            <p class="text-muted mb-0">6 Products</p>
                           </div>
-                          <div class="right d-flex gap">
+                          <p class="text-muted">
+                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
+                          </p>
+                        </div>
+                        <div class="right d-flex gap align-items-start flex-column flex4">
+                          <div class="status d-flex gap align-items-center">
+                            <div class="info d-flex text-muted">
+                              <i class="las la-box"></i>
+                              <div class="value ms-2">
+                                6 Products
+                              </div>
+                            </div>
                             <div class="info d-flex text-muted">
                               <i class="las la-wallet"></i>
                               <div class="value ms-2">
@@ -119,14 +126,7 @@
                                 Delivered
                               </div>
                             </div>
-
                           </div>
-                        </div>
-                        <div class="purchaseBody">
-                          <p class="text-muted">
-                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
-                          </p>
-
                           <ul class="tags mb-0">
                             <li class="tag">
                               <i class="las la-calendar"></i>
@@ -142,23 +142,203 @@
                             </li>
                           </ul>
                         </div>
-                      </div>
-                    </article>
-                  </a>
-                </div>
-                <div class="order mb-3">
-                  <a href="#">
-                    <article class="d-flex">
-                      <figure class="flex2">
-                        <img src="assets/images/model1.png" class="img-fludi" alt="">
-                      </figure>
-                      <div class="info p-4 flex6">
-                        <div class="heading d-flex justify-content-between">
-                          <div class="left">
-                            <h5 class="title">#42342379</h5>
-                            <p class="text-muted mb-0">6 Products</p>
+                        <div class="actions flex1 d-flex align-items-end  gap_small">
+                          <div class="action download myTooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Download Invoice">
+                            <i class="las la-arrow-down"></i>
                           </div>
-                          <div class="right d-flex gap">
+                          <div class="action delete" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Delete Order">
+                            <i class="las la-trash"></i>
+                          </div>
+
+                          <div class="action view" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Expand this Order">
+                            <i class="las la-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="toggleItems">
+
+
+                      <div class="items d-flex align-items-stretch">
+                        <div class="itemwrapper flex8">
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tablewrapper flex3 d-flex align-items-center px-4">
+                          <table class="table text-white">
+                            <tr>
+                              <td>
+                                Sub Total
+                              </td>
+                              <td>
+                                Rs. 28000
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Coupon
+                              </td>
+                              <td>
+                                Rs. 2000
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Voucher Applied
+                              </td>
+                              <td>
+                                Rs. 1000
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>Total</td>
+                              <td>Rs. 23000</td>
+                            </tr>
+
+                          </table>
+                        </div>
+
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+                <div class="order ">
+                  <article class="d-flex flex-column">
+                    <div class="info p-4 flex6">
+                      <div class="heading align-items-center gap d-flex justify-content-between">
+                        <div class="left flex3">
+                          <div class="inf">
+                            <h5 class="title">#42342379</h5>
+                          </div>
+                          <p class="text-muted">
+                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
+                          </p>
+                        </div>
+                        <div class="right d-flex gap align-items-start flex-column flex4">
+                          <div class="status d-flex gap align-items-center">
+                            <div class="info d-flex text-muted">
+                              <i class="las la-box"></i>
+                              <div class="value ms-2">
+                                6 Products
+                              </div>
+                            </div>
                             <div class="info d-flex text-muted">
                               <i class="las la-wallet"></i>
                               <div class="value ms-2">
@@ -171,14 +351,7 @@
                                 Delivered
                               </div>
                             </div>
-
                           </div>
-                        </div>
-                        <div class="purchaseBody">
-                          <p class="text-muted">
-                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
-                          </p>
-
                           <ul class="tags mb-0">
                             <li class="tag">
                               <i class="las la-calendar"></i>
@@ -194,23 +367,203 @@
                             </li>
                           </ul>
                         </div>
-                      </div>
-                    </article>
-                  </a>
-                </div>
-                <div class="order mb-3">
-                  <a href="#">
-                    <article class="d-flex">
-                      <figure class="flex2">
-                        <img src="assets/images/model1.png" class="img-fludi" alt="">
-                      </figure>
-                      <div class="info p-4 flex6">
-                        <div class="heading d-flex justify-content-between">
-                          <div class="left">
-                            <h5 class="title">#42342379</h5>
-                            <p class="text-muted mb-0">6 Products</p>
+                        <div class="actions flex1 d-flex align-items-end  gap_small">
+                          <div class="action download myTooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Download Invoice">
+                            <i class="las la-arrow-down"></i>
                           </div>
-                          <div class="right d-flex gap">
+                          <div class="action delete" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Delete Order">
+                            <i class="las la-trash"></i>
+                          </div>
+
+                          <div class="action view" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Expand this Order">
+                            <i class="las la-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="toggleItems">
+
+
+                      <div class="items d-flex align-items-stretch">
+                        <div class="itemwrapper flex8">
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tablewrapper flex3 d-flex align-items-center px-4">
+                          <table class="table text-white">
+                            <tr>
+                              <td>
+                                Sub Total
+                              </td>
+                              <td>
+                                Rs. 28000
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Coupon
+                              </td>
+                              <td>
+                                Rs. 2000
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Voucher Applied
+                              </td>
+                              <td>
+                                Rs. 1000
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>Total</td>
+                              <td>Rs. 23000</td>
+                            </tr>
+
+                          </table>
+                        </div>
+
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+                <div class="order ">
+                  <article class="d-flex flex-column">
+                    <div class="info p-4 flex6">
+                      <div class="heading align-items-center gap d-flex justify-content-between">
+                        <div class="left flex3">
+                          <div class="inf">
+                            <h5 class="title">#42342379</h5>
+                          </div>
+                          <p class="text-muted">
+                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
+                          </p>
+                        </div>
+                        <div class="right d-flex gap align-items-start flex-column flex4">
+                          <div class="status d-flex gap align-items-center">
+                            <div class="info d-flex text-muted">
+                              <i class="las la-box"></i>
+                              <div class="value ms-2">
+                                6 Products
+                              </div>
+                            </div>
                             <div class="info d-flex text-muted">
                               <i class="las la-wallet"></i>
                               <div class="value ms-2">
@@ -223,14 +576,7 @@
                                 Delivered
                               </div>
                             </div>
-
                           </div>
-                        </div>
-                        <div class="purchaseBody">
-                          <p class="text-muted">
-                            Purchase includes Red Jama, Pink Blouse, Watch, Earrings, Foundation and more..
-                          </p>
-
                           <ul class="tags mb-0">
                             <li class="tag">
                               <i class="las la-calendar"></i>
@@ -246,10 +592,185 @@
                             </li>
                           </ul>
                         </div>
+                        <div class="actions flex1 d-flex align-items-end  gap_small">
+                          <div class="action download myTooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Download Invoice">
+                            <i class="las la-arrow-down"></i>
+                          </div>
+                          <div class="action delete" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Delete Order">
+                            <i class="las la-trash"></i>
+                          </div>
+
+                          <div class="action view" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Expand this Order">
+                            <i class="las la-angle-down"></i>
+                          </div>
+                        </div>
                       </div>
-                    </article>
-                  </a>
+
+                    </div>
+
+                    <div class="toggleItems">
+
+
+                      <div class="items d-flex align-items-stretch">
+                        <div class="itemwrapper flex8">
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <div class="value"><a href="#">1</a></div>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted">Product Category</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tablewrapper flex3 d-flex align-items-center px-4">
+                          <table class="table text-white">
+                            <tr>
+                              <td>
+                                Sub Total
+                              </td>
+                              <td>
+                                Rs. 28000
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Coupon
+                              </td>
+                              <td>
+                                Rs. 2000
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Voucher Applied
+                              </td>
+                              <td>
+                                Rs. 1000
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>Total</td>
+                              <td>Rs. 23000</td>
+                            </tr>
+
+                          </table>
+                        </div>
+
+                      </div>
+                    </div>
+                  </article>
+
                 </div>
+
+
               </div>
 
 
@@ -379,6 +900,19 @@
 
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  <script>
+    $(".myOrders article").click(function () {
+      $(this).parent().find(".toggleItems").slideToggle();
+      $(this).parent().find(".view i").toggleClass("rotateIcon");
+    })
+  </script>
   <script>
     $(document).ready(function () {
 

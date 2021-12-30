@@ -727,6 +727,10 @@ article .share-icons a {
   display: none;
 }
 
+.myOrders .order .toggleItems img {
+  height: 60px;
+}
+
 .myOrders .order .activeToggleItems {
   display: block;
 }
@@ -819,8 +823,8 @@ article .share-icons a {
 }
 
 .rotateIcon {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 /*

@@ -24,22 +24,26 @@
 
 .hero {
   position: relative;
+  height: 70vh;
   .owl-carousel {
     position: relative;
     z-index: 1;
   }
-  .active {
-    .slider {
-      .imagewrapper {
-        img {
-          animation: scaleUpDown;
-          animation-duration: 2s;
-          animation-delay: 1000ms;
-          animation-iteration-count: 1;
-          animation-direction: normal;
-          animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-        }
-      }
+  .slider {
+    // background-color: $a;
+    height: 70vh;
+    position: relative;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      content: "";
     }
   }
 

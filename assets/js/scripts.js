@@ -4,13 +4,14 @@ $(document).ready(function () {
   heroSlider.owlCarousel({
     loop: true,
     margin: 0,
+    lazyLoad: true,
     nav: false,
     items: 1,
     dots: false,
     smartSpeed: 2000,
     autoplayHoverPause: true,
     smooth: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   });
   $(".nextHero").click(function () {

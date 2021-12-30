@@ -449,7 +449,7 @@ figure {
 }
 
 .quantitywrapper .act:hover {
-  background-color: #c73535;
+  background-color: #e95f71;
   color: #fff;
 }
 
@@ -486,7 +486,7 @@ article .share-icons a {
   font-size: 14px;
   width: auto !important;
   min-width: 100px;
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 .cartPage .cart_summary_content {
@@ -512,7 +512,7 @@ article .share-icons a {
 }
 
 .cartPage .cartItem .remove {
-  background-color: #c73535;
+  background-color: #e95f71;
   height: 30px;
   width: 30px;
   border-radius: 30px;
@@ -560,7 +560,7 @@ article .share-icons a {
 }
 
 .shippingPage .addresses .addNew i.las {
-  background-color: #c73535;
+  background-color: #e95f71;
   height: 30px;
   width: 30px;
   font-size: 20px;
@@ -588,7 +588,7 @@ article .share-icons a {
 }
 
 .shippingPage .addresses .address .edit i {
-  background-color: #c73535;
+  background-color: #e95f71;
   line-height: 20px;
   cursor: pointer;
   padding: 5px;
@@ -629,7 +629,7 @@ article .share-icons a {
 }
 
 .shippingPage .addresses .customradio input:checked ~ .default {
-  background-color: #c73535;
+  background-color: #e95f71;
   color: #fff;
   display: block !important;
 }
@@ -639,7 +639,7 @@ article .share-icons a {
 }
 
 .modal-content .btn-close {
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 .modal-content .modal-header {
@@ -654,7 +654,7 @@ article .share-icons a {
 }
 
 .modal-content .modal-body select {
-  color: #c73535;
+  color: #e95f71;
 }
 
 .paymentMethodPage .paymentMethods .address {
@@ -679,7 +679,7 @@ article .share-icons a {
 }
 
 .agreeTerms a {
-  color: #c73535;
+  color: #e95f71;
 }
 
 .actionPage .btn {
@@ -779,7 +779,7 @@ article .share-icons a {
 }
 
 .myOrders .order .actions .action i:hover {
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 .myOrders .order .tags .tag {
@@ -953,7 +953,7 @@ body {
 }
 
 .header .navbar .nav-link span.count {
-  background-color: #c73535;
+  background-color: #e95f71;
   color: #fff;
   padding: 1px 5px;
   border-radius: 3px;
@@ -986,11 +986,11 @@ body {
 }
 
 .header .cartwrapper::-webkit-scrollbar-thumb {
-  background: #c73535;
+  background: #e95f71;
 }
 
 .header .cartwrapper::-webkit-scrollbar-thumb:hover {
-  background: #c73535;
+  background: #e95f71;
 }
 
 .header .cartwrapper .cartItem {
@@ -1505,11 +1505,11 @@ body {
 }
 
 .header .search_sidebar .searchHistory::-webkit-scrollbar-thumb {
-  background: #c73535;
+  background: #e95f71;
 }
 
 .header .search_sidebar .searchHistory::-webkit-scrollbar-thumb:hover {
-  background: #c73535;
+  background: #e95f71;
 }
 
 .header .search_sidebar .searchHistory .item a {
@@ -1526,7 +1526,7 @@ body {
 }
 
 .header .search_sidebar .searchbar .btn_search {
-  background-color: #c73535;
+  background-color: #e95f71;
   border: none;
   color: #fff;
   width: 50px;
@@ -1610,11 +1610,11 @@ body {
 }
 
 .header .notification_sidebar .notification::-webkit-scrollbar-thumb {
-  background: #c73535;
+  background: #e95f71;
 }
 
 .header .notification_sidebar .notification::-webkit-scrollbar-thumb:hover {
-  background: #c73535;
+  background: #e95f71;
 }
 
 .header .notification_sidebar .notification .item {
@@ -1633,7 +1633,7 @@ body {
 }
 
 .header .notification_sidebar .searchbar .btn_search {
-  background-color: #c73535;
+  background-color: #e95f71;
   border: none;
   color: #fff;
   width: 50px;
@@ -1871,7 +1871,7 @@ a.iconLink i {
 
 a.iconLink i:hover {
   background-color: #fff;
-  color: #c73535;
+  color: #e95f71;
 }
 
 .gap {
@@ -1952,12 +1952,12 @@ a.iconLink i:hover {
 
 ::-moz-selection {
   color: #fff;
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 ::selection {
   color: #fff;
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 .bg_rotate_icon {
@@ -2875,6 +2875,7 @@ footer .upper .form-control::placeholder {
 
 .hero {
   position: relative;
+  height: 70vh;
 }
 
 .hero .owl-carousel {
@@ -2882,19 +2883,22 @@ footer .upper .form-control::placeholder {
   z-index: 1;
 }
 
-.hero .active .slider .imagewrapper img {
-  -webkit-animation: scaleUpDown;
-          animation: scaleUpDown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+.hero .slider {
+  height: 70vh;
+  position: relative;
+}
+
+.hero .slider::after {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
 }
 
 .hero .imagewrapper .heroImg {
@@ -3180,7 +3184,7 @@ footer .upper .form-control::placeholder {
 }
 
 .news article:hover .heading .title {
-  color: #c73535;
+  color: #e95f71;
 }
 
 @-webkit-keyframes scaleUpDown {
@@ -3276,7 +3280,7 @@ footer .upper .form-control::placeholder {
 .reviewsQuestions .dropdown-menu {
   background-color: #2f3131;
   color: #fff !important;
-  border: 1px solid #c73535;
+  border: 1px solid #e95f71;
   border-radius: 0px;
 }
 
@@ -3285,11 +3289,11 @@ footer .upper .form-control::placeholder {
 }
 
 .reviewsQuestions .dropdown-menu .dropdown-item:hover {
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 .reviewsQuestions .dropdown-menu .dropdown-item:focus {
-  background-color: #c73535;
+  background-color: #e95f71;
 }
 
 .reviewsQuestions .dropdown-toggle {
@@ -3372,7 +3376,7 @@ footer .upper .form-control::placeholder {
 .productPage .xactive {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border: 1px solid #c73535 !important;
+  border: 1px solid #e95f71 !important;
 }
 
 .productPage .lookspage {
@@ -3436,7 +3440,7 @@ footer .upper .form-control::placeholder {
 
 .adswrapper .info .btn {
   width: auto !important;
-  background-color: #c73535 !important;
+  background-color: #e95f71 !important;
   display: inline-block !important;
   color: #fff !important;
 }

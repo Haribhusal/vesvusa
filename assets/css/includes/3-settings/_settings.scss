@@ -562,18 +562,20 @@ article {
   .paymentMethods {
     .address {
       text-align: center;
-      background-color: #fff;
+      background-color: rgba(#fff, 0.05);
       padding: 0px !important;
+
       label {
         text-align: center;
         width: 100% !important;
         padding: 15px;
         cursor: pointer;
         flex: 1;
-      }
-      img {
-        height: 60px;
-        text-align: center;
+        img {
+          height: 60px;
+          text-align: center;
+          // filter: brightness(0) invert(1);
+        }
       }
     }
   }
@@ -723,3 +725,70 @@ article {
 .rotateIcon {
   transform: rotate(-180deg);
 }
+
+.btn_featuring {
+  &:hover {
+    background-color: #fff;
+    color: $p;
+  }
+}
+
+.customradioColor {
+  .form-check {
+    position: relative;
+    label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid #fff;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      cursor: pointer;
+      line-height: 30px;
+      transform: translate(-50%, -50%);
+
+      .color {
+        height: 15px;
+        width: 15px;
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transition: all 0.5s ease;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  input {
+    display: none;
+    &:checked + label {
+      // background-color: #fff;
+      color: $p;
+      .color {
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+// .imageCatalog {
+//   .info {
+//     width: 100% !important;
+//     .title {
+//       text-align: left !important;
+//     }
+//     .action {
+//       display: flex;
+//       justify-content: flex-end;
+//       a {
+//         display: inline-block !important;
+//         max-width: 300px;
+//       }
+//     }
+//   }
+// }

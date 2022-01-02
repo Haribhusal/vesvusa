@@ -659,7 +659,7 @@ article .share-icons a {
 
 .paymentMethodPage .paymentMethods .address {
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 0px !important;
 }
 
@@ -673,7 +673,7 @@ article .share-icons a {
           flex: 1;
 }
 
-.paymentMethodPage .paymentMethods .address img {
+.paymentMethodPage .paymentMethods .address label img {
   height: 60px;
   text-align: center;
 }
@@ -825,6 +825,59 @@ article .share-icons a {
 .rotateIcon {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+
+.btn_featuring:hover {
+  background-color: #fff;
+  color: #2f3131;
+}
+
+.customradioColor .form-check {
+  position: relative;
+}
+
+.customradioColor .form-check label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.customradioColor .form-check label .color {
+  height: 15px;
+  width: 15px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.customradioColor input {
+  display: none;
+}
+
+.customradioColor input:checked + label {
+  color: #2f3131;
+}
+
+.customradioColor input:checked + label .color {
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*
@@ -2937,6 +2990,14 @@ footer .upper .form-control::placeholder {
 .hero .actionTrigger .actionItems .item {
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.catalog .container-fluid,
+.menswear .container-fluid,
+.shinyCollection .container-fluid,
+.video .container-fluid {
+  overflow: hidden;
+  padding: 0px !important;
 }
 
 .catalog .imageCatalog,

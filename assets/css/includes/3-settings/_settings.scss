@@ -427,9 +427,6 @@ article {
   }
   .cartItem {
     .remove {
-      background-color: $a;
-      height: 30px;
-      width: 30px;
       border-radius: 30px;
       text-align: center;
       display: flex;
@@ -792,3 +789,132 @@ article {
 //     }
 //   }
 // }
+
+.productList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  .cartItem {
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: rgba(#000, 0.2) !important;
+    border: 1px solid rgba(#fff, 0);
+    .actions {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    figure {
+      overflow: hidden;
+      img {
+        height: 100%;
+      }
+    }
+    img {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      border: 1px solid rgba(#fff, 0.3);
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.shippingPage {
+  .addresses {
+    text-align: left !important;
+
+    grid-template-columns: 1fr 1fr !important;
+    .address {
+      .title {
+        color: $a;
+      }
+      .table {
+        background-color: transparent !important;
+        margin-bottom: 0px !important;
+        font-size: 14px;
+        line-height: 30px;
+        tr {
+          td {
+            &:first-child {
+              opacity: 0.4;
+            }
+          }
+        }
+        td,
+        tr {
+          border: none !important;
+          padding: 0px !important;
+        }
+      }
+    }
+    .pmethod {
+      text-align: left !important;
+      min-height: 100px !important;
+    }
+
+    .addPaymentMethod {
+      border: 1px dashed rgba(#fff, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.5s ease;
+      &:hover {
+        border: 1px dashed rgba(#fff, 0.8);
+      }
+      .customradio {
+        width: 100%;
+        display: block;
+        flex: 1;
+      }
+    }
+    img {
+      width: 80px !important;
+      height: auto !important;
+      object-fit: contain !important;
+    }
+  }
+}
+
+.watermark {
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .table {
+    background-color: transparent !important;
+    margin-bottom: 0px !important;
+    font-size: 14px;
+    line-height: 30px;
+    tfoot {
+      tr {
+        td {
+          &:first-child {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+
+    td,
+    tr,
+    thead,
+    tbody,
+    tfoot {
+      border: none !important;
+      padding: 0px !important;
+    }
+    tfoot,
+    tbody,
+    thead {
+      border-top: 1px solid rgba(#fff, 0.3) !important;
+    }
+    thead {
+      td {
+        padding: 10px !important;
+      }
+    }
+  }
+}

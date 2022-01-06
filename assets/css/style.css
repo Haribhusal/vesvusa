@@ -512,9 +512,6 @@ article .share-icons a {
 }
 
 .cartPage .cartItem .remove {
-  background-color: #e95f71;
-  height: 30px;
-  width: 30px;
   border-radius: 30px;
   text-align: center;
   display: -webkit-box;
@@ -878,6 +875,153 @@ article .share-icons a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.productList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.productList .cartItem {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.productList .cartItem .actions {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.productList .cartItem figure {
+  overflow: hidden;
+}
+
+.productList .cartItem figure img {
+  height: 100%;
+}
+
+.productList .cartItem img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.productList .cartItem:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.productList .cartItem:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.shippingPage .addresses {
+  text-align: left !important;
+  -ms-grid-columns: 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr !important;
+}
+
+.shippingPage .addresses .address .title {
+  color: #e95f71;
+}
+
+.shippingPage .addresses .address .table {
+  background-color: transparent !important;
+  margin-bottom: 0px !important;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.shippingPage .addresses .address .table tr td:first-child {
+  opacity: 0.4;
+}
+
+.shippingPage .addresses .address .table td,
+.shippingPage .addresses .address .table tr {
+  border: none !important;
+  padding: 0px !important;
+}
+
+.shippingPage .addresses .pmethod {
+  text-align: left !important;
+  min-height: 100px !important;
+}
+
+.shippingPage .addresses .addPaymentMethod {
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.shippingPage .addresses .addPaymentMethod:hover {
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+}
+
+.shippingPage .addresses .addPaymentMethod .customradio {
+  width: 100%;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.shippingPage .addresses img {
+  width: 80px !important;
+  height: auto !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.watermark {
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.watermark .table {
+  background-color: transparent !important;
+  margin-bottom: 0px !important;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.watermark .table tfoot tr td:first-child {
+  opacity: 0.4;
+}
+
+.watermark .table td,
+.watermark .table tr,
+.watermark .table thead,
+.watermark .table tbody,
+.watermark .table tfoot {
+  border: none !important;
+  padding: 0px !important;
+}
+
+.watermark .table tfoot,
+.watermark .table tbody,
+.watermark .table thead {
+  border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.watermark .table thead td {
+  padding: 10px !important;
 }
 
 /*

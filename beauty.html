@@ -1,0 +1,2437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/locomotive-scroll.css" />
+  <link rel="stylesheet" type="text/css" href="vendors/xzoom.min.css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>vesvusa</title>
+</head>
+
+<body data-scroll-container tabindex='-1'>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/vesvusa-icon-logo.png" style="filter: brightness(0) invert(1); height: 60px;
+" class="img-fluid" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav leftmenu px-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Today</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beauty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fashion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lifestyle</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link searchToggle" href="#"><i class="las la-search flipX"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link notificationToggle" href="#"><i class="las la-bell"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link favouritesToggle" href="#"><i class="las la-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cartToggle" href="#"><i class="las la-shopping-bag"></i>
+                <span class="count">4</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link accountToggle" href="#"><i class="las la-user"></i></a>
+            </li>
+
+          </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="slideBar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Account
+            </h5>
+          </div>
+          <a href="#" class="link">Signout</a>
+        </div>
+        <div class="linkswrapper mt-4">
+          <a href="#" class="linkitem loginToggle">
+            <i class="las la-sign-in-alt"></i>
+            <span class="d-block label"> Login</span>
+          </a>
+          <a href="#" class="linkitem signupToggle">
+            <i class="las la-user-plus"></i>
+            <span class="d-block label"> Signup</span>
+          </a>
+          <a href="my-orders.html" class="linkitem">
+            <i class="las la-money-check"></i>
+            <span class="d-block label"> Orders</span>
+          </a>
+          <a href="login-security.html" class="linkitem">
+            <i class="las la-shield-alt"></i>
+            <span class="d-block label">Login & Security</span>
+          </a>
+          <a href="#" class="linkitem">
+            <i class="las la-file-invoice-dollar"></i>
+            <span class="d-block label"> Payments</span>
+          </a>
+          <a href="profile-details.html" class="linkitem">
+            <i class="las la-address-card"></i>
+            <span class="d-block label"> Profile</span>
+          </a>
+          <a href="messages.html" class="linkitem">
+            <i class="las la-sms"></i>
+            <span class="d-block label"> Message</span>
+          </a>
+          <a href="profile-devices.html" class="linkitem">
+            <i class="las la-mobile"></i>
+            <span class="d-block label">Devices</span>
+          </a>
+          <a href="loyalty.html" class="linkitem">
+            <i class="las la-handshake"></i>
+            <span class="d-block label">Loyalty</span>
+
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sidebar_cart">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Cart
+            </h5>
+          </div>
+          <a href="cartpage.html" class="link">Go To Cart</a>
+        </div>
+        <div class="cartwrapper mt-4 w-100">
+          <div class="actions mb-3 d-flex gap">
+            <form action="">
+              <input type="text" class="form-control" placeholder="Search Products">
+            </form>
+            <div class="filter">
+              <div class="dropdown">
+                <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter | All
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap" data-id="2">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 2</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
+                </div>
+
+                <div class="action  removeCartItem mt-2" id="2">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap" data-id="3">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 3</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
+                </div>
+
+                <div class="action mt-2 removeCartItem" id="3">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="checkout w-100 mt-3">
+
+          <a href="catalog.html">
+            <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="favourites_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Favourites
+            </h5>
+          </div>
+        </div>
+        <div class="cartwrapper mt-4 w-100">
+          <div class="actions mb-3 d-flex gap">
+            <form action="">
+              <input type="text" class="form-control" placeholder="Search Products">
+            </form>
+            <div class="filter">
+              <div class="dropdown">
+                <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter | All
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartItem mb-3 d-flex align-items-center gap">
+            <figure>
+              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+            </figure>
+            <div class="info">
+              <div class="titlewrapper">
+                <a href="#">
+                  <h5 class="title">Product Name 1</h5>
+                </a>
+                <div class="meta d-flex gap">
+                  <div class="category small ">
+                    <i class="las la-tag"></i>
+                    Maxi
+                  </div>
+                  <div class="category small">
+                    <i class="las la-wallet"></i>
+                    Rs. 23000
+                  </div>
+                </div>
+                <div class="bottom mt-3 d-flex justify-content-between align-items-center">
+                  <div class="quantitywrapper">
+                    <div class="decrease act">
+                      <i class="las la-minus"></i>
+                    </div>
+                    <input type="number" value="1">
+                    <div class="increase act">
+                      <i class="las la-plus"></i>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#">
+                      <small>Buy</small>
+
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="action removeCartItem mt-2" id="1">
+                  <a href="#" class="link"><i class="las la-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class="checkout w-100 mt-3">
+
+          <a href="#">
+            <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="search_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Search History
+            </h5>
+          </div>
+
+        </div>
+        <div class="searchbar mt-3 w-100">
+          <div class="row">
+            <div class="col-sm-12">
+              <form action="" class="searchform d-flex gap_small">
+                <input type="text" class="form-control" placeholder="Search Products">
+                <button class="btn_search">
+                  <i class="las la-search flipX"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="searchHistory w-100">
+          <hr />
+          <div class="heading mt-4 d-flex justify-content-between">
+            <h6 class="title text-uppercase spacedText">
+              Recent Searches
+            </h6>
+            <a href="#">Clear Search</a>
+          </div>
+          <hr />
+          <div class="item">
+            <a href="#">Notification Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+          <div class="item">
+            <a href="#">Search Item 1</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="notification_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Notifications
+            </h5>
+          </div>
+          <a href="#">Mark all as read</a>
+
+        </div>
+
+        <div class="searchHistory w-100 notification">
+
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="@">
+              <div class="heading mb-2 d-flex align-items-center justify-content-between">
+                <div class="">Notification Item 1</div>
+                <span class="date">
+                  <i class="las la-calendar-alt"></i>
+                  <span class="small">
+                    <time datetime="2019-01-01">
+                      January 01, 2019
+                    </time>
+                  </span>
+                </span>
+              </div>
+              <div class="info">
+                <p class="mb-0">
+                  <small class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minus quod
+                    omnis.</small>
+                </p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="login_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Login
+            </h5>
+          </div>
+          <div class="signupToggle">Register</div>
+        </div>
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Username / Email / Phone Number</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter username/phone/email">
+              <span class="text-danger"><small>Invalid Username/Email/Mobile</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Enter Password">
+              <span class="text-success"><small>Success</small></span>
+            </div>
+            <div class="form-group mb-2 d-flex gap justify-content-between">
+              <div class="left">
+                <input type="checkbox" id="rem">
+                <label for="rem">
+                  <small>Remember Me</small>
+                </label>
+              </div>
+              <div class="right small">
+                <a href="#" class="forgetTrigger">Forget Password?</a>
+              </div>
+            </div>
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="forget_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Forgot Password?
+            </h5>
+          </div>
+        </div>
+
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Email / Phone</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter username/phone/email">
+              <span class="text-danger"><small>Invalid Username/Email/Mobile</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>OTP</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter OTP">
+
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Enter Password">
+
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Confirm Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Confirm Password">
+
+            </div>
+
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="signup_sidebar">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Register
+            </h5>
+          </div>
+          <div class="loginToggle">Login</div>
+        </div>
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Full Name</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter your Name">
+              <span class="text-danger"><small>Provide Name</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Email</small>
+              </label>
+              <input type="email" class="form-control" placeholder="Enter Email">
+              <span class="text-danger"><small>Provide Valid Email</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Mobile Number</small>
+              </label>
+              <input type="tel" class="form-control" placeholder="Enter your Mobile">
+              <span class="text-danger"><small>Provide Valid Mobile Number</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Enter Password">
+              <span class="text-danger"><small>Password must contains one uppercase and one number</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Confirm Password</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Confirm Password">
+              <span class="text-danger"><small>Passwords don't match</small></span>
+            </div>
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Refer Code</small>
+              </label>
+              <input type="password" class="form-control" placeholder="Confirm Password">
+              <span class="text-danger"><small>Passwords don't match</small></span>
+            </div>
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="forgetPassword">
+      <div class="container">
+        <div class="close">
+          <i class="las la-times"></i>
+        </div>
+        <div class="heading w-100 mt-4 d-flex justify-content-between">
+          <div class="titlewrapper ">
+            <h5 class="title text-uppercase spacedText">
+              Forget Password?
+            </h5>
+            <p class="text-muted">
+              Enter your Phone Number and we'll send you a verification code on your mobile to reset your password.
+            </p>
+          </div>
+        </div>
+        <div class="authwrapper w-100 notification">
+          <form action="" class="loginform">
+            <div class="form-group mb-2">
+              <label for="">
+                <small>Phone Number</small>
+              </label>
+              <input type="text" class="form-control" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group mb-2 mt-4">
+              <button class="btn btn_bordered btn_sent_otp">
+                Submit
+              </button>
+            </div>
+            <div class="timeOutCounter">
+              <div class="timer active"></div>
+              <div class="border"></div>
+            </div>
+            <div class="my-4 resendOTP">
+              <form action="">
+                <div class="form-group ">
+                  <label for="">
+                    <small>Didn't get an OTP?</small>
+                  </label>
+                  <button class="btn btn_small btn_bordered">Resend OTP</button>
+                </div>
+              </form>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main class="category beauty">
+    <section class="cat">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="catwrapper pt-3">
+              <ul class="nav nav-tabs " id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cat1" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    <div class="catitem d-flex justify-content-between align-items-stretch">
+                      <div class="info p-3">
+                        <h5 class="title">Sale</h5>
+                      </div>
+                      <img src="assets/images/model1.png" alt="">
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    <div class="catitem d-flex justify-content-between align-items-stretch">
+                      <div class="info p-3">
+                        <h5 class="title">Sale</h5>
+                      </div>
+                      <img src="assets/images/model2.png" alt="">
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">
+                    <div class="catitem d-flex justify-content-between align-items-stretch">
+                      <div class="info p-3">
+                        <h5 class="title">Sale</h5>
+                      </div>
+                      <img src="assets/images/model3.png" alt="">
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cat1" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    <div class="catitem d-flex justify-content-between align-items-stretch">
+                      <div class="info p-3">
+                        <h5 class="title">Sale</h5>
+                      </div>
+                      <img src="assets/images/model4.png" alt="">
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    <div class="catitem d-flex justify-content-between align-items-stretch">
+                      <div class="info p-3">
+                        <h5 class="title">Sale</h5>
+                      </div>
+                      <img src="assets/images/model5.png" alt="">
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="cat1">
+                  <div class="d-block catItemWrapper">
+                    <div class="subCatwrapper">
+                      <div class="subcategory py-3">
+                        <div class="subItem">
+                          <div class="title">Makeup<i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Foundation <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="d-block catItemWrapper">
+                    <div class="subCatwrapper">
+                      <div class="subcategory py-3">
+                        <div class="subItem">
+                          <div class="title">Makeup<i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Foundation <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="d-block catItemWrapper">
+                    <div class="subCatwrapper">
+                      <div class="subcategory py-3">
+                        <div class="subItem">
+                          <div class="title">Makeup<i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Foundation <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="subItem">
+                          <div class="title">Hair <i class="las la-angle-down"></i> </div>
+                          <div class="subSub">
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                            <a href="#">
+                              <div class="item">Item 1</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="heroBanner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="imageCatalog owl-carousel">
+              <a href="#" class="d-block">
+                <figure>
+                  <img src="assets/images/winter-catalog.jpg" alt="" class="img-fluid">
+                </figure>
+              </a>
+              <a href="#" class="d-block">
+                <figure>
+                  <img src="assets/images/summer-catalog.jpg" alt="" class="img-fluid">
+                </figure>
+              </a>
+              <a href="#" class="d-block">
+                <figure>
+                  <img src="assets/images/valentines-catalog.jpg" alt="" class="img-fluid">
+                </figure>
+              </a>
+              <a href="#" class="d-block">
+                <figure>
+                  <img src="assets/images/mens-catalog.jpg" alt="" class="img-fluid">
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="titlearea mt-5">
+              <h3 class="title text-uppercase spacedText">Categories</h3>
+              <p class="text-muted text-uppercase">
+                Picked just for you
+              </p>
+            </div>
+            <div class="catwrapper">
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-1.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-2.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-3.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-4.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-5.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-7.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-8.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-9.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-10.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="catItemSingle">
+                <a href="#">
+                  <article>
+                    <figure>
+                      <img src="assets/images/collection-11.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <div class="info">
+                      <h5 class="title">Makeup</h5>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comfort mt-3" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="d-flex  justify-content-center align-items-center flex-column text-center">
+              <h3 class="title text-uppercase mb-3">
+                Brand Talks
+              </h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="catalogSlider">
+              <div class="owl-carousel ">
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-1.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-2.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-3.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-4.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-5.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-7.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-8.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-9.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="item imageCatalog">
+                  <a href="#">
+                    <article>
+                      <figure>
+                        <img src="assets/images/collection-10.jpg" class=" img-fluid" alt="">
+                      </figure>
+                      <div class="info p-3 d-flex align-items-center">
+                        <div class="imagewrapper">
+                          <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="title flex1 text-end text-capitalize">
+                          <p class="text mb-0">
+                            shiny collection
+                          </p>
+                          <div class="text-muted">
+                            Upto 70% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-center mt-3">
+            <div class="action d-flex">
+              <div class="trigger customPrevBtn  left ">
+                <i class="las la-angle-left"></i>
+              </div>
+              <div class=" trigger customNextBtn right ">
+                <i class="las la-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="catalog mt-3" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <article class="mb-3" data-scroll data-scroll-speed="3">
+              <div class="imageCatalog">
+                <figure>
+                  <img src="assets/images/summer-catalog.jpg" class="img-fluid" alt="">
+                </figure>
+                <div class="info text-center">
+                  <div class="title mb-3">
+                    <h3 class="text text-uppercase f40">
+                      SUMMER CATALOG
+                    </h3>
+                  </div>
+                  <div class="action">
+                    <a href="#" class="btn  btn_bordered btn_hovered">
+                      <div class="label">Explore
+
+                      </div>
+                      <div class="hovered">I want to explore</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row" data-scroll-speed="2">
+          <div class="col-sm-12 col-md-12">
+            <article class="mb-3" data-scroll data-scroll-speed="3">
+              <div class="imageCatalog">
+                <figure>
+                  <img src="assets/images/winter-catalog.jpg" class="img-fluid" alt="">
+                </figure>
+                <div class="info text-center">
+                  <div class="title mb-3">
+                    <h3 class="text text-uppercase f40">
+                      WINTER CATALOG
+                    </h3>
+                  </div>
+                  <div class="action">
+                    <a href="#" class="btn  btn_bordered btn_hovered">
+                      <div class="label">Explore</div>
+                      <div class="hovered">I want to explore </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </article>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="row alsolike">
+          <div class="col-sm-3">
+
+
+
+          </div>
+
+          <div class="col-sm-3">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                  role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">.sa.</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..saasas.</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..a.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+
+  <footer class="siteFooter" data-scroll-section>
+    <section class="upper py-5" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/images/text.png" class="img-fluid" alt="">
+              </a>
+              <p class="text-muted mt-3 me-4">
+                Vesvusa is fashion luxury brand with moto of beauty, fashion and lifestyle.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menuwrapper">
+              <h4 class="title text-bold bold">Help</h4>
+              <ul>
+                <li><a href="#" class="link">Contact Us</a></li>
+                <li><a href="#" class="link">Return Inf</a></li>
+                <li><a href="#" class="link">Terms & Conditions</a></li>
+                <li><a href="#" class="link">Sizing Guide</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menuwrapper">
+              <h4 class="title text-bold bold">Shop</h4>
+              <ul>
+                <li><a href="#" class="link">Women</a></li>
+                <li><a href="#" class="link">Men</a></li>
+                <li><a href="#" class="link">Sleepwear</a></li>
+                <li><a href="#" class="link">Shoes</a></li>
+                <li><a href="#" class="link">Makeup</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="wrapper">
+              <div class="newsletter">
+                <h4 class="title text-bold bold">Newsletter</h4>
+                <p class="text-muted">
+                  Subscribe to our newsletter and get 10% off your first purchase
+                </p>
+                <form action="#" class="form-inline d-flex ">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                  </div>
+                  <button type="submit" class="btn_subscribe">Subscribe</button>
+                </form>
+              </div>
+              <div class="socials my-3 d-flex">
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-instagram"></i>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-youtube"></i>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <i class="lab la-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lower py-3" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-left">
+            <div class="textwrapper">
+              <p class="text-muted">
+                © 2021 Vesvusa. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="textwrapper">
+              <a href="#" class="text-muted">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right">
+            <div class="textwrapper ">
+              <a href="#" class="text-muted">
+                Designed by Techcare Softwares
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="vendors/jquery-3.6.0.min.js"></script>
+  <script src="vendors/polyfill.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="vendors/owl.carousel.min.js"></script>
+  <script src="vendors/jquery.primarycolor.js"></script>
+  <script src="vendors/color-thief.umd.js"></script>
+  <script src="vendors/xzoom.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

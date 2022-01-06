@@ -138,7 +138,7 @@ $(document).ready(function () {
 
   comfortSlider.owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 16,
     dots: false,
     autoPlay: false,
     nav: false,
@@ -172,6 +172,35 @@ $(document).ready(function () {
 
   // comfortSlider Slider ends
 
+  // heroBanner slider Starts
+
+  var heroBannerSlider = $(".heroBanner .owl-carousel");
+
+  heroBannerSlider.owlCarousel({
+    loop: true,
+    margin: 30,
+    dots: true,
+    autoPlay: true,
+    // autoplayTimeout: 3000,
+    nav: false,
+    autoplaySpeed: 2000,
+    items: 1,
+
+    navText: [
+      "<i class='las la-angle-left'></i>",
+      "<i class='las la-angle-right'></i>",
+    ],
+  });
+
+  $(".customNextBtn").click(function () {
+    comfortSlider.trigger("next.owl.carousel");
+  });
+  $(".customPrevBtn").click(function () {
+    comfortSlider.trigger("prev.owl.carousel", [300]);
+  });
+
+  // heroBanner ends
+
   $(document).ready(function () {
     var sliders = document.querySelectorAll(" .sliderItem");
     sliders.forEach((slider) => {
@@ -188,17 +217,14 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    var lookspage = document.querySelector(" .lookspage");
     const colorThief = new ColorThief();
-    const img = lookspage.querySelector(".pickColor");
+    const img = $(".lookspage .pickColor");
     console.log("img", img);
     var themeColor = colorThief.getColor(img);
     var red = themeColor[0];
     var green = themeColor[1];
     var blue = themeColor[2];
-    lookspage.findClass(
-      ".cardwrapper"
-    ).style.backgroundColor = `rgb(${red},${green},${blue})`;
+    $("cardwrapper").style.backgroundColor = `rgb(${red},${green},${blue})`;
   });
 
   // pickColor;
@@ -235,5 +261,17 @@ $(document).ready(function () {
       thumbContainerClass: "owl-thumbs",
       thumbItemClass: "owl-thumb-item",
     });
+  });
+});
+// $(".catItemWrapper").click(function () {
+//   $(this).toggleClass("active");
+// });
+
+$(document).ready(function () {
+  $(".catItemWrapper").bind("click", function () {
+    // remove the active class from all elements with active class
+    $(".active").removeClass("active");
+    // add active class to clicked element
+    $(this).addClass("active");
   });
 });

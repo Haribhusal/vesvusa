@@ -126,7 +126,7 @@
       </div>
     </div>
 
-    <div class="sidebar_cart d-block">
+    <div class="sidebar_cart">
       <div class="container">
         <div class="close">
           <i class="las la-times"></i>
@@ -137,66 +137,28 @@
               Cart
             </h5>
           </div>
-
+          <a href="cartpage.html" class="link">Go To Cart</a>
         </div>
-        <div class="cartwrapper mt-4 w-100 pe-1">
+        <div class="cartwrapper mt-4 w-100">
           <div class="actions mb-3 d-flex gap">
-            <form action="" class="w-100 flex1  d-flex gap_small align-items-center ">
+            <form action="">
               <input type="text" class="form-control" placeholder="Search Products">
-              <button class="btn btn_search btn_small bg_a" style="width: auto !important;">
-                <i class="las la-search flipX"></i>
-              </button>
             </form>
-            <!-- <div class="filter">
- <div class="dropdown">
+            <div class="filter">
+              <div class="dropdown">
                 <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown" aria-expanded="false"
-                  style="width: auto !important; font-size: 12px !important;">
-                  Recent
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter | All
                 </button>
-                 <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Filter 1</a></li>
-                  <li><a class="dropdown-item" href="#">Filter 2</a></li>
-                </ul> 
-              </div> 
-            </div> -->
-          </div>
-
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
-                    </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
-                    </div>
-                  </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
-                  </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
-                </div>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -211,26 +173,23 @@
                 </a>
                 <div class="meta d-flex gap">
                   <div class="category small ">
-                    Shimmer, Maxi..
+                    <i class="las la-tag"></i>
+                    Maxi
                   </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
-                    </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
-                    </div>
-                  </div>
-                  <div class="category small flex1">
+                  <div class="category small">
                     <i class="las la-wallet"></i>
                     Rs. 23000
                   </div>
                 </div>
-
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
+                </div>
 
                 <div class="action removeCartItem mt-2" id="1">
                   <a href="#" class="link"><i class="las la-trash"></i></a>
@@ -238,166 +197,84 @@
               </div>
             </div>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
+          <div class="cartItem mb-3 d-flex align-items-center gap" data-id="2">
             <figure>
               <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
             </figure>
             <div class="info">
               <div class="titlewrapper">
                 <a href="#">
-                  <h5 class="title">Product Name 1</h5>
+                  <h5 class="title">Product Name 2</h5>
                 </a>
                 <div class="meta d-flex gap">
                   <div class="category small ">
-                    Shimmer, Maxi..
+                    <i class="las la-tag"></i>
+                    Maxi
                   </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
-                    </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
-                    </div>
-                  </div>
-                  <div class="category small flex1">
+                  <div class="category small">
                     <i class="las la-wallet"></i>
                     Rs. 23000
                   </div>
                 </div>
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
+                </div>
 
-
-                <div class="action removeCartItem mt-2" id="1">
+                <div class="action  removeCartItem mt-2" id="2">
                   <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
+          <div class="cartItem mb-3 d-flex align-items-center gap" data-id="3">
             <figure>
               <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
             </figure>
             <div class="info">
               <div class="titlewrapper">
                 <a href="#">
-                  <h5 class="title">Product Name 1</h5>
+                  <h5 class="title">Product Name 3</h5>
                 </a>
                 <div class="meta d-flex gap">
                   <div class="category small ">
-                    Shimmer, Maxi..
+                    <i class="las la-tag"></i>
+                    Maxi
                   </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
-                    </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
-                    </div>
-                  </div>
-                  <div class="category small flex1">
+                  <div class="category small">
                     <i class="las la-wallet"></i>
                     Rs. 23000
                   </div>
                 </div>
+                <div class="quantitywrapper mt-2">
+                  <div class="decrease act">
+                    <i class="las la-minus"></i>
+                  </div>
+                  <input type="number" value="1">
+                  <div class="increase act">
+                    <i class="las la-plus"></i>
+                  </div>
+                </div>
 
-
-                <div class="action removeCartItem mt-2" id="1">
+                <div class="action mt-2 removeCartItem" id="3">
                   <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
 
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
-                    </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
-                    </div>
-                  </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
-                  </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
-                    </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
-                    </div>
-                  </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
-                  </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
 
 
         </div>
-
         <div class="checkout w-100 mt-3">
 
-          <a href="cartpage.html#payment">
+          <a href="catalog.html">
             <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
           </a>
         </div>
@@ -1457,7 +1334,7 @@
             <div class="titlewrapper" data-scroll data-scroll-speed="3">
               <div class="spacedText  text-uppercase mb-5">
                 <span class="quote f40">
-                  <i class="las la-dove"></i>
+                  <i class="las la-quote-left"></i>
                 </span>
                 <span class="f40">
                   Your Choice
@@ -1803,6 +1680,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
             <div class="mid flex7 d-flex flex-column justify-content-start">
               <div class="cardwrapper bgColor d-flex justify-content-start flex-column gap p-4"
@@ -1833,33 +1711,27 @@
                   </div>
                 </div>
                 <div class="action mt-3 d-flex justify-content-md-between align-items-center">
-                  <div class="left d-flex gap_small align-items-center">
+                  <div class="left">
                     <div class="price">
-                      <div class="text text-uppercase f28 d-flex align-items-center gap_small">
-                        <i class="las la-tag"></i> Rs. 100
-                      </div>
-                    </div>
-                    <div class="price was_price">
-                      <div class="text text-uppercase  d-flex align-items-center gap">
-                        Rs. 100
+                      <div class="text text-uppercase f28 d-flex align-items-center gap">
+                        <i class="las la-tag"></i> 100
                       </div>
                     </div>
                   </div>
                   <div class="right">
                     <button class="btn btn_bordered btn_hovered">
                       <div class="label">
-                        Buy Look
+                        Buy Looks
                       </div>
                       <div class="hovered">
-                        I want to buy look
+                        I want to buy this looks
                       </div>
                     </button>
                   </div>
                 </div>
               </div>
-
               <div class="actionMain mt-3">
-                <button class="btn btn_bordered btn_hovered" style="width: auto !important;">
+                <button class="btn btn_bordered btn_hovered">
                   <div class="label">
                     See more detail
                   </div>
@@ -1936,7 +1808,7 @@
                       <figure>
                         <img src="assets/images/collection-1.jpg" class=" img-fluid" alt="">
                       </figure>
-                      <div class="info">
+                      <div class="info colinfo">
                         <div class="title">
                           <h3 class="text text-uppercase f20">
                             Jwellery Collection
@@ -1952,7 +1824,7 @@
                       <figure>
                         <img src="assets/images/collection-2.jpg" class=" img-fluid" alt="">
                       </figure>
-                      <div class="info">
+                      <div class="info colinfo">
                         <div class="title">
                           <h3 class="text text-uppercase f20">
                             Shoes Collection
@@ -1968,7 +1840,7 @@
                       <figure>
                         <img src="assets/images/collection-3.jpg" class=" img-fluid" alt="">
                       </figure>
-                      <div class="info">
+                      <div class="info colinfo">
                         <div class="title">
                           <h3 class="text text-uppercase f20">
                             Watches Collection
@@ -1984,7 +1856,7 @@
                       <figure>
                         <img src="assets/images/collection-4.jpg" class=" img-fluid" alt="">
                       </figure>
-                      <div class="info">
+                      <div class="info colinfo">
                         <div class="title">
                           <h3 class="text text-uppercase f20">
                             Wedding Dresses
@@ -2000,7 +1872,7 @@
                       <figure>
                         <img src="assets/images/collection-5.jpg" class=" img-fluid" alt="">
                       </figure>
-                      <div class="info">
+                      <div class="info colinfo">
                         <div class="title">
                           <h3 class="text text-uppercase f20">
                             Gadgets Collection
@@ -2016,7 +1888,7 @@
                       <figure>
                         <img src="assets/images/collection-7.jpg" class=" img-fluid" alt="">
                       </figure>
-                      <div class="info">
+                      <div class="info colinfo">
                         <div class="title">
                           <h3 class="text text-uppercase f20">
                             Perfumes Collection

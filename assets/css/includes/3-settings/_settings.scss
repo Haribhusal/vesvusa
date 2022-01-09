@@ -941,3 +941,15 @@ article {
     );
   }
 }
+
+.was_price {
+  opacity: 0.4;
+  font-size: 20px !important;
+  .text {
+    text-decoration: line-through;
+  }
+}
+
+.bg_a {
+  background-color: $a;
+}

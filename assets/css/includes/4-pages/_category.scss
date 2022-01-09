@@ -1,4 +1,18 @@
 .category {
+  .products {
+    .product {
+      .colors {
+        .color {
+          border-radius: 100px;
+          border: 2px solid transparent;
+        }
+        .active {
+          border: 2px solid #fff;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
   .catwrapper {
     .nav {
       display: grid;

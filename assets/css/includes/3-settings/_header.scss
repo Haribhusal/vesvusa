@@ -470,48 +470,96 @@
     box-shadow: -10px -20px 30px rgba(#000, 0.2);
     max-width: 400px;
     width: 100%;
+
     .searchHistory {
-      height: 500px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      /* width */
-      &::-webkit-scrollbar {
-        width: 5px;
+      .btn_clearsearch {
+        font-size: 12px !important;
+        width: auto !important;
+        border: 1px solid rgba(#fff, 0.2);
+        // background-color: rgba(#fff, 0.1);
+        text-transform: capitalize !important;
+        &:hover {
+          background-color: $p;
+          color: #fff !important;
+        }
       }
-
-      /* Track */
-      &::-webkit-scrollbar-track {
-        background: $p;
+      .searchItems {
+        flex-wrap: wrap;
       }
-
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
-        background: $a;
-      }
-
-      /* Handle on hover */
-      &::-webkit-scrollbar-thumb:hover {
-        background: $a;
-      }
-
       .item {
         a {
-          display: block;
-          padding-top: 5px;
-          padding-bottom: 5px;
+          display: inline-block;
+          padding: 3px 10px;
+          align-items: center;
+          font-size: 12px !important;
+          background-color: rgba(#fff, 0.1);
           transition: all 0.5s ease;
+          display: flex;
+          gap: 5px;
+          i {
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            &:hover {
+              transform: rotate(90deg);
+            }
+          }
           &:hover {
-            background-color: rgba($p, 0.1);
+            background-color: rgba(#fff, 0.3);
             padding-left: 10px;
           }
         }
       }
     }
-    .searchbar {
+
+    .topsearchItems {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      .item {
+        a {
+          background: rgba(209, 190, 132, 1);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:hover {
+            background-color: rgba(#fff, 0.2);
+          }
+          .label {
+            padding: 10px;
+          }
+        }
+        img {
+          width: 50px;
+          display: block;
+          flex: 1;
+        }
+      }
+    }
+
+    .filter {
+      background-color: rgba(#fff, 0.1);
+      button {
+        &::after {
+          display: none;
+        }
+        &:focus,
+        &:hover {
+          background-color: rgba(#fff, 0.1) !important;
+          color: #fff !important;
+        }
+      }
+    }
+    .searchform {
+      position: relative;
+
       .btn_search {
-        background-color: $a;
+        position: absolute;
+        height: 100%;
         border: none;
-        color: #fff;
+        right: 0;
+
+        background-color: transparent !important;
+        top: 0;
+        color: #bbb;
         width: 50px;
 
         cursor: pointer;

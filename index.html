@@ -597,8 +597,6 @@
 
       </div>
     </div>
-
-
     <div class="search_sidebar">
       <div class="container">
         <div class="close">
@@ -607,50 +605,158 @@
         <div class="heading w-100 mt-4 d-flex justify-content-between">
           <div class="titlewrapper ">
             <h5 class="title text-uppercase spacedText">
-              Search History
+              Search
             </h5>
           </div>
 
         </div>
+        <!-- searchbar -->
         <div class="searchbar mt-3 w-100">
           <div class="row">
-            <div class="col-sm-12">
-              <form action="" class="searchform d-flex gap_small">
+            <div class="col-sm-12 gap_small searchWrapper d-flex justify-content-between">
+              <form action="" class="searchform flex1 ">
                 <input type="text" class="form-control" placeholder="Search Products">
                 <button class="btn_search">
                   <i class="las la-search flipX"></i>
                 </button>
               </form>
+              <div class="filter">
+                <div class="dropdown">
+                  <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All <i class="las la-angle-down f12"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Beauty</a></li>
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="searchHistory w-100">
-          <hr />
-          <div class="heading mt-4 d-flex justify-content-between">
-            <h6 class="title text-uppercase spacedText">
-              Recent Searches
-            </h6>
-            <a href="#">Clear Search</a>
+
+        <div class="scrollable">
+
+
+          <!-- search keywords -->
+          <div class="searchHistory w-100">
+
+            <div class="heading  mb-2 mt-4 d-flex justify-content-between align-items-center">
+              <h6 class="title mb-0 text-uppercase spacedText">
+                Recent
+              </h6>
+              <button class="btn btn_small btn_clearsearch">Clear Search</button>
+            </div>
+            <div class="searchItems d-flex gap_small">
+
+
+
+              <div class="item">
+                <a href="#">Notification Item 1 <div class="remove">
+                    <i class="las la-times"></i>
+                  </div> </a>
+              </div>
+              <div class="item">
+                <a href="#">Search Item 1 <div class="remove">
+                    <i class="las la-times"></i>
+                  </div></a>
+              </div>
+              <div class="item">
+                <a href="#">Search Item 1 <div class="remove">
+                    <i class="las la-times"></i>
+                  </div></a>
+              </div>
+              <div class="item">
+                <a href="#">Search Item 1 <div class="remove">
+                    <i class="las la-times"></i>
+                  </div></a>
+              </div>
+              <div class="item">
+                <a href="#">Search Item 1 <div class="remove">
+                    <i class="las la-times"></i>
+                  </div></a>
+              </div>
+            </div>
           </div>
-          <hr />
-          <div class="item">
-            <a href="#">Notification Item 1</a>
+
+          <!-- top searches -->
+          <div class="topsearches w-100">
+            <div class="heading  mb-2 mt-4 d-flex justify-content-between align-items-center">
+              <h6 class="title mb-0 text-uppercase spacedText">
+                Top Searches
+              </h6>
+            </div>
+            <div class="topsearchItems">
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+
+            </div>
           </div>
-          <div class="item">
-            <a href="#">Search Item 1</a>
-          </div>
-          <div class="item">
-            <a href="#">Search Item 1</a>
-          </div>
-          <div class="item">
-            <a href="#">Search Item 1</a>
-          </div>
-          <div class="item">
-            <a href="#">Search Item 1</a>
+
+          <!-- browse -->
+          <div class="topsearches w-100">
+            <div class="heading  mb-2 mt-4 d-flex justify-content-between align-items-center">
+              <h6 class="title mb-0 text-uppercase spacedText">
+                Browse
+              </h6>
+            </div>
+            <div class="topsearchItems">
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+            </div>
           </div>
         </div>
-
-
       </div>
     </div>
 
@@ -1341,9 +1447,9 @@
       </div>
       </div>
     </section>
-    <section class="featuring py-5" data-scroll-section>
-      <div class="container">
 
+    <!-- <section class="featuring py-5" data-scroll-section>
+      <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title text-end">
@@ -1381,7 +1487,6 @@
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
                           value="option3">
                         <label class="form-check-label" for="inlineRadio4">XL</label>
-
                       </div>
                     </div>
                   </div>
@@ -1399,13 +1504,187 @@
                     <a href="/assets/images/model4.png">
                       <img class="xzoom-gallery" src="assets/images/model4.png">
                     </a>
-
                   </div>
                 </div>
               </article>
             </div>
             <div class="mid flex7 d-flex flex-column justify-content-start">
               <div class="cardwrapper bgColor d-flex justify-content-start flex-column gap p-4">
+                <div class="toparea">
+                  <div class="top d-flex justify-content-sm-start justify-content-md-between">
+                    <div class="meta py-3 pl-0">
+                      HOT SALE
+                    </div>
+                    <div class="action d-flex justify-content-sm-start justify-content-md-between">
+                      <div class="">
+                        <a href="#" class=" d-block iconLink">
+                          <i class="las la-heart"></i>
+                        </a>
+                      </div>
+                      <div class="">
+                        <a href="#" class=" d-block iconLink">
+                          <i class="las la-shopping-bag"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="text-uppercase f20">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit veritatis
+                      quam minus nulla! Dolorum, fugiat consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div class="action mt-3 d-flex justify-content-md-between align-items-center">
+                  <div class="left">
+                    <div class="price">
+                      <div class="text text-uppercase f28 d-flex align-items-center gap">
+                        <i class="las la-tag"></i> 100
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <button class="btn btn_bordered btn_hovered">
+                      <div class="label">
+                        Buy Looks
+                      </div>
+                      <div class="hovered">
+                        I want to buy this looks
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="actionMain mt-3">
+                <button class="btn btn_bordered btn_hovered">
+                  <div class="label">
+                    See more detail
+                  </div>
+                  <div class="hovered">
+                    I want to see more detail
+                  </div>
+                </button>
+              </div>
+            </div>
+            <a href="#"
+              class="bg_rotate_icon btn_featuring right flex1 d-flex align-items-center justify-content-center"
+              style="width: 60px;">
+              <div class="btn_rotate f20">
+                see&nbsp;all&nbsp;featuring
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="featuring py-5" data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title text-end">
+              <div class="spacedText f28 text-uppercase mb-4">
+                Test Featuring
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 d-flex gap ">
+            <div class="left flex5">
+              <div class="d-flex align-items-start gap">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="smallsize" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                    type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    S
+                  </button>
+                  <button class="nav-link" id="mediumSize" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                    type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">M</button>
+                  <button class="nav-link" id="largeSize" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                    type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">L</button>
+                  <button class="nav-link" id="extraLargeSize" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                    type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">XL</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="smallsize">
+                    <div class="wrapImages">
+                      <img class="xzoom" src="https://picsum.photos/id/10/1000/1200"
+                        xoriginal="https://picsum.photos/id/10/1000/1200" />
+                      <div class="xzoom-thumbs">
+                        <a href="https://picsum.photos/id/11/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/11/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/12/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/12/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/13/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/13/1000/1200">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="mediumSize">
+
+                    <div class="wrapImages">
+                      <img class="xzoom" src="https://picsum.photos/id/14/1000/1200"
+                        xoriginal="https://picsum.photos/id/14/1000/1200" />
+                      <div class="xzoom-thumbs">
+                        <a href="https://picsum.photos/id/15/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/15/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/16/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/16/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/17/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/17/1000/1200">
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="largeSize">
+
+                    <div class="wrapImages">
+                      <img class="xzoom" src="https://picsum.photos/id/18/1000/1200"
+                        xoriginal="https://picsum.photos/id/18/1000/1200" />
+                      <div class="xzoom-thumbs">
+                        <a href="https://picsum.photos/id/19/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/19/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/20/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/20/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/21/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/21/1000/1200">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="extraLargeSize">
+
+                    <div class="wrapImages">
+                      <img class="xzoom" src="https://picsum.photos/id/22/1000/1200"
+                        xoriginal="https://picsum.photos/id/22/1000/1200" />
+                      <div class="xzoom-thumbs">
+                        <a href="https://picsum.photos/id/23/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/23/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/24/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/24/1000/1200">
+                        </a>
+                        <a href="https://picsum.photos/id/25/1000/1200">
+                          <img class="xzoom-gallery" src="https://picsum.photos/id/25/1000/1200">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="mid flex7 d-flex flex-column justify-content-start">
+              <div class="cardwrapper bgColor d-flex justify-content-start flex-column gap p-4"
+                style="background-color: rgb(167, 143, 7);">
                 <div class="toparea">
                   <div class="top d-flex justify-content-sm-start justify-content-md-between">
                     <div class="meta py-3 pl-0">
@@ -1476,6 +1755,7 @@
         </div>
       </div>
     </section>
+
     <section class="menswear py-5" data-scroll-section>
       <div class="container">
         <div class="row">
@@ -2424,12 +2704,16 @@
         }, 30000);
       });
       $('.xzoom, .xzoom-gallery').xzoom({
-        zoomWidth: 300,
-        zoomHeight: 300,
+        zoomWidth: 400,
+        zoomHeight: 400,
         title: false,
-        tint: "#2f3131",
-        scroll: false,
-        Xoffset: 20
+        tint: "#000",
+        scroll: true,
+        Xoffset: 20,
+        fadeIn: true,
+        smoothZoomMove: 10,
+        smoothLensMove: 10,
+        smoothScale: 10
       });
     });
     $(".btn_play").click(function () {

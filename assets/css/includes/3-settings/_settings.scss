@@ -953,3 +953,94 @@ article {
 .bg_a {
   background-color: $a;
 }
+
+.filterPropductsBy {
+  .item {
+    .count {
+      background-color: rgba(#fff, 0.05);
+      font-size: 12px;
+      border-radius: 100px;
+      padding: 3px 5px;
+    }
+  }
+  .form-group {
+    display: block;
+    // margin-bottom: 15px;
+  }
+
+  .form-group input[type="checkbox"] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+    // margin-right: 10px;
+  }
+
+  .form-group input[type="radio"] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+    // margin-right: 10px;
+  }
+
+  .form-group input[type="text"] {
+    padding: 3px 10px;
+    background: $p;
+    border: none;
+    border: 1px solid rgba(#fff, 0.3);
+    color: #fff !important;
+    border-radius: 0px;
+    &:focus {
+      border-color: rgba(#fff, 0.4) !important;
+      border-radius: 0px !important;
+    }
+  }
+  .form-group .btn_search {
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(#fff, 0.2);
+    color: #fff;
+  }
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+    color: rgba(#fff, 0.5);
+    // padding-left: 1;
+  }
+
+  .form-group label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff4b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .opacity_50 {
+    opacity: 0.1 !important;
+  }
+  .form-group input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}

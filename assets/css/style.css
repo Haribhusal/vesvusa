@@ -1064,6 +1064,95 @@ article .share-icons a {
   background-color: #e95f71;
 }
 
+.filterPropductsBy .item .count {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  border-radius: 100px;
+  padding: 3px 5px;
+}
+
+.filterPropductsBy .form-group {
+  display: block;
+}
+
+.filterPropductsBy .form-group input[type="checkbox"] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.filterPropductsBy .form-group input[type="radio"] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.filterPropductsBy .form-group input[type="text"] {
+  padding: 3px 10px;
+  background: #2f3131;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff !important;
+  border-radius: 0px;
+}
+
+.filterPropductsBy .form-group input[type="text"]:focus {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 0px !important;
+}
+
+.filterPropductsBy .form-group .btn_search {
+  border: none;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.filterPropductsBy .form-group label {
+  position: relative;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.filterPropductsBy .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff4b;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.filterPropductsBy .opacity_50 {
+  opacity: 0.1 !important;
+}
+
+.filterPropductsBy .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -1238,6 +1327,11 @@ body {
   transition: all 0.5s ease;
   -webkit-box-shadow: none;
           box-shadow: none;
+  position: relative;
+}
+
+.header .cartwrapper .cartItem input {
+  display: none;
 }
 
 .header .cartwrapper .cartItem figure img {

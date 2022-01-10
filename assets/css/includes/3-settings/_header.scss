@@ -73,6 +73,10 @@
       backdrop-filter: blur(10px);
       transition: all 0.5s ease;
       box-shadow: none;
+      position: relative;
+      input {
+        display: none;
+      }
       figure {
         img {
           height: 120px;

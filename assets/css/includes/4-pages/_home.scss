@@ -1,8 +1,7 @@
 .insize {
   max-width: 600px;
 }
-.owl-thumbs {
-}
+
 .owl-thumbs .owl-thumb-item {
   height: 150px;
   width: 100%;
@@ -24,15 +23,30 @@
 
 .hero {
   position: relative;
-  height: 70vh;
+  min-height: 70vh;
   .owl-carousel {
     position: relative;
     z-index: 1;
   }
   .slider {
     // background-color: $a;
-    height: 70vh;
+    min-height: 70vh;
     position: relative;
+    @include media("<=phone") {
+      min-height: 100vh;
+      // background-color: black !important;
+    }
+    .productDetails {
+      @include media("<=phone") {
+        padding: 25px;
+      }
+
+      .top {
+        @include media("<=phone") {
+          justify-content: space-between !important;
+        }
+      }
+    }
     &::after {
       position: absolute;
       z-index: -1;
@@ -72,10 +86,18 @@
   }
   .actionTrigger {
     position: absolute;
-    bottom: 60px;
+    bottom: 30px;
     left: 0;
     right: 0;
     z-index: 2;
+    @include media("<=phone") {
+      top: 0;
+
+      right: 0;
+      .actionItems {
+        justify-content: flex-end !important;
+      }
+    }
     .actionItems {
       .item {
         padding: 5px 10px;

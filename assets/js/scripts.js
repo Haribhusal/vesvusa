@@ -90,11 +90,8 @@ $(document).ready(function () {
   $(".customPrevBtn").click(function () {
     looksAndThemeSlider.trigger("prev.owl.carousel", [300]);
   });
-
   // looksAndThemeSlider Slider ends
-
   // shinyCollection Slider Starts
-
   var shinyCollectionSlider = $(".shinyCollection .owl-carousel");
 
   shinyCollectionSlider.owlCarousel({
@@ -206,7 +203,6 @@ $(document).ready(function () {
     sliders.forEach((slider) => {
       const colorThief = new ColorThief();
       const img = slider.querySelector(".heroImg");
-      console.log("image", img);
       var themeColor = colorThief.getColor(img);
       var red = themeColor[0];
       var green = themeColor[1];
@@ -219,7 +215,6 @@ $(document).ready(function () {
   $(document).ready(function () {
     const colorThief = new ColorThief();
     const img = $(".lookspage .pickColor");
-    console.log("img", img);
     var themeColor = colorThief.getColor(img);
     var red = themeColor[0];
     var green = themeColor[1];
@@ -240,7 +235,6 @@ $(document).ready(function () {
 
       const colorThief = new ColorThief();
       const img = slider.querySelector(".xzoom-gallery");
-      console.log("image", img);
       var themeColor = colorThief.getColor(img);
       var red = themeColor[0];
       var green = themeColor[1];

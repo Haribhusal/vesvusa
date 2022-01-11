@@ -3,6 +3,132 @@
   background-color: $p;
   box-shadow: 0px 0px 10px rgba(#000, 0.2);
   padding: 10px 0;
+  @include media("<=phone") {
+    // background-color: $a !important;
+  }
+
+  .mobileMenuWrapper {
+    height: 100vh;
+    display: none;
+    width: 100vw;
+    background-color: rgba($p, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    bottom: 0;
+    right: 0;
+
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+
+  .mobile_menu {
+    height: 100vh;
+    width: calc(100vw - 50px);
+    background-color: #666;
+    position: relative;
+    top: 0;
+    z-index: 99;
+
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+    // position: relative;
+    .widget {
+      padding: 20px;
+      .title {
+        font-size: 16px !important;
+      }
+    }
+    .info {
+      dt {
+        font-weight: normal;
+      }
+    }
+    ul {
+      li {
+        a {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: red;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #b30000;
+    }
+
+    .close_menu {
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      height: 30px;
+      background-color: $p;
+      z-index: 9999;
+      border-radius: 100px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    // @include media(">phone") {
+    //   display: none !important;
+    // }
+    .join_form {
+      .btn_join {
+        background-color: #999;
+        border: none;
+        padding: 10px;
+      }
+    }
+  }
+
+  .navbar-collapse,
+  .show,
+  .collapse {
+    @include media("<=phone") {
+      display: none !important;
+    }
+  }
+  .headerWrapper {
+    .notification {
+      @include media(">phone") {
+        display: none;
+      }
+    }
+    @include media("<=phone") {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none;
+      border: none !important;
+    }
+  }
   .navbar {
     padding: 0px;
     background-color: transparent !important;
@@ -16,6 +142,9 @@
     .navbar-brand {
       img {
         height: 40px;
+        @include media("<=phone") {
+          height: 30px !important;
+        }
       }
     }
     .nav-link {
@@ -74,8 +203,74 @@
       transition: all 0.5s ease;
       box-shadow: none;
       position: relative;
+      overflow: visible;
+      &:hover {
+        cursor: pointer;
+      }
+
       input {
         display: none;
+      }
+      label {
+        position: relative;
+        &::after {
+          height: 30px;
+          cursor: pointer;
+          width: 30px;
+          border: 2px solid $p;
+          // background-color: red;
+          top: 2px;
+          left: 2px;
+          content: "";
+          position: absolute;
+          z-index: 9;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        &::before {
+          cursor: pointer;
+
+          height: 30px;
+          width: 30px;
+          border: 2px solid $p;
+          // background-color: red;
+          top: 2px;
+          left: 2px;
+          content: "";
+          position: absolute;
+          z-index: 99;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+      }
+
+      input:checked + label {
+        &::before {
+          // background-color: black;
+          height: 7px;
+          width: 20px;
+          top: 13px;
+          left: 7px;
+          border-left: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          border-top: 2px solid transparent;
+          border-right: 2px solid transparent;
+          border-top: 0;
+          border-right: 0;
+          transform: rotate(-45deg);
+        }
+      }
+      input:checked + label {
+        &::after {
+          height: 30px;
+          width: 30px;
+          border: 2px solid $a;
+          background-color: $a !important;
+          top: 2px;
+          left: 2px;
+          content: "";
+          position: absolute;
+          z-index: 9;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
       }
       figure {
         img {

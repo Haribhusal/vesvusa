@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="vendors/locomotive-scroll.css" />
   <link rel="stylesheet" type="text/css" href="vendors/xzoom.min.css" media="all" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <link rel="stylesheet" href="vendors/animate.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>vesvusa</title>
 </head>
@@ -19,15 +18,22 @@
 <body data-scroll-container tabindex='-1'>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
+      <div class="container headerWrapper">
+        <div class="notification">
+          <div class="icon">
+            <i class="las la-bell"></i>
+          </div>
+        </div>
         <a class="navbar-brand" href="#">
           <img src="assets/images/vesvusa-icon-logo.png" style="filter: brightness(0) invert(1); height: 60px;
-" class="img-fluid" alt="" />
+" class="img-fluid logo_desktop" alt="" />
+
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="las la-bars"></i>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav leftmenu px-5 me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -68,6 +74,121 @@
         </div>
       </div>
     </nav>
+
+    <div class="mobileMenuWrapper">
+
+
+
+      <div class="mobile_menu">
+        <div class="menuWrap">
+          <i class="las la-times"></i>
+        </div>
+
+        <div class="widget about">
+          <div class="titlewrapper">
+            <h3 class="title spacedText text-uppercase">About</h3>
+          </div>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero expedita nesciunt quibusdam minima, porro a
+            similique nostrum. Vitae, alias maxime.
+          </p>
+        </div>
+
+        <div class="widget about">
+          <div class="titlewrapper">
+            <h3 class="title spacedText text-uppercase">Help</h3>
+          </div>
+          <ul class="menu">
+            <li class="item">
+              <a href="" class="link">
+                Contact Us
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Return Inf
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Term & Services
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Sizing Guide
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget about">
+          <div class="titlewrapper">
+            <h3 class="title spacedText text-uppercase">Shop</h3>
+          </div>
+          <ul class="menu">
+            <li class="item">
+              <a href="" class="link">
+                Women
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Men
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Children
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Sleepwears
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Shoes
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                Makeup
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget about">
+          <div class="titlewrapper">
+            <h3 class="title spacedText text-uppercase">Join Our Community</h3>
+          </div>
+          <form action="" class="join_form">
+            <div class="form-group d-flex ">
+              <input type="text" class="form-control" placeholder="Email Address">
+              <button class="btn_join">
+                JOIN
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="widget info mt-3">
+          <dt>
+          <dt>
+            <a href="#">Privacy Policy</a>
+          </dt>
+          <dt>
+            <p class="text">Designed by <a href="https://techcaresoft.com" target="_blank">Techcare Softwares</a></p>
+          </dt>
+          <dt>
+            <p class="text">&copy; 2022 VESVUSA, ALL RIGHTS RESERVED</p>
+          </dt>
+          </dt>
+        </div>
+      </div>
+    </div>
 
     <div class="slideBar">
       <div class="container">
@@ -118,37 +239,36 @@
           <a href="loyalty.html" class="linkitem">
             <i class="las la-handshake"></i>
             <span class="d-block label">Loyalty</span>
-
           </a>
-
         </div>
-
       </div>
     </div>
-
-    <div class="sidebar_cart d-block">
+    <div class="sidebar_cart">
       <div class="container">
         <div class="close">
           <i class="las la-times"></i>
         </div>
-        <div class="heading w-100 mt-4 d-flex justify-content-between">
-          <div class="titlewrapper ">
-            <h5 class="title text-uppercase spacedText">
-              Cart
-            </h5>
+        <div class="heading w-100 mt-4 d-flex flex-column align-items-start justify-content-between">
+          <div class="top w-100 d-flex justify-content-between">
+            <div class="titlewrapper ">
+              <h5 class="title text-uppercase spacedText">
+                Cart
+              </h5>
+            </div>
           </div>
-
-        </div>
-        <div class="cartwrapper mt-4 w-100 pe-1">
-          <div class="actions mb-3 d-flex gap">
+          <div class="bottom w-100">
             <form action="" class="w-100 flex1  d-flex gap_small align-items-center ">
               <input type="text" class="form-control" placeholder="Search Products">
               <button class="btn btn_search btn_small bg_a" style="width: auto !important;">
                 <i class="las la-search flipX"></i>
               </button>
             </form>
+          </div>
+        </div>
+        <div class="cartwrapper mt-4 w-100 pe-1">
+          <div class="actions d-flex gap">
             <!-- <div class="filter">
- <div class="dropdown">
+              <div class="dropdown">
                 <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton2"
                   data-bs-toggle="dropdown" aria-expanded="false"
                   style="width: auto !important; font-size: 12px !important;">
@@ -165,8 +285,6 @@
           <div class="cartItem mb-3 ">
             <input type="checkbox" id="cartItem1">
             <label for="cartItem1" class="d-flex align-items-center gap">
-
-
               <figure>
                 <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
               </figure>
@@ -205,208 +323,223 @@
               </div>
             </label>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
+          <div class="cartItem mb-3 ">
+            <input type="checkbox" id="cartItem2">
+            <label for="cartItem2" class="d-flex align-items-center gap">
+              <figure>
+                <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+              </figure>
+              <div class="info">
+                <div class="titlewrapper">
+                  <a href="#">
+                    <h5 class="title">Product Name 1</h5>
+                  </a>
+                  <div class="meta d-flex gap">
+                    <div class="category small ">
+                      Shimmer, Maxi..
                     </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
+
+                  </div>
+                  <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
+                    <div class="quantitywrapper">
+                      <div class="decrease act">
+                        <i class="las la-minus"></i>
+                      </div>
+                      <input type="number" value="1">
+                      <div class="increase act">
+                        <i class="las la-plus"></i>
+                      </div>
+                    </div>
+                    <div class="category small flex1">
+                      <i class="las la-wallet"></i>
+                      Rs. 23000
                     </div>
                   </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
+
+
+                  <div class="action removeCartItem mt-2" id="1">
+                    <a href="#" class="link"><i class="las la-trash"></i></a>
                   </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
-            </div>
+            </label>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
+          <div class="cartItem mb-3 ">
+            <input type="checkbox" id="cartItem3">
+            <label for="cartItem3" class="d-flex align-items-center gap">
+              <figure>
+                <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+              </figure>
+              <div class="info">
+                <div class="titlewrapper">
+                  <a href="#">
+                    <h5 class="title">Product Name 1</h5>
+                  </a>
+                  <div class="meta d-flex gap">
+                    <div class="category small ">
+                      Shimmer, Maxi..
                     </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
+
+                  </div>
+                  <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
+                    <div class="quantitywrapper">
+                      <div class="decrease act">
+                        <i class="las la-minus"></i>
+                      </div>
+                      <input type="number" value="1">
+                      <div class="increase act">
+                        <i class="las la-plus"></i>
+                      </div>
+                    </div>
+                    <div class="category small flex1">
+                      <i class="las la-wallet"></i>
+                      Rs. 23000
                     </div>
                   </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
+
+
+                  <div class="action removeCartItem mt-2" id="1">
+                    <a href="#" class="link"><i class="las la-trash"></i></a>
                   </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
-            </div>
+            </label>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
 
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
+          <div class="cartItem mb-3 ">
+            <input type="checkbox" id="cartItem4">
+            <label for="cartItem4" class="d-flex align-items-center gap">
+              <figure>
+                <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+              </figure>
+              <div class="info">
+                <div class="titlewrapper">
+                  <a href="#">
+                    <h5 class="title">Product Name 1</h5>
+                  </a>
+                  <div class="meta d-flex gap">
+                    <div class="category small ">
+                      Shimmer, Maxi..
                     </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
+
+                  </div>
+                  <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
+                    <div class="quantitywrapper">
+                      <div class="decrease act">
+                        <i class="las la-minus"></i>
+                      </div>
+                      <input type="number" value="1">
+                      <div class="increase act">
+                        <i class="las la-plus"></i>
+                      </div>
+                    </div>
+                    <div class="category small flex1">
+                      <i class="las la-wallet"></i>
+                      Rs. 23000
                     </div>
                   </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
+
+
+                  <div class="action removeCartItem mt-2" id="1">
+                    <a href="#" class="link"><i class="las la-trash"></i></a>
                   </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
-            </div>
+            </label>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
+          <div class="cartItem mb-3 ">
+            <input type="checkbox" id="cartItem5">
+            <label for="cartItem5" class="d-flex align-items-center gap">
+              <figure>
+                <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
+              </figure>
+              <div class="info">
+                <div class="titlewrapper">
+                  <a href="#">
+                    <h5 class="title">Product Name 1</h5>
+                  </a>
+                  <div class="meta d-flex gap">
+                    <div class="category small ">
+                      Shimmer, Maxi..
                     </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
+
+                  </div>
+                  <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
+                    <div class="quantitywrapper">
+                      <div class="decrease act">
+                        <i class="las la-minus"></i>
+                      </div>
+                      <input type="number" value="1">
+                      <div class="increase act">
+                        <i class="las la-plus"></i>
+                      </div>
+                    </div>
+                    <div class="category small flex1">
+                      <i class="las la-wallet"></i>
+                      Rs. 23000
                     </div>
                   </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
+
+
+                  <div class="action removeCartItem mt-2" id="1">
+                    <a href="#" class="link"><i class="las la-trash"></i></a>
                   </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
-            </div>
+            </label>
           </div>
-          <div class="cartItem mb-3 d-flex align-items-center gap">
-            <figure>
-              <img src="assets/images/model2.png" width="100" alt="" class="img-fluid">
-            </figure>
-            <div class="info">
-              <div class="titlewrapper">
-                <a href="#">
-                  <h5 class="title">Product Name 1</h5>
-                </a>
-                <div class="meta d-flex gap">
-                  <div class="category small ">
-                    Shimmer, Maxi..
-                  </div>
-
-                </div>
-                <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
-                  <div class="quantitywrapper">
-                    <div class="decrease act">
-                      <i class="las la-minus"></i>
+          <div class="cartItem mb-3 ">
+            <input type="checkbox" id="cartItem6">
+            <label for="cartItem6" class="d-flex align-items-center gap">
+              <figure>
+                <img src="assets/images/collection-11.jpg" width="100" alt="" class="img-fluid">
+              </figure>
+              <div class="info">
+                <div class="titlewrapper">
+                  <a href="#">
+                    <h5 class="title">Product Name 1</h5>
+                  </a>
+                  <div class="meta d-flex gap">
+                    <div class="category small ">
+                      Shimmer, Maxi..
                     </div>
-                    <input type="number" value="1">
-                    <div class="increase act">
-                      <i class="las la-plus"></i>
+
+                  </div>
+                  <div class="quantityPrice mt-2 d-flex align-items-center gap_small justify-content-between">
+                    <div class="quantitywrapper">
+                      <div class="decrease act">
+                        <i class="las la-minus"></i>
+                      </div>
+                      <input type="number" value="1">
+                      <div class="increase act">
+                        <i class="las la-plus"></i>
+                      </div>
+                    </div>
+                    <div class="category small flex1">
+                      <i class="las la-wallet"></i>
+                      Rs. 23000
                     </div>
                   </div>
-                  <div class="category small flex1">
-                    <i class="las la-wallet"></i>
-                    Rs. 23000
+
+
+                  <div class="action removeCartItem mt-2" id="1">
+                    <a href="#" class="link"><i class="las la-trash"></i></a>
                   </div>
-                </div>
-
-
-                <div class="action removeCartItem mt-2" id="1">
-                  <a href="#" class="link"><i class="las la-trash"></i></a>
                 </div>
               </div>
-            </div>
+            </label>
           </div>
-
-
-
         </div>
-
+        <div class="totals w-100 mt-3 d-flex justify-content-between">
+          <div class=" label">
+            Cart Total
+          </div> <span class="value">Rs. 23000</span>
+        </div>
         <div class="checkout w-100 mt-3">
-
           <a href="cartpage.html#payment">
             <button class="btn btn_p btn_bordered btn_hovered">Checkout Now</button>
           </a>
         </div>
-
       </div>
     </div>
 
@@ -1244,15 +1377,15 @@
   <main>
     <section class="hero" data-scroll-section>
       <div class="actionTrigger">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-sm-12">
-              <div class="actionItems d-flex gap justify-content-end">
+              <div class="actionItems d-flex justify-content-start">
                 <div class="item prevHero">
-                  <i class="las la-arrow-left"></i> <span>Prev</span>
+                  <i class="las la-arrow-left"></i>
                 </div>
                 <div class="item nextHero">
-                  <i class="las la-arrow-right"></i> <span>Next</span>
+                  <i class="las la-arrow-right"></i>
                 </div>
               </div>
             </div>
@@ -1291,10 +1424,10 @@
                     </div>
                     <div class="title">
                       <h3 class="text text-uppercase">
-                        I want to be different. If everyone is wearing black, I want to be wearing red.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, mollitia!
                       </h3>
                       <p class="text mb-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor repellat consectetur!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nisi consectetur voluptas!
                       </p>
                       <div class="action mb-5">
                         <a href="#" class="btn mb-5  btn_bordered btn_hovered">
@@ -1339,10 +1472,10 @@
                     </div>
                     <div class="title">
                       <h3 class="text text-uppercase">
-                        I want to be different. If everyone is wearing black, I want to be wearing red.
+                        Lorem ipsum dolor sit amet consectetur.
                       </h3>
                       <p class="text mb-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor repellat consectetur!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, repellendus?
                       </p>
                       <div class="action mb-5">
                         <a href="#" class="btn mb-5  btn_bordered btn_hovered">
@@ -1387,10 +1520,11 @@
                     </div>
                     <div class="title">
                       <h3 class="text text-uppercase">
-                        I want to be different. If everyone is wearing black, I want to be wearing red.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsum pariatur expedita
+                        doloribus sunt!
                       </h3>
                       <p class="text mb-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor repellat consectetur!
+                        Lorem ipsum dolor sit amet.
                       </p>
                       <div class="action mb-5">
                         <a href="#" class="btn mb-5  btn_bordered btn_hovered">
@@ -1720,7 +1854,7 @@
         <div class="row">
           <div class="col-sm-12 d-flex gap ">
             <div class="left flex5">
-              <div class="d-flex align-items-start gap">
+              <div class="sizesSelector d-flex align-items-start gap">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <button class="nav-link active" id="smallsize" data-bs-toggle="pill" data-bs-target="#v-pills-home"
                     type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
@@ -2836,18 +2970,45 @@
           $('.timeOutCounter').addClass('d-none');
         }, 30000);
       });
-      $('.xzoom, .xzoom-gallery').xzoom({
-        zoomWidth: 400,
-        zoomHeight: 400,
-        title: false,
-        tint: "#000",
-        scroll: true,
-        Xoffset: 20,
-        fadeIn: true,
-        smoothZoomMove: 10,
-        smoothLensMove: 10,
-        smoothScale: 10
+
+
+
+
+
+
+
+      var featuringSizes = $('.sizesSelector .nav button');
+      console.log(featuringSizes);
+      featuringSizes.map((item) => {
+        featuringSizes[item].addEventListener('click', function () {
+          featuringSizes[item].classList.add('hello');
+        });
       });
+
+
+      var panes = $('.sizesSelector .tab-content .tab-pane');
+
+      panes.map((item) => {
+        $(item('.xzoom, .xzoom-gallery')).xzoom({
+          zoomWidth: 400,
+          zoomHeight: 400,
+          title: false,
+          tint: "#000",
+          scroll: true,
+          Xoffset: 20,
+          fadeIn: true,
+          smoothZoomMove: 10,
+          smoothLensMove: 10,
+          smoothScale: 10
+        });
+      });
+
+      $('.tab-content .tab-pane').bind('click', function () {
+
+
+      });
+
+
     });
     $(".btn_play").click(function () {
       $(".imageCatalog").hide();
@@ -2873,6 +3034,14 @@
       $input.val(count);
       $input.change();
       return false;
+    });
+
+    $('.close_menu').click(function () {
+      $(this).parent().parent().slideToggle();
+    });
+
+    $('.navbar-toggler').click(function () {
+      $('.mobileMenuWrapper').slideToggle();
     });
   </script>
 </body>

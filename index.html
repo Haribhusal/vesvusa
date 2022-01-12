@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="vendors/xzoom.min.css" media="all" />
   <link rel="stylesheet" href="vendors/animate.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/icon.png" type="image/png" sizes="64X64">
   <title>vesvusa</title>
 </head>
 
@@ -19,7 +20,7 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container headerWrapper">
-        <div class="notification">
+        <div class="notification notificationToggle">
           <div class="icon">
             <i class="las la-bell"></i>
           </div>
@@ -81,7 +82,9 @@
 
       <div class="mobile_menu">
         <div class="menuWrap">
-          <i class="las la-times"></i>
+          <div class="close_menu">
+            <i class="las la-times"></i> Close Menu
+          </div>
         </div>
 
         <div class="widget about">
@@ -900,7 +903,7 @@
           </div>
         </div>
 
-        <div class="scrollable">
+        <div class="scrollable mt-3">
 
 
           <!-- search keywords -->
@@ -945,7 +948,7 @@
           </div>
 
           <!-- top searches -->
-          <div class="topsearches w-100">
+          <div class="topsearches w-100 mt-3">
             <div class="heading  mb-2 mt-4 d-flex justify-content-between align-items-center">
               <h6 class="title mb-0 text-uppercase spacedText">
                 Top Searches
@@ -975,13 +978,77 @@
           </div>
 
           <!-- browse -->
-          <div class="topsearches w-100">
+          <div class="topsearches w-100 mt-3">
             <div class="heading  mb-2 mt-4 d-flex justify-content-between align-items-center">
               <h6 class="title mb-0 text-uppercase spacedText">
                 Browse
               </h6>
             </div>
             <div class="topsearchItems">
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="label">
+                    Notification Item 1
+                  </div>
+                  <img src="assets/images/model3.png" class="img-fluid" alt="">
+                </a>
+              </div>
               <div class="item">
                 <a href="#">
                   <div class="label">
@@ -1374,6 +1441,43 @@
     </div>
     </div>
   </header>
+  <div class="bottomNavigation">
+    <div class="menuwrapper">
+      <div class="menu_item active">
+        <div class="menu_item_wrapper">
+          <img src="assets/images/vesvusa-icon-logo.png">
+          <span>Today</span>
+        </div>
+      </div>
+      <div class="menu_item">
+        <div class="menu_item_wrapper searchToggle">
+          <i class="las la-search flipX"></i>
+          <span>Search</span>
+        </div>
+      </div>
+      <div class="menu_item">
+        <div class="menu_item_wrapper">
+          <i class="las la-socks"></i>
+          <span>Explore</span>
+        </div>
+      </div>
+      <div class="menu_item">
+        <div class="menu_item_wrapper cartToggle">
+          <i class="las la-shopping-cart"></i>
+          <div class="count">7</div>
+          <span>Cart</span>
+        </div>
+      </div>
+      <div class="menu_item">
+        <div class="menu_item_wrapper accountToggle">
+          <i class="las la-user"></i>
+          <span>Profile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <main>
     <section class="hero" data-scroll-section>
       <div class="actionTrigger">
@@ -1608,7 +1712,7 @@
                 </span>
               </div>
               <div class="action">
-                <a href="#" class="btn  btn_bordered btn_hovered">
+                <a href="#" class="btn mb-3 btn_bordered btn_hovered">
                   <div class="label">Discover Videos</div>
                   <div class="hovered">I want to discover more videos</div>
                 </a>
@@ -1628,7 +1732,7 @@
               </div>
 
               <div class="imageCatalog">
-                <figure>
+                <figure class="d-block">
                   <img src="https://picsum.photos/800/550" class="img-fluid" alt="">
                 </figure>
                 <div class="info text-center">
@@ -1852,8 +1956,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12 d-flex gap ">
-            <div class="left flex5">
+          <div class="col-sm-12 d-sm-block d-md-flex gap ">
+            <div class="left flex5 mb-3">
               <div class="sizesSelector d-flex align-items-start gap">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <button class="nav-link active" id="smallsize" data-bs-toggle="pill" data-bs-target="#v-pills-home"
@@ -2597,11 +2701,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-11">
-            <div class="titlewrapper mb-3 d-flex justify-content-between align-items-center">
+            <div
+              class="titlewrapper mb-3 d-sm-block d-md-flex justify-content-sm-start justify-content-md-between align-items-center">
               <h3 class="title text-uppercase">News & Events</h3>
               <div class="action">
                 <a href="#" class="btn">
-                  <div class="label">see all news & events</div>
+                  <div class="label findmore">see all news & events</div>
                 </a>
               </div>
             </div>
@@ -2858,8 +2963,8 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-4 text-center">
-            <div class="textwrapper">
+          <div class="col-sm-4">
+            <div class="textwrapper d-sm-block d-md-flex justify-content-sm-start justify-content-md-between">
               <a href="#" class="text-muted">
                 Privacy Policy
               </a>
@@ -2914,37 +3019,62 @@
         })
       })
       $('.accountToggle').click(function () {
-        $('.slideBar').show();
+        $('.slideBar').show().addClass('animate__animated animate__fadeInUp');
+        $('.sidebar_cart').hide();
+        $('.search_sidebar').hide();
+        $('.notification_sidebar').hide();
+        $('.favourites_sidebar').hide();
       });
       $('.close').click(function () {
         $('.slideBar').hide();
       });
       $('.cartToggle').click(function () {
-        $('.sidebar_cart').show();
+        $('.slideBar').hide();
+        $('.sidebar_cart').show().addClass('animate__animated animate__fadeInUp');
+        $('.search_sidebar').hide();
+        $('.notification_sidebar').hide();
+        $('.favourites_sidebar').hide();
       });
       $('.close').click(function () {
         $('.sidebar_cart').hide();
       });
       $('.forgetTrigger').click(function () {
-        $('.forget_sidebar').show();
+        $('.forget_sidebar').show().addClass('animate__animated animate__fadeInUp');
+        $('.slideBar').hide();
+        $('.sidebar_cart').hide();
+        $('.search_sidebar').hide();
+        $('.notification_sidebar').hide();
+        $('.favourites_sidebar').hide();
       });
       $('.close').click(function () {
         $('.forget_sidebar').hide();
       });
       $('.searchToggle').click(function () {
-        $('.search_sidebar').show();
+        $('.search_sidebar').show().addClass('animate__animated animate__fadeInUp');
+        $('.slideBar').hide();
+        $('.sidebar_cart').hide();
+        $('.notification_sidebar').hide();
+        $('.favourites_sidebar').hide();
       });
       $('.close').click(function () {
         $('.search_sidebar').hide();
       });
       $('.notificationToggle').click(function () {
-        $('.notification_sidebar').show();
+        $('.notification_sidebar').show().addClass('animate__animated animate__fadeInUp');
+        $('.slideBar').hide();
+        $('.sidebar_cart').hide();
+        $('.search_sidebar').hide();
+        $('.favourites_sidebar').hide();
       });
       $('.close').click(function () {
         $('.notification_sidebar').hide();
       });
       $('.favouritesToggle').click(function () {
-        $('.favourites_sidebar').show();
+        $('.favourites_sidebar').show().addClass('animate__animated animate__fadeInUp');
+        $('.slideBar').hide();
+        $('.sidebar_cart').hide();
+        $('.search_sidebar').hide();
+        $('.notification_sidebar').hide();
       });
       $('.close').click(function () {
         $('.favourites_sidebar').hide();
@@ -3037,11 +3167,28 @@
     });
 
     $('.close_menu').click(function () {
-      $(this).parent().parent().slideToggle();
+      $(this).parent().parent().parent().slideToggle();
     });
 
     $('.navbar-toggler').click(function () {
       $('.mobileMenuWrapper').slideToggle();
+    });
+
+
+
+
+
+    // $('.bottomNavigation .menuwrapper .menu_item').click(function (e) {
+    //   e.preventDefault();
+    //   $(this).removeClass('active'); // remove first
+    //   $(this).parents().eq(2).addClass('active');
+    // });
+
+    $(".bottomNavigation .menuwrapper .menu_item").click(function () {
+      // $(this).toggleClass('active');
+      // // $(this).hasClass('active').removeClass('active');
+      $('.bottomNavigation .menuwrapper .active').removeClass('active');
+      $(this).toggleClass('active');
     });
   </script>
 </body>

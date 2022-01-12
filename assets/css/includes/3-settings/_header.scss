@@ -3,10 +3,34 @@
   background-color: $p;
   box-shadow: 0px 0px 10px rgba(#000, 0.2);
   padding: 10px 0;
+
   @include media("<=phone") {
-    // background-color: $a !important;
+    .container {
+      padding: 15px !important;
+      padding-bottom: calc(10vh + 15px) !important;
+      background: $p !important;
+      .cartItem {
+        background-color: rgba(#000, 0.3) !important;
+      }
+      .heading {
+        margin-top: 0px !important;
+      }
+    }
+
+    .close {
+      display: none !important;
+    }
+
+    .headerWrapper {
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
+    }
   }
 
+  .animate__animated {
+    animation-duration: 0.5s !important;
+    animation-timing-function: ease-out !important;
+  }
   .mobileMenuWrapper {
     height: 100vh;
     display: none;
@@ -36,9 +60,26 @@
     overflow-y: auto;
     overflow-x: hidden;
     font-size: 14px;
+    position: relative;
+    &::before {
+      // background-color: #fff;
+      background-image: url("../images/logo-white.svg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: 0;
+      z-index: -1;
+      opacity: 0.06;
+    }
     // position: relative;
     .widget {
       padding: 20px;
+      padding-bottom: 0px !important;
       .title {
         font-size: 16px !important;
       }
@@ -77,20 +118,11 @@
       background: #b30000;
     }
 
+    .menuWrap {
+      padding: 20px 20px;
+      background-color: rgba($p, 0.2);
+    }
     .close_menu {
-      position: fixed;
-      top: 15px;
-      left: 20px;
-      height: 30px;
-      background-color: $p;
-      z-index: 9999;
-      border-radius: 100px;
-      width: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
     }
     // @include media(">phone") {
     //   display: none !important;
@@ -99,7 +131,8 @@
       .btn_join {
         background-color: #999;
         border: none;
-        padding: 10px;
+        padding: 10px 15px;
+        color: #fff;
       }
     }
   }
@@ -278,6 +311,10 @@
           width: 120px;
           object-fit: cover;
           object-position: center top;
+          @include media("<=phone") {
+            height: 120px;
+            width: 80px;
+          }
         }
       }
       &:hover {
@@ -884,10 +921,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    @include media("<=phone") {
+      gap: 15px;
+      margin-top: 0px !important;
+    }
     .linkitem {
       background-color: rgba($color: #fff, $alpha: 0.2);
       backdrop-filter: blur(10px);
       padding: 30px;
+      @include media("<=phone") {
+        padding: 15px;
+      }
       transition: all 0.5s ease;
       text-align: center;
       border: 1px solid transparent;

@@ -224,25 +224,25 @@ $(document).ready(function () {
 
   // pickColor;
 
-  $(document).ready(function () {
-    var thumbnails = document.querySelectorAll(".xzoom-thumbs .xzoom-gallery");
+  // $(document).ready(function () {
+  //   var thumbnails = document.querySelectorAll(".xzoom-thumbs .xzoom-gallery");
 
-    thumbnails.forEach((thumbnail) => {
-      thumbnail.find(".xzoom-gallery").click(function () {
-        alert("hello");
-        $(".mid .bgColor").style.backgroundColor = `red`;
-      });
+  //   thumbnails.forEach((thumbnail) => {
+  //     thumbnail.find(".xzoom-gallery").click(function () {
+  //       alert("hello");
+  //       $(".mid .bgColor").style.backgroundColor = `red`;
+  //     });
 
-      const colorThief = new ColorThief();
-      const img = slider.querySelector(".xzoom-gallery");
-      var themeColor = colorThief.getColor(img);
-      var red = themeColor[0];
-      var green = themeColor[1];
-      var blue = themeColor[2];
+  //     const colorThief = new ColorThief();
+  //     const img = slider.querySelector(".xzoom-gallery");
+  //     var themeColor = colorThief.getColor(img);
+  //     var red = themeColor[0];
+  //     var green = themeColor[1];
+  //     var blue = themeColor[2];
 
-      $(".mid .bgColor").style.backgroundColor = `rgb(${red},${green},${blue})`;
-    });
-  });
+  //     $(".mid .bgColor").style.backgroundColor = `rgb(${red},${green},${blue})`;
+  //   });
+  // });
 
   $(document).ready(function () {
     $(".featuredslider .owl-carousel").owlCarousel({

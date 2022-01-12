@@ -792,6 +792,106 @@ article {
 //   }
 // }
 
+@include media(">phone") {
+  .bottomNavigation {
+    display: none;
+  }
+}
+
+@include media("<=phone") {
+  .imageCatalog {
+    min-height: 300px;
+    position: relative;
+    figure {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .bottomNavigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    z-index: 9999;
+    background-color: $p;
+    padding: 10px 15px;
+    box-shadow: 0px -20px 30px rgba(#000, 0.2);
+
+    @include media("<=phone") {
+      height: 10vh !important;
+    }
+    .menuwrapper {
+      display: flex;
+      justify-content: space-between;
+      .menu_item {
+        display: flex;
+        align-items: center;
+        .menu_item_wrapper {
+          display: flex;
+          position: relative;
+          align-items: center;
+
+          .count {
+            position: absolute;
+            left: 50%;
+            top: -5px;
+            background-color: $a;
+            padding: 0px 10px;
+            border-radius: 100px;
+            font-size: 12px;
+            transform: translateX(-50%);
+          }
+          i {
+            display: block !important;
+            font-size: 22px;
+          }
+          img {
+            display: block !important;
+            width: 24px;
+            filter: brightness(1) invert(1);
+            height: auto;
+          }
+
+          padding: 10px 15px;
+          column-gap: 6px;
+
+          span {
+            visibility: hidden;
+            opacity: 0;
+            font-size: 12px;
+            width: 0;
+            transition: width 1s ease;
+          }
+        }
+      }
+      .active {
+        .menu_item_wrapper {
+          background-color: rgba(#fff, 0.1);
+          border-radius: 100px;
+          span {
+            visibility: visible;
+            opacity: 1;
+            width: auto;
+            min-width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .productList {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -824,6 +924,11 @@ article {
   }
 }
 
+footer {
+  @include media("<=phone") {
+    padding-bottom: calc(10vh + 20px) !important;
+  }
+}
 .shippingPage {
   .addresses {
     text-align: left !important;
@@ -1071,6 +1176,28 @@ article {
   .form-check {
     .shadename {
       display: none;
+    }
+  }
+}
+
+.xzoom {
+  @include media("<=phone") {
+    width: 100%;
+    min-height: 250px;
+  }
+}
+
+.featuring {
+  .bg_rotate_icon {
+    @include media("<=phone") {
+      width: 100% !important;
+      margin-top: 15px;
+    }
+    .btn_rotate {
+      @include media("<=phone") {
+        transform: rotate(0deg);
+        padding: 10px;
+      }
     }
   }
 }

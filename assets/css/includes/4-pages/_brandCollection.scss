@@ -1,0 +1,37 @@
+.brand-collection {
+  .categories {
+    article {
+      position: relative;
+      figure {
+      }
+      .info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 16px;
+        // background-color: red;
+        width: 100%;
+        text-align: center;
+        background-color: rgba($p, 0.4);
+        backdrop-filter: blur(10px);
+      }
+    }
+  }
+  .brands {
+    figure {
+      img {
+        height: 100px;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+      }
+      .exploreButton {
+        padding: 15px;
+        font-size: 20px !important;
+        h3.title {
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+}

@@ -1183,7 +1183,9 @@ footer {
 .xzoom {
   @include media("<=phone") {
     width: 100%;
-    min-height: 250px;
+    min-height: 350px;
+    object-fit: cover;
+    object-position: center center;
   }
 }
 
@@ -1199,5 +1201,21 @@ footer {
         padding: 10px;
       }
     }
+  }
+}
+
+.btn-add-review {
+  background-color: $a;
+  color: #fff;
+  border: none;
+  padding: 3px 10px !important;
+  border-radius: 5px;
+  font-size: 12px !important;
+  font-weight: 500;
+  text-transform: capitalize !important;
+  margin-top: 10px;
+  &:hover {
+    background-color: $a;
+    color: #fff;
   }
 }

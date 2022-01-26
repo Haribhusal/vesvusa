@@ -1,0 +1,115 @@
+.brandpage {
+  .share {
+    .icons {
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+  .brands {
+    .brandwrapper {
+      figure {
+        position: relative;
+        .exploreButton {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-color: rgba($p, 0.8);
+          top: 30px;
+          left: 0;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          opacity: 0;
+          pointer-events: none;
+          visibility: hidden;
+          transition: all 0.2s ease-in-out;
+          justify-content: center;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+      &:hover {
+        .exploreButton {
+          opacity: 1;
+          top: 0;
+          pointer-events: all;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .catalogSlider {
+    .item {
+      figure {
+        position: relative;
+        background-color: #fff;
+        img {
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+        .info {
+          position: absolute;
+          z-index: 99;
+          top: 30px;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          padding: 30px;
+          text-align: center;
+          background-color: rgba($p, 0.8);
+          opacity: 0;
+          pointer-events: none;
+          visibility: hidden;
+          transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+      }
+      &:hover {
+        .info {
+          opacity: 1;
+          top: 0;
+          pointer-events: all;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .comfort {
+    .item {
+      figure {
+        img {
+          object-fit: cover !important;
+        }
+      }
+    }
+  }
+  .brand_hero {
+    min-height: auto !important;
+  }
+  .heading {
+    h1.title {
+      font-weight: bolder;
+    }
+    .menuwrapper {
+      a {
+        padding: 10px 16px;
+        display: block;
+        color: rgba($color: #fff, $alpha: 0.6);
+        &:hover {
+          color: #fff;
+        }
+      }
+      .active {
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

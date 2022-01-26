@@ -67,10 +67,10 @@
   </header>
   <main class="py-5">
 
-    <section class="auth py-5 loyalty">
+    <section class=" py-5 loyalty">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 d-flex align-items-center">
+          <div class="col-sm-12">
             <div class="content">
               <div class="titlewrapper d-flex justify-content-between">
                 <div class="left">
@@ -78,7 +78,7 @@
                   <h3 class="title text-uppercase spacedText">your Loyalty</h3>
                   <p class="text-muted">
                     <small>
-                      Points and Coins you get from your purchases or activities
+                      Voucher, Points and Wallet
                     </small>
                   </p>
                 </div>
@@ -95,35 +95,42 @@
                   </div>
                 </div>
               </div>
-
               <div class="titlearea mt-3 d-flex justify-content-between">
                 <div class="left">
                   <div class="titlewrapper">
-                    <h3 class="title text-uppercase spacedText">Refer and earn</h3>
+                    <h3 class="title text-uppercase spacedText">Voucher</h3>
                   </div>
                 </div>
                 <div class="right">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">Claim Refer using
-                        token</button>
+                      <button class="nav-link active" id="voucher-tab" data-bs-toggle="tab" data-bs-target="#voucher"
+                        type="button" role="tab" aria-controls="voucher" aria-selected="true">Voucher</button>
                     </li>
+
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">Create new refer</button>
+                      <button class="nav-link" id="used-tab" data-bs-toggle="tab" data-bs-target="#used" type="button"
+                        role="tab" aria-controls="used" aria-selected="true">Used</button>
                     </li>
+
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="expired-tab" data-bs-toggle="tab" data-bs-target="#expired"
+                        type="button" role="tab" aria-controls="expired" aria-selected="true">Expired</button>
+                    </li>
+
+
                   </ul>
                 </div>
               </div>
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane fade show active" id="voucher" role="tabpanel" aria-labelledby="home-tab">
+
+
                   <div class="tabwrapper">
                     <div class="tokenItem mb-3">
-
-
-                      <div class="row mb-3 referItemSingle">
-                        <div class="col-sm-12 d-flex gap justify-content-between">
+                      <h3 class="mb-3">Vouchers</h3>
+                      <div class="voucherwrapper mb-3 referItemSingle">
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
                           <div class="left d-flex gap_small">
                             <div class="icon">
                               <i class="las la-mobile la-3x"></i>
@@ -133,184 +140,342 @@
                                 <h6 class="name text-uppercase">Ram Bahadur</h6>
                               </div>
                               <div class="email">
-                                <p class="text-muted mb-0">info@text.com</p>
+                                <p class="text-muted mb-0 spacedText">845789</p>
                               </div>
                               <div class="mobile">
-                                <p class="text-muted mb-0">+91 9876543210</p>
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
                               </div>
                             </div>
                           </div>
                           <div class="right">
                             <div class="text-end status">
-                              Status : <span class="text-uppercase">Not Used</span>
+                              <span class="text-uppercase">Not Used</span>
                             </div>
-                            <div class="refers d-flex gap">
-                              <div class="referer d-flex gap_small">
-                                <p class="text-muted mb-0">Referer</p>
-                                <p class="text-muted mb-0 ">50 Coins</p>
-                              </div>
-                              <div class="referee d-flex gap_small">
-                                <p class="text-muted mb-0">Referee</p>
-                                <p class="text-muted mb-0">150 Coins</p>
-                              </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
                             </div>
-                            <div class="copy d-flex gap justify-content-end">
-                              <div class="referer d-flex gap_small">
-                                <button class="text-muted mb-0 ">Copy Token</button>
-                              </div>
-                              <div class="referee d-flex gap_small">
-                                <button class="text-muted mb-0 ">Copy Refer Link</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3 referItemSingle">
-                        <div class="col-sm-12 d-flex gap justify-content-between">
-                          <div class="left d-flex gap_small">
-                            <div class="icon">
-                              <i class="las la-mobile la-3x"></i>
-                            </div>
-                            <div class="person">
-                              <div class="name">
-                                <h6 class="name text-uppercase">Ram Bahadur</h6>
-                              </div>
-                              <div class="email">
-                                <p class="text-muted mb-0">info@text.com</p>
-                              </div>
-                              <div class="mobile">
-                                <p class="text-muted mb-0">+91 9876543210</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="text-end status">
-                              Status : <span class="text-uppercase">Not Used</span>
-                            </div>
-                            <div class="refers d-flex gap">
-                              <div class="referer d-flex gap_small">
-                                <p class="text-muted mb-0">Referer</p>
-                                <p class="text-muted mb-0 ">50 Coins</p>
-                              </div>
-                              <div class="referee d-flex gap_small">
-                                <p class="text-muted mb-0">Referee</p>
-                                <p class="text-muted mb-0">150 Coins</p>
-                              </div>
-                            </div>
-                            <div class="copy d-flex gap justify-content-end">
-                              <div class="referer d-flex gap_small">
-                                <button class="text-muted mb-0 ">Copy Token</button>
-                              </div>
-                              <div class="referee d-flex gap_small">
-                                <button class="text-muted mb-0 ">Copy Refer Link</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3 referItemSingle">
-                        <div class="col-sm-12 d-flex gap justify-content-between">
-                          <div class="left d-flex gap_small">
-                            <div class="icon">
-                              <i class="las la-mobile la-3x"></i>
-                            </div>
-                            <div class="person">
-                              <div class="name">
-                                <h6 class="name text-uppercase">Ram Bahadur</h6>
-                              </div>
-                              <div class="email">
-                                <p class="text-muted mb-0">info@text.com</p>
-                              </div>
-                              <div class="mobile">
-                                <p class="text-muted mb-0">+91 9876543210</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="text-end status">
-                              Status : <span class="text-uppercase">Not Used</span>
-                            </div>
-                            <div class="refers d-flex gap">
-                              <div class="referer d-flex gap_small">
-                                <p class="text-muted mb-0">Referer</p>
-                                <p class="text-muted mb-0 ">50 Coins</p>
-                              </div>
-                              <div class="referee d-flex gap_small">
-                                <p class="text-muted mb-0">Referee</p>
-                                <p class="text-muted mb-0">150 Coins</p>
-                              </div>
-                            </div>
-                            <div class="copy d-flex gap justify-content-end">
-                              <div class="referer d-flex gap_small">
-                                <button class="text-muted mb-0 ">Copy Token</button>
-                              </div>
-                              <div class="referee d-flex gap_small">
-                                <button class="text-muted mb-0 ">Copy Refer Link</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
+
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="tab-pane fade show " id="used" role="tabpanel" aria-labelledby="home-tab">
                   <div class="tabwrapper">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="titlewrapper">
-                          <h3 class="title">
-                            <span class="text-uppercase">Create new refer</span>
-                          </h3>
+                    <div class="tokenItem mb-3">
+                      <h3 class="mb-3">Used</h3>
+                      <div class="voucherwrapper mb-3 referItemSingle">
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+
+
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-
-
-
-                        <div class="py-3 pe-4">
-                          <form action="" class="formwrapper">
-                            <div class="form-group mb-3">
-                              <label for="">
-                                <small class="text-muted">
-                                  Referees Name
-                                </small>
-                              </label>
-                              <input type="text" class="form-control" placeholder="Full Name">
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
                             </div>
-                            <div class="form-group mb-3">
-                              <label for="">
-                                <small class="text-muted">
-                                  Referees Phone Number
-                                </small>
-                              </label>
-                              <input type="tel" class="form-control" placeholder="Phone Number">
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
                             </div>
-                            <div class="form-group mb-3">
-                              <label for="">
-                                <small class="text-muted">
-                                  Referees Email Address
-                                </small>
-                              </label>
-                              <input type="email" class="form-control" placeholder="Email Address">
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
                             </div>
-                            <hr />
-                            <div class="form-group mb-3">
-                              <button class="btn btn_submit btn_small">
-                                Submit
-                              </button>
+                            <div class="spacedText text-danger">
+                              23:22:11
                             </div>
-                          </form>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-sm-6" style="background-image: url('https://picsum.photos/id/100/500/500');">
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="tab-pane fade show " id="expired" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="tabwrapper">
+                    <div class="tokenItem mb-3">
+                      <h3 class="mb-3">Expired</h3>
+                      <div class="voucherwrapper mb-3 referItemSingle">
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+
+
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                        <div class="voucherwrapper--item d-flex gap justify-content-between">
+                          <div class="left d-flex gap_small">
+                            <div class="icon">
+                              <i class="las la-mobile la-3x"></i>
+                            </div>
+                            <div class="person">
+                              <div class="name">
+                                <h6 class="name text-uppercase">Ram Bahadur</h6>
+                              </div>
+                              <div class="email">
+                                <p class="text-muted mb-0 spacedText">845789</p>
+                              </div>
+                              <div class="mobile">
+                                <p class="text-muted mb-0">Expires at 23 Feb, 2022</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="text-end status">
+                              <span class="text-uppercase">Not Used</span>
+                            </div>
+                            <div class="spacedText text-danger">
+                              23:22:11
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
               </div>
 
 

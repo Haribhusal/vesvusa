@@ -1,4 +1,50 @@
 .supportpage {
+  .supportForms {
+    padding-top: 30px;
+    // border-top: 1px solid rgba(#fff, 0.2) !important;
+  }
+  .supportTabs {
+    display: flex;
+    border: none !important;
+    gap: 20px;
+
+    @include media("<=phone") {
+      flex-wrap: nowrap !important;
+      flex-direction: row !important;
+      overflow-x: scroll;
+      .nav-item {
+        width: 100%;
+        min-width: 200px;
+      }
+    }
+
+    button {
+      height: 100% !important;
+      width: 100% !important;
+      padding: 0px !important;
+      border: none !important;
+      margin: 0px !important;
+      color: #fff;
+      background-color: rgba(#000, 0.1);
+      border-radius: 0px !important;
+      i {
+        font-size: 30px !important;
+      }
+      .text-muted {
+        color: #fff !important;
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+      }
+    }
+    .active {
+      background-color: $a;
+      color: #fff !important;
+      .text-muted {
+        color: #fff !important;
+        margin-bottom: 0px !important;
+      }
+    }
+  }
   .toggleForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,16 +55,18 @@
     }
 
     .formwrapper {
-      display: none;
       width: 100%;
       background-color: rgba(#000, 0.1);
       padding: 25px;
       flex: 1;
     }
     .toggleForm {
-      select {
+      select.form-control {
         color: $p !important;
+        background-color: $p !important;
         option {
+          background-color: $p !important;
+
           color: $p !important;
         }
       }
@@ -43,43 +91,15 @@
     }
   }
   .supportWrapper {
-    display: grid;
-    gap: 25px;
     margin-top: 16px;
-    grid-template-columns: repeat(5, 1fr);
-    @include media("<=phone") {
-      gap: 16px;
-
-      grid-template-columns: repeat(2, 1fr);
-    }
 
     .active {
-      background-color: rgba($a, 1) !important;
-      border: 1px solid rgba(#fff, 0.2) !important;
-      box-shadow: 0px 10px 30px rgba(#000, 0.2) !important;
+      border: none !important;
       i {
         color: #fff !important;
       }
       .text-muted {
         color: #fff !important;
-      }
-    }
-  }
-  .boxwrapper {
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.5s ease;
-    border: 1px solid rgba(#fff, 0);
-
-    i {
-      font-size: 30px;
-      transition: all 0.5s ease;
-    }
-    &:hover {
-      background-color: rgba(#000, 0.1);
-      border: 1px solid rgba(#fff, 0.2);
-      box-shadow: 0px 10px 30px rgba(#000, 0.2);
-      i {
-        color: $a;
       }
     }
   }

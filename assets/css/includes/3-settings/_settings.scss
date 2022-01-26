@@ -173,6 +173,15 @@ figure {
   }
 }
 .loyalty {
+  .voucherwrapper {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    &--item {
+      padding: 16px;
+      background-color: rgba(255, 255, 255, 0.06);
+    }
+  }
   .messagesBody {
     box-shadow: 0px 10px 30px rgba(#000, 0.2);
 

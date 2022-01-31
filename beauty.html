@@ -3715,27 +3715,6 @@
       $('.bottomNavigation .menuwrapper .active').removeClass('active');
       $(this).toggleClass('active');
     });
-
-
-    $(window).on('resize', function () {
-    var win = $(this); //this = window
-
-      if (win.width() <= 768) {
-        $(location).attr('href', 'today.html');
-      }
-
-
-
-
-    });
-
-    $(window).on('resize', function () {
-      var win = $(this); //this = window
-
-      if (win.width() >= 768) {
-        $(location).attr('href', 'index.html');
-      }
-    });
   </script>
 </body>
 

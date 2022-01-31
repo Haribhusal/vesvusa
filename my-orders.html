@@ -65,14 +65,15 @@
     </nav>
 
   </header>
-  <main class="py-5">
+  <main class="">
 
     <section class="auth myOrders py-5">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 d-flex align-items-center">
             <div class="content w-100">
-              <div class="heading d-flex justify-content-between align-items-center">
+              <div
+                class="heading d-flex justify-content-between align-items-start flex-column flex-sm-row align-items-sm-center">
                 <div class="titlewrapper">
                   <h3 class="title text-uppercase spacedText">My Orders</h3>
                   <p class="text-muted">
@@ -82,7 +83,7 @@
                   </p>
 
                 </div>
-                <div class="actions d-flex align-items-center gap">
+                <div class="actions d-flex align-items-start gap flex-column flex-sm-row align-items-sm-center">
                   <form action="">
                     <div class="form-group d-flex">
                       <input type="text" class="form-control" placeholder="Search Orders">
@@ -95,7 +96,7 @@
 
 
               <div class="myOrders mb-3">
-                <div class="titlewrapper mt-3">
+                <div class="titlewrapper mt-5">
                   <h3 class="title spacedText text-uppercase">
                     recent orders
                   </h3>
@@ -103,7 +104,8 @@
                 <div class="order">
                   <article class="d-flex flex-column">
                     <div class="info p-4 flex6">
-                      <div class="heading align-items-center gap d-flex justify-content-between">
+                      <div
+                        class="heading align-items-center gap d-flex justify-content-between flex-column flex-sm-row">
                         <div class="left flex3">
                           <div class="inf">
                             <h5 class="title">#42342379</h5>
@@ -113,7 +115,8 @@
                           </p>
                         </div>
                         <div class="right d-flex gap align-items-start flex-column flex4">
-                          <div class="status d-flex gap align-items-center">
+                          <div
+                            class="status d-flex gap align-items-start flex-column flex-sm-row align-items-sm-center">
                             <div class="info d-flex text-muted">
                               <i class="las la-box"></i>
                               <div class="value ms-2">
@@ -170,11 +173,11 @@
                     <div class="toggleItems">
 
 
-                      <div class="items d-flex align-items-stretch">
+                      <div class="items d-flex align-items-stretch flex-column flex-sm-row">
                         <div class="itemwrapper flex8">
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -217,7 +220,7 @@
                           </div>
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -249,54 +252,10 @@
                                 <label for="" class="small text-muted">Amount</label>
                               </div>
                               <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
                                     add reviews
-                                  </a>
-                                </div>
-                              </div>
-
-
-                            </div>
-                          </div>
-                          <div class="item px-4  d-flex gap">
-
-                            <div class="info d-flex gap flex7 align-items-start
-                        
-                        ">
-                              <div class="quantity">
-                                <label for="" class="small text-muted">01</label>
-
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="value"><a href="#">Product Name</a></div>
-                                <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
-
-                              </div>
-
-                              <div class="quantity flex2">
-                                <div class="value">
-                                  <img src="https://picsum.photos/id/10/100/100" alt="">
-                                </div>
-                              </div>
-
-                              <div class="quantity flex2">
-                                <div class="value">Small</div>
-                                <label for="" class="small text-muted">Variation</label>
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="value">7 Piece</div>
-                                <label for="" class="small text-muted">Quantity</label>
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="value">Rs. 7000</div>
-                                <label for="" class="small text-muted">Amount</label>
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
-                                    add reviews
-                                  </a>
+                                  </button>
                                 </div>
                               </div>
 
@@ -304,7 +263,7 @@
                           </div>
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -314,7 +273,9 @@
                               <div class="quantity flex2">
                                 <div class="value"><a href="#">Product Name</a></div>
                                 <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
+
                               </div>
+
                               <div class="quantity flex2">
                                 <div class="value">
                                   <img src="https://picsum.photos/id/10/100/100" alt="">
@@ -334,10 +295,10 @@
                                 <label for="" class="small text-muted">Amount</label>
                               </div>
                               <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
                                     add reviews
-                                  </a>
+                                  </button>
                                 </div>
                               </div>
 
@@ -345,7 +306,7 @@
                           </div>
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -377,10 +338,96 @@
                                 <label for="" class="small text-muted">Amount</label>
                               </div>
                               <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
                                     add reviews
-                                  </a>
+                                  </button>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <label for="" class="small text-muted">01</label>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
+
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">
+                                  <img src="https://picsum.photos/id/10/100/100" alt="">
+                                </div>
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
+                                    add reviews
+                                  </button>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <label for="" class="small text-muted">01</label>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
+
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">
+                                  <img src="https://picsum.photos/id/10/100/100" alt="">
+                                </div>
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
+                                    add reviews
+                                  </button>
                                 </div>
                               </div>
 
@@ -437,7 +484,8 @@
                 <div class="order">
                   <article class="d-flex flex-column">
                     <div class="info p-4 flex6">
-                      <div class="heading align-items-center gap d-flex justify-content-between">
+                      <div
+                        class="heading align-items-center gap d-flex justify-content-between flex-column flex-sm-row">
                         <div class="left flex3">
                           <div class="inf">
                             <h5 class="title">#42342379</h5>
@@ -447,7 +495,8 @@
                           </p>
                         </div>
                         <div class="right d-flex gap align-items-start flex-column flex4">
-                          <div class="status d-flex gap align-items-center">
+                          <div
+                            class="status d-flex gap align-items-start flex-column flex-sm-row align-items-sm-center">
                             <div class="info d-flex text-muted">
                               <i class="las la-box"></i>
                               <div class="value ms-2">
@@ -491,9 +540,10 @@
                             title="Delete Order">
                             <i class="las la-trash"></i>
                           </div>
-                          <a href="support.html">
 
-                            <div class="action delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Support">
+                          <a href="support.html">
+                            <div class="action delete" data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Delete Order">
                               <i class="las la-headset"></i>
                             </div>
                           </a>
@@ -510,11 +560,11 @@
                     <div class="toggleItems">
 
 
-                      <div class="items d-flex align-items-stretch">
+                      <div class="items d-flex align-items-stretch flex-column flex-sm-row">
                         <div class="itemwrapper flex8">
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -557,7 +607,7 @@
                           </div>
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -589,54 +639,10 @@
                                 <label for="" class="small text-muted">Amount</label>
                               </div>
                               <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
                                     add reviews
-                                  </a>
-                                </div>
-                              </div>
-
-
-                            </div>
-                          </div>
-                          <div class="item px-4  d-flex gap">
-
-                            <div class="info d-flex gap flex7 align-items-start
-                        
-                        ">
-                              <div class="quantity">
-                                <label for="" class="small text-muted">01</label>
-
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="value"><a href="#">Product Name</a></div>
-                                <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
-
-                              </div>
-
-                              <div class="quantity flex2">
-                                <div class="value">
-                                  <img src="https://picsum.photos/id/10/100/100" alt="">
-                                </div>
-                              </div>
-
-                              <div class="quantity flex2">
-                                <div class="value">Small</div>
-                                <label for="" class="small text-muted">Variation</label>
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="value">7 Piece</div>
-                                <label for="" class="small text-muted">Quantity</label>
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="value">Rs. 7000</div>
-                                <label for="" class="small text-muted">Amount</label>
-                              </div>
-                              <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
-                                    add reviews
-                                  </a>
+                                  </button>
                                 </div>
                               </div>
 
@@ -644,7 +650,7 @@
                           </div>
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -654,7 +660,9 @@
                               <div class="quantity flex2">
                                 <div class="value"><a href="#">Product Name</a></div>
                                 <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
+
                               </div>
+
                               <div class="quantity flex2">
                                 <div class="value">
                                   <img src="https://picsum.photos/id/10/100/100" alt="">
@@ -674,10 +682,10 @@
                                 <label for="" class="small text-muted">Amount</label>
                               </div>
                               <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
                                     add reviews
-                                  </a>
+                                  </button>
                                 </div>
                               </div>
 
@@ -685,7 +693,7 @@
                           </div>
                           <div class="item px-4  d-flex gap">
 
-                            <div class="info d-flex gap flex7 align-items-start
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
                         
                         ">
                               <div class="quantity">
@@ -717,10 +725,96 @@
                                 <label for="" class="small text-muted">Amount</label>
                               </div>
                               <div class="quantity flex2">
-                                <div class="review">
-                                  <a href="link" class="btn btn-add-review">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
                                     add reviews
-                                  </a>
+                                  </button>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <label for="" class="small text-muted">01</label>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
+
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">
+                                  <img src="https://picsum.photos/id/10/100/100" alt="">
+                                </div>
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
+                                    add reviews
+                                  </button>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="item px-4  d-flex gap">
+
+                            <div class="info d-flex gap flex7 flex-column flex-sm-row align-items-start
+                        
+                        ">
+                              <div class="quantity">
+                                <label for="" class="small text-muted">01</label>
+
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value"><a href="#">Product Name</a></div>
+                                <label for="" class="small text-muted mb-0"><small>#SUBORDER234</small></label>
+
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">
+                                  <img src="https://picsum.photos/id/10/100/100" alt="">
+                                </div>
+                              </div>
+
+                              <div class="quantity flex2">
+                                <div class="value">Small</div>
+                                <label for="" class="small text-muted">Variation</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">7 Piece</div>
+                                <label for="" class="small text-muted">Quantity</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="value">Rs. 7000</div>
+                                <label for="" class="small text-muted">Amount</label>
+                              </div>
+                              <div class="quantity flex2">
+                                <div class="review" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  <button class="btn btn-add-review">
+                                    add reviews
+                                  </button>
                                 </div>
                               </div>
 

@@ -16,7 +16,7 @@
   <title>vesvusa</title>
 </head>
 
-<body data-scroll-container tabindex='-1'>
+<body>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container headerWrapper">
@@ -1438,6 +1438,7 @@
     </div>
     </div>
   </header>
+
   <div class="bottomNavigation">
     <div class="menuwrapper">
       <div class="menu_item active todayToggle">
@@ -3171,27 +3172,6 @@
       // // $(this).hasClass('active').removeClass('active');
       $('.bottomNavigation .menuwrapper .active').removeClass('active');
       $(this).toggleClass('active');
-    });
-
-
-    $(window).on('resize', function () {
-      var win = $(this); //this = window
-
-      if (win.width() <= 768) {
-        $(location).attr('href', 'today.html');
-      }
-
-
-
-
-    });
-
-    $(window).on('resize', function () {
-      var win = $(this); //this = window
-
-      if (win.width() >= 768) {
-        $(location).attr('href', 'index.html');
-      }
     });
   </script>
 </body>

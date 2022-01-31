@@ -159,6 +159,13 @@ figure {
   gap: 20px;
 }
 
+@media (max-width: 425px) {
+  .devices {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
 .devices .device {
   background-color: rgba(255, 255, 255, 0.06);
   padding: 20px;
@@ -217,6 +224,13 @@ figure {
   gap: 16px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 425px) {
+  .loyalty .voucherwrapper {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
 }
 
 .loyalty .voucherwrapper--item {
@@ -1354,6 +1368,54 @@ article .share-icons a {
   color: #fff;
 }
 
+.product figure img {
+  height: 300px !important;
+  width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.responsive_product_title {
+  position: fixed;
+  background-color: #2f3131;
+  padding: 20px;
+  z-index: 999 !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .responsive_product_title {
+    font-size: 20px !important;
+  }
+  .responsive_product_title .price {
+    margin-bottom: 0px !important;
+  }
+  .responsive_product_title .size {
+    display: none !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .responsive_action {
+    position: fixed;
+    background-color: #2f3131;
+    padding: 20px;
+    z-index: 999 !important;
+    bottom: 20px;
+    right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .order {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -1447,16 +1509,42 @@ body {
           box-sizing: border-box;
 }
 
+main {
+  padding-top: 15vh !important;
+  overflow: auto !important;
+}
+
 .header {
-  position: relative;
+  width: 100% !important;
+  position: fixed !important;
   background-color: #2f3131;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar {
+  width: 100%;
+}
+
+.header .container {
+  width: 100%;
 }
 
 @media (max-width: 425px) {
   .header .container {
+    width: 100%;
     padding: 15px !important;
     background: #2f3131 !important;
   }
@@ -2665,6 +2753,22 @@ body {
 
 .resendOTP {
   display: none;
+}
+
+.nav-down {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav-up {
+  top: -15vh;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .font_p {
@@ -3951,6 +4055,24 @@ footer .upper .form-control::placeholder {
           align-items: center;
 }
 
+.video .imageCatalog img {
+  width: 800px !important;
+  height: 550px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.catalog .imageCatalog figure img {
+  width: 1300px !important;
+  height: 400px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .insize {
   max-width: 600px;
 }
@@ -4587,6 +4709,10 @@ main.homepage .popup .shade3 {
   z-index: -1;
   -webkit-filter: blur(80px);
           filter: blur(80px);
+}
+
+.lookspage .rating {
+  height: auto !important;
 }
 
 .lookspage .bgColor {
@@ -5699,9 +5825,12 @@ main.homepage .popup .shade3 {
     overflow-x: scroll;
   }
   .supportpage .supportTabs .nav-item {
-    width: 100%;
-    min-width: 200px;
+    min-width: 200px !important;
   }
+}
+
+.supportpage .supportTabs .nav-item {
+  max-width: 200px !important;
 }
 
 .supportpage .supportTabs button {

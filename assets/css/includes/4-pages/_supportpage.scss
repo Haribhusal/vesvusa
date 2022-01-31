@@ -13,9 +13,12 @@
       flex-direction: row !important;
       overflow-x: scroll;
       .nav-item {
-        width: 100%;
-        min-width: 200px;
+        min-width: 200px !important;
       }
+    }
+
+    .nav-item {
+      max-width: 200px !important;
     }
 
     button {

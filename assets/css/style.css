@@ -1399,6 +1399,18 @@ article .share-icons a {
   }
 }
 
+@media (min-width: 425px) {
+  .responsive_product_title {
+    position: static !important;
+  }
+  .responsive_product_title .price {
+    margin-bottom: 20px !important;
+  }
+  .responsive_product_title .size {
+    display: block !important;
+  }
+}
+
 @media (max-width: 425px) {
   .responsive_action {
     position: fixed;
@@ -1407,6 +1419,12 @@ article .share-icons a {
     z-index: 999 !important;
     bottom: 20px;
     right: 0;
+  }
+}
+
+@media (min-width: 425px) {
+  .responsive_action {
+    position: static !important;
   }
 }
 

@@ -1265,6 +1265,16 @@ footer {
       display: none !important;
     }
   }
+  @include media(">=phone") {
+    position: static !important;
+
+    .price {
+      margin-bottom: 20px !important;
+    }
+    .size {
+      display: block !important;
+    }
+  }
 }
 
 .responsive_action {
@@ -1275,6 +1285,9 @@ footer {
     z-index: 999 !important;
     bottom: 20px;
     right: 0;
+  }
+  @include media(">=phone") {
+    position: static !important;
   }
 }
 

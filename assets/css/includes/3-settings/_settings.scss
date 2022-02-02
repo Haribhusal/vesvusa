@@ -1256,7 +1256,7 @@ footer {
   left: 0;
   width: 100%;
   @include media("<=phone") {
-    font-size: 20px !important;
+    font-size: 10px !important;
 
     .price {
       margin-bottom: 0px !important;
@@ -1269,7 +1269,7 @@ footer {
     position: static !important;
 
     .price {
-      margin-bottom: 20px !important;
+      margin-bottom: 0px !important;
     }
     .size {
       display: block !important;
@@ -1294,5 +1294,54 @@ footer {
 .order {
   @include media("<=phone") {
     background-color: rgba(#fff, 0.1);
+  }
+}
+
+.mainPrice {
+  font-size: 30px !important;
+}
+
+.product figure img {
+  @include media("<=phone") {
+    height: 150px !important;
+  }
+}
+
+.product {
+  .imagearea {
+    position: relative;
+    overflow: hidden;
+    .btn_addtocart {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100% !important;
+
+      background-color: $a;
+      border: none;
+      padding: 10px !important;
+      opacity: 0;
+      transition: all 0.5s ease;
+      visibility: hidden;
+      pointer-events: none;
+      i {
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  &:hover {
+    .btn_addtocart {
+      opacity: 1;
+      top: calc(100% - 40px);
+      visibility: visible;
+      pointer-events: auto;
+
+      &:hover {
+        color: #fff !important;
+        i {
+          padding-right: 5px;
+        }
+      }
+    }
   }
 }

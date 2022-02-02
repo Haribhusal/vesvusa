@@ -1389,7 +1389,7 @@ article .share-icons a {
 
 @media (max-width: 425px) {
   .responsive_product_title {
-    font-size: 20px !important;
+    font-size: 10px !important;
   }
   .responsive_product_title .price {
     margin-bottom: 0px !important;
@@ -1404,7 +1404,7 @@ article .share-icons a {
     position: static !important;
   }
   .responsive_product_title .price {
-    margin-bottom: 20px !important;
+    margin-bottom: 0px !important;
   }
   .responsive_product_title .size {
     display: block !important;
@@ -1432,6 +1432,56 @@ article .share-icons a {
   .order {
     background-color: rgba(255, 255, 255, 0.1);
   }
+}
+
+.mainPrice {
+  font-size: 30px !important;
+}
+
+@media (max-width: 425px) {
+  .product figure img {
+    height: 150px !important;
+  }
+}
+
+.product .imagearea {
+  position: relative;
+  overflow: hidden;
+}
+
+.product .imagearea .btn_addtocart {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100% !important;
+  background-color: #e95f71;
+  border: none;
+  padding: 10px !important;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.product .imagearea .btn_addtocart i {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.product:hover .btn_addtocart {
+  opacity: 1;
+  top: calc(100% - 40px);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.product:hover .btn_addtocart:hover {
+  color: #fff !important;
+}
+
+.product:hover .btn_addtocart:hover i {
+  padding-right: 5px;
 }
 
 /*

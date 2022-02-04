@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" href="assets/images/icon.png" type="image/png" sizes="64X64">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>vesvusa</title>
+</head>
+
+<body>
+
+
+  <main class="home">
+    <section class="hero">
+      <div class="container-fluid mx-0">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-5 leftwrapper d-flex align-items-center justify-content-center">
+            <div class="contentwrapper">
+              <div class="logo mb-5">
+                <a href="#">
+                  <img src="assets/images/logo-vesvusa.svg" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="textwrapper my-5">
+                <h1 class="title font_s">
+                  This <span class="text_p mb-3">Valentine</span> <br />
+                  Love Yourself
+                </h1>
+                <p class="text">
+                  Register to be the one go grab the hottest deals from the premium brands in Nepal
+                </p>
+              </div>
+
+              <div class="buttonwrapper mt-5">
+                <a href="#" class="btn btn_p btn_register">Register</a>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm-7 bannerImage d-flex align-items-center justify-content-center"
+            style="background-image: url('assets/images/banner11.png');">
+
+            <div class="formwrapper">
+              <form action="">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="fname">First Name</label>
+                      <input type="text" placeholder="First Name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="fname">Last Name</label>
+                      <input type="text" placeholder="Last Name" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="fname">Email Address</label>
+                      <input type="email" placeholder="Email Address" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="fname">Phone Number</label>
+                      <input type="tel" placeholder="Phone Number" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="text text-uppercase text-center">
+                      We will let you know when we are up!
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <button class="btn btn_submit">Alert Me</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="vendors/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $('.btn_register').click(function () {
+      $('.formwrapper').toggleClass('active');
+    });
+  </script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

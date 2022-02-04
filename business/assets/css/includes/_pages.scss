@@ -1,0 +1,264 @@
+// login
+
+.login {
+  background-color: $p;
+  .rightpart {
+    .imageText {
+      position: relative;
+      margin-bottom: 30px;
+      height: 100px;
+      &::before {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      }
+      img {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+      .title {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        font-size: 20px;
+        z-index: 99;
+        width: 100%;
+        text-align: center;
+        transform: translateX(-50%);
+      }
+    }
+
+    background-color: $a;
+
+    height: 100%;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    .form-floating {
+      color: $p;
+    }
+  }
+
+  .leftpart {
+    .owl-carousel {
+      position: relative;
+      .owl-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        display: flex;
+        gap: 5px;
+        .owl-dot {
+          height: 15px;
+          width: 15px;
+          background-color: #fff;
+          border-radius: 100px;
+          border: 2px solid #fff;
+        }
+        .active {
+          border: 2px solid #fff;
+          background-color: $a;
+        }
+      }
+    }
+    img {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden !important;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+}
+
+.register {
+  background-color: $p;
+  color: #fff;
+  .header {
+    height: 10vh;
+    background-color: rgba(#fff, 0.1);
+    display: flex;
+    align-items: center;
+    .logowrapper {
+      img {
+        height: 60px;
+        filter: brightness(1) invert(1);
+      }
+    }
+  }
+  .registerOne {
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .profile_details {
+      .data {
+        // background-color: rgba(#fff, 0.1);
+        border: 1px solid rgba(#fff, 0.1);
+        padding: 20px;
+      }
+      .data {
+        .icon {
+          height: 60px;
+          width: 60px;
+          background-color: rgba(#fff, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    hr {
+      background-color: rgba(#fff, 0.3);
+    }
+    @include media("<=phone") {
+      padding: 30px 0;
+      height: auto !important;
+    }
+
+    a {
+      color: $p;
+    }
+    .card {
+      padding: 0px;
+      text-align: center;
+      position: relative;
+      border: 1px solid transparent;
+      border-radius: 0px;
+      background-color: rgba(#fff, 1);
+
+      @include media("<=phone") {
+        margin-bottom: 30px;
+      }
+      &::before {
+        background-color: rgba(#fff, 0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        content: "";
+        top: 0;
+        transition: all 0.4s ease;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      &::after {
+        background-color: rgba(#fff, 0.2);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        content: "";
+        top: 0;
+        transition: all 0.7s ease;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .content {
+        position: relative;
+        z-index: 99;
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+      }
+
+      .title {
+        margin: 30px 0;
+        transition: all 0.4s ease;
+      }
+      .icon {
+        i {
+          font-size: 50px;
+          color: $a;
+          transition: all 0.4s ease;
+        }
+      }
+      .text {
+        opacity: 0.7;
+      }
+      &:hover {
+        border: 1px solid transparent;
+
+        .content {
+        }
+        &::before {
+          transform: scale(1) rotate(5deg);
+        }
+        &::after {
+          transform: scale(1) rotate(10deg);
+        }
+        .title {
+          color: $a;
+        }
+        .icon {
+          i {
+            font-size: 50px;
+            color: $p;
+          }
+        }
+      }
+    }
+    .step-section {
+      background-color: #595a5a;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      .stepwrapper {
+        column-gap: 25px;
+        display: flex;
+        a {
+          display: block;
+          position: relative;
+          padding: 10px 15px;
+          transition: all 0.5s ease;
+          color: #fff;
+          border-radius: 5px;
+          &:hover {
+            color: #fff;
+            background-color: rgba($p, 0.3);
+          }
+
+          &:last-child {
+            &::after {
+              display: none !important;
+            }
+          }
+
+          &::after {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            content: "\f105";
+            font-family: "Line Awesome Free";
+            color: $a;
+            font-weight: 900;
+            right: -20px;
+          }
+        }
+
+        .active {
+          color: #fff;
+          background-color: rgba($p, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.btn_p {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.btn_small {
+  padding: 3px 10px !important;
+  font-size: 12px !important;
+}
+
+.btn_a_dim {
+  background-color: rgba($color: $a, $alpha: 0.3);
+}
+.btn_dim {
+  background-color: rgba($color: #fff, $alpha: 0.2);
+  color: #fff !important;
+}
+
+.btn_fullwidth {
+  width: 100%;
+}
+.btn {
+  &:focus {
+    box-shadow: none;
+    border-color: transparent;
+    outline: none;
+  }
+}
+.btn_bordered {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent !important;
+  &:focus {
+    background-color: rgba($color: #fff, $alpha: 0.1) !important;
+    color: #fff !important;
+  }
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: 0.1) !important;
+    color: #fff;
+  }
+}
+
+.btn_a {
+  background-color: $a !important;
+  border: 1px solid $a !important;
+  color: #fff !important;
+  &:focus {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: $a !important;
+  }
+  &:hover {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: $a !important;
+  }
+}

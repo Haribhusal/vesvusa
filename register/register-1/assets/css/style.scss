@@ -1,0 +1,53 @@
+@import "include-media";
+@import "includes/1-variables/variables";
+@import "font";
+@import "includes/3-settings/dir_settings";
+@import "includes/4-pages/dir_pages";
+
+.btn {
+  background-color: $a;
+  padding: 15px 45px;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 20px;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: $p;
+    color: #fff;
+  }
+}
+
+.btn_submit {
+  padding: 8px 25px !important;
+  font-size: 16px;
+  color: $a;
+
+  background-color: #fff;
+}
+
+.formwrapper {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.formwrapper.active {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  animation: fadeInRight 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}

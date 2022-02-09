@@ -10,6 +10,8 @@
 
 body {
   font-family: Mollen;
+  background-color: #2f3131;
+  color: #fff;
 }
 
 a {
@@ -110,6 +112,14 @@ a {
   width: 100%;
 }
 
+.btn {
+  color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
 .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -149,6 +159,296 @@ a {
   background-color: #fff !important;
   border: 1px solid #fff !important;
   color: #e95f71 !important;
+}
+
+header {
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header .headerwrapper .left img {
+  -webkit-filter: brightness(1) invert(1);
+          filter: brightness(1) invert(1);
+  height: 50px;
+}
+
+header .headerwrapper .right img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 2px solid #fff;
+  margin-right: 10px;
+}
+
+.mainBusiness {
+  height: 90vh;
+}
+
+.mainBusiness aside {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.mainBusiness .main {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.mainBusiness aside,
+.mainBusiness .main {
+  padding: 20px;
+}
+
+.mainBusiness .scroller {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 80vh;
+}
+
+.mainBusiness .scroller::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+.mainBusiness .scroller::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  width: 2px;
+}
+
+.mainBusiness .scroller::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  width: 1px;
+}
+
+.mainBusiness .scroller::-webkit-scrollbar-thumb:hover {
+  width: 10px !important;
+}
+
+.mainBusiness .leftmenu .accordion-button {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.mainBusiness .leftmenu .accordion-button:hover {
+  background-color: #2f3131 !important;
+}
+
+.mainBusiness .leftmenu .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.mainBusiness .leftmenu .accordion-item {
+  border: none;
+  border-radius: 0px;
+  background-color: transparent !important;
+}
+
+.mainBusiness .leftmenu .accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0px;
+}
+
+.mainBusiness .leftmenu .active {
+  background-color: #2f3131 !important;
+}
+
+.mainBusiness .leftmenu .accordion-body {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.mainBusiness .leftmenu .noChild .accordion-button::after {
+  display: none;
+}
+
+.mainBusiness .main .content .dataTables_wrapper {
+  color: #fff !important;
+}
+
+.mainBusiness .main .content .dataTables_wrapper input {
+  color: #fff !important;
+}
+
+.mainBusiness .main .content .dataTables_wrapper select {
+  color: #fff;
+}
+
+.mainBusiness .main .content .dataTables_wrapper select option {
+  color: #fff;
+  background-color: #e95f71;
+}
+
+.mainBusiness .main .content table.dataTable tbody tr {
+  background: transparent;
+  cursor: copy;
+}
+
+.mainBusiness .main .content table.display {
+  position: relative;
+}
+
+.mainBusiness .main .content table.display .dataTables_length {
+  position: absolute;
+  right: 0 !important;
+}
+
+.mainBusiness .main .content table.display .selected {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.mainBusiness .main .content table.display td {
+  border: none;
+}
+
+.mainBusiness .main .content table.display td {
+  background-color: transparent !important;
+}
+
+.mainBusiness .main .content .nav-tabs {
+  border: none;
+}
+
+.mainBusiness .main .content .nav-tabs .nav-link {
+  border-radius: 0px;
+  color: #fff;
+}
+
+.mainBusiness .main .content .nav-tabs .active {
+  background-color: #e95f71;
+  color: #fff;
+  border-color: transparent;
+}
+
+.stats .infowrapper {
+  margin-top: 20px;
+  background-color: #2f3131;
+  padding: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
+
+.stats .infowrapper::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.stats .infowrapper .number h3 {
+  font-size: 50px;
+  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.stats .infowrapper .text-muted {
+  margin-top: -20px;
+}
+
+.stats .infowrapper .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #e95f71;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stats .infowrapper .icon i {
+  font-size: 30px;
+}
+
+.stats .infowrapper:hover::before {
+  top: -10px;
+  left: -10px;
+}
+
+.stats .infowrapper:hover h3 {
+  color: #e95f71;
+}
+
+.addAddress {
+  padding: 30px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.addAddress:hover {
+  border-style: solid;
+}
+
+.addAddress i {
+  font-size: 25px;
+  color: #e95f71;
+}
+
+.addAddressModal .modal-body {
+  padding: 30px;
+  background-color: #2f3131;
+}
+
+.addAddressModal .modal-content {
+  background: #2f3131;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline-color: transparent;
+  color: #fff !important;
+}
+
+.form-select option {
+  background-color: #2f3131 !important;
+  color: #fff !important;
+}
+
+.form-select:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline-color: transparent;
 }
 
 .login {

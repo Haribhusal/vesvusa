@@ -75,27 +75,34 @@
                     </div>
                     <form action="">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="Legal Company Name"
-                                        required>
-                                    <label for="name" class="form-label">Office Adddress</label>
+                            <div class="col-sm-4">
+                                <div class="form-floating mb-3 addAddress" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <i class="las la-building"></i>
+                                    <div class="label">Add Office Address</div>
+
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="Legal Company Name"
-                                        required>
-                                    <label for="name" class="form-label">Warehouse Address</label>
+
+                            <div class="col-sm-4">
+                                <div class="form-floating mb-3 addAddress" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <i class="las la-warehouse"></i>
+                                    <div class="label">Add Warehouse Address</div>
+
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="Legal Company Name"
-                                        required>
-                                    <label for="name" class="form-label">Shop Address</label>
+
+                            <div class="col-sm-4">
+                                <div class="form-floating mb-3 addAddress" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <i class="las la-store-alt"></i>
+                                    <div class="label">Add Shop Address</div>
+
                                 </div>
                             </div>
+
+
                         </div>
 
                         <hr />
@@ -119,6 +126,75 @@
         </section>
     </main>
 
+
+    <!-- Modal -->
+    <div class="modal fade addAddressModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <form action="" class="formwrapper">
+                        <div class="heading">
+                            <h5 class="title mb-3">
+                                Add Office Address
+                            </h5>
+
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected disabled>Select Provience</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelect">Select Provience</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected disabled>Select District</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelect">Select District</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected disabled>Select Municipality</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelect">Select Municipality</label>
+                            </div>
+
+
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Company Location"
+                                    required>
+                                <label for="name" class="form-label">Location</label>
+                            </div>
+
+                            <div class="buttonswrapper d-flex justify-content-between align-items-center">
+
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn_a" data-bs-dismiss="modal">Submit</button>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -133,6 +209,15 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+    <!-- this page -->
+
+    <script>
+        $('#exampleModal').modal({
+            backdrop: 'static',
+            keyboard: false
+        })
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

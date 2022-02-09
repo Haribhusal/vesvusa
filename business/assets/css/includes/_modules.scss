@@ -19,6 +19,10 @@
   width: 100%;
 }
 .btn {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
   &:focus {
     box-shadow: none;
     border-color: transparent;
@@ -52,5 +56,263 @@
     background-color: #fff !important;
     border: 1px solid #fff !important;
     color: $a !important;
+  }
+}
+
+header {
+  height: 10vh;
+
+  background-color: rgba($color: #fff, $alpha: 0.1);
+  // padding: 10px 0;
+  .headerwrapper {
+    .left {
+      img {
+        filter: brightness(1) invert(1);
+        height: 50px;
+      }
+    }
+    .right {
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        object-fit: cover;
+        object-position: center;
+        border: 2px solid #fff;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.mainBusiness {
+  height: 90vh;
+  aside {
+    flex: 3;
+    background-color: rgba($color: #fff, $alpha: 0.05);
+  }
+  .main {
+    flex: 10;
+  }
+  aside,
+  .main {
+    padding: 20px;
+  }
+  .scroller {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80vh;
+    &::-webkit-scrollbar {
+      width: 2px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba($color: #fff, $alpha: 0.1);
+      width: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba($color: #fff, $alpha: 0.3);
+      width: 1px;
+      &:hover {
+        width: 10px !important;
+      }
+    }
+  }
+  .leftmenu {
+    .accordion-button {
+      background-color: transparent;
+      color: #fff;
+      border-radius: 0px;
+      display: flex;
+      gap: 10px;
+      &:hover {
+        background-color: $p !important;
+      }
+      &::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+      }
+    }
+
+    .accordion-item {
+      border: none;
+      border-radius: 0px;
+      background-color: transparent !important;
+    }
+    .accordion-item:last-of-type .accordion-button.collapsed {
+      border-radius: 0px;
+    }
+
+    .active {
+      background-color: $p !important;
+    }
+
+    .accordion-body {
+      background-color: rgba($color: #fff, $alpha: 0.05) !important;
+    }
+    .noChild {
+      .accordion-button {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .main {
+    .content {
+      // background-color: red;
+      .dataTables_wrapper {
+        color: #fff !important;
+        input {
+          color: #fff !important;
+        }
+        select {
+          color: #fff;
+          option {
+            color: #fff;
+            background-color: $a;
+          }
+        }
+      }
+      table.dataTable tbody tr {
+        background: transparent;
+        cursor: copy;
+      }
+      table.display {
+        position: relative;
+        .dataTables_length {
+          position: absolute;
+          right: 0 !important;
+        }
+        .selected {
+          background-color: rgba(#fff, 0.2) !important;
+        }
+
+        td {
+          border: none;
+        }
+        td {
+          background-color: transparent !important;
+        }
+      }
+      .nav-tabs {
+        border: none;
+        .nav-link {
+          border-radius: 0px;
+          color: #fff;
+        }
+        .active {
+          background-color: $a;
+          color: #fff;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.stats {
+  .infowrapper {
+    margin-top: 20px;
+    background-color: rgba($color: $p, $alpha: 1);
+    padding: 30px;
+    border: 2px solid rgba(#000, 0.2);
+    border-radius: 10px;
+    // box-shadow: 0px 0px 100px rgba($color: #000, $alpha: 0.1);
+
+    position: relative;
+    &::before {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(#000, 0.2);
+      content: "";
+      top: 10px;
+      left: 10px;
+      z-index: -1;
+      border-radius: 10px;
+      transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      // transform: scale(1.3);
+    }
+    .number {
+      h3 {
+        font-size: 50px;
+        transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    }
+    .text-muted {
+      margin-top: -20px;
+    }
+    .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: $a;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 30px;
+      }
+    }
+    &:hover {
+      &::before {
+        top: -10px;
+        left: -10px;
+        // background-color: rgba($a, 1);
+      }
+      h3 {
+        color: $a;
+      }
+    }
+  }
+}
+
+.addAddress {
+  padding: 30px;
+  border: 1px dashed rgba(#fff, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  &:hover {
+    border-style: solid;
+  }
+  i {
+    font-size: 25px;
+    color: $a;
+  }
+}
+
+.addAddressModal {
+  .modal-body {
+    padding: 30px;
+    background-color: $p;
+  }
+  .modal-content {
+    background: $p;
+    box-shadow: 0px 10px 30px rgba(#000, 0.5);
+  }
+}
+
+.form-select {
+  background-color: rgba(#fff, 0.1);
+  border-color: transparent;
+  box-shadow: none;
+  outline-color: transparent;
+  color: #fff !important;
+  option {
+    background-color: $p !important;
+    color: #fff !important;
+  }
+  &:focus {
+    background-color: rgba(#fff, 0.1);
+    border-color: transparent;
+    box-shadow: none;
+    outline-color: transparent;
   }
 }

@@ -254,7 +254,7 @@ main {
 
     .cartItem {
       background-color: rgba($p, 0.2);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(150px);
       transition: all 0.5s ease;
       box-shadow: none;
       position: relative;
@@ -380,16 +380,13 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.3);
-    backdrop-filter: blur(10px);
-
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
-
     box-shadow: -10px -20px 30px rgba(#000, 0.2);
     max-width: 400px;
     width: 100%;
-
     @include media("<=phone") {
       max-width: 100% !important;
     }
@@ -410,6 +407,7 @@ main {
         position: absolute;
         cursor: pointer;
         height: 40px;
+        z-index: 999;
         width: 40px;
         background-color: #fff;
         top: 15px;
@@ -427,7 +425,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -484,7 +482,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -538,7 +536,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -592,7 +590,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -646,7 +644,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -701,7 +699,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -755,7 +753,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -896,7 +894,7 @@ main {
     position: fixed;
     z-index: 999;
     background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(150px);
     top: 0;
     right: 0;
     display: none;
@@ -998,7 +996,7 @@ main {
     }
     .linkitem {
       background-color: rgba($color: #fff, $alpha: 0.2);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(150px);
       padding: 30px;
       @include media("<=phone") {
         padding: 10px 15px;

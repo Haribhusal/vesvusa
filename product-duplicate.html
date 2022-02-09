@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="vendors/locomotive-scroll.css" />
   <link rel="stylesheet" type="text/css" href="vendors/xzoom.min.css" media="all" />
-
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>vesvusa</title>
 </head>
@@ -92,131 +91,372 @@
           <!-- 9851278496 -->
         </div>
         <div class="row mb-3">
-          <div class="col-sm-7">
-            <div class="mediawrapper">
-              <img class="xzoom img-fluid" src="assets/images/model2.png" xoriginal="path/to/original_image_01.jpg" />
+          <div class="col-sm-6 ">
+            <div class="stickyContent">
 
-              <div class="xzoom-thumbs">
-                <a href="assets/images/model2.png">
-                  <img class="xzoom-gallery" src="assets/images/model2.png" xpreview="assets/images/model2.png">
-                </a>
-                <a href="assets/images/model3.png">
-                  <img class="xzoom-gallery" src="assets/images/model3.png" xpreview="assets/images/model3.png">
-                </a>
-                <a href="assets/images/model4.png">
-                  <img class="xzoom-gallery" src="assets/images/model4.png" xpreview="assets/images/model4.png">
-                </a>
-                <a href="assets/images/model5.png">
-                  <img class="xzoom-gallery" src="assets/images/model5.png" xpreview="assets/images/model5.png">
-                </a>
+
+              <div class="mediawrapper">
+                <img class="xzoom img-fluid" src="assets/images/model2.png" xoriginal="path/to/original_image_01.jpg" />
+
+                <div class="xzoom-thumbs">
+                  <a href="assets/images/model2.png">
+                    <img class="xzoom-gallery" src="assets/images/model2.png" xpreview="assets/images/model2.png">
+                  </a>
+                  <a href="assets/images/model3.png">
+                    <img class="xzoom-gallery" src="assets/images/model3.png" xpreview="assets/images/model3.png">
+                  </a>
+                  <a href="assets/images/model4.png">
+                    <img class="xzoom-gallery" src="assets/images/model4.png" xpreview="assets/images/model4.png">
+                  </a>
+                  <a href="assets/images/model5.png">
+                    <img class="xzoom-gallery" src="assets/images/model5.png" xpreview="assets/images/model5.png">
+                  </a>
+
+                </div>
 
               </div>
 
-            </div>
+              <div class="reviewsQuestions">
+                <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+                  <li class="nav-item flex1" role="presentation">
+                    <button class="nav-link active" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                      type="button" role="tab" aria-controls="reviews" aria-selected="true">Reviews</button>
+                  </li>
+                  <li class="nav-item flex1" role="presentation">
+                    <button class="nav-link" id="questions-tab" data-bs-toggle="tab" data-bs-target="#questions"
+                      type="button" role="tab" aria-controls="questions" aria-selected="false">Questions</button>
+                  </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div class="reviewswrapper py-3">
+                      <div class="heading d-flex align-items-center justify-content-between mb-3">
+                        <div class="titlewrapper">
+                          <h4 class="title text-uppercase mb-0">Customer Reviews</h4>
+                        </div>
+                        <div class="actions">
+                          <button class="btn btn_small btn_bordered btn-small btn_add_review">
+                            Add
+                          </button>
+                        </div>
+                      </div>
+                      <div class="addreview mb-3">
+                        <form action="" class="formwrapper py-3">
+                          <div class="form-group mb-3">
+                            <label for="">
+                              <small class="text-muted">Your Rating</small>
+                            </label>
+
+                            <div class="star-rating">
+                              <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                  <input class="star-rating__input" id="star-rating-5" type="radio" name="rating"
+                                    value="5">
+                                  <label class="star-rating__ico las la-star-of-david" for="star-rating-5"
+                                    title="5 out of 5 stars"></label>
+                                  <input class="star-rating__input" id="star-rating-4" type="radio" name="rating"
+                                    value="4">
+                                  <label class="star-rating__ico las la-star-of-david" for="star-rating-4"
+                                    title="4 out of 5 stars"></label>
+                                  <input class="star-rating__input" id="star-rating-3" type="radio" name="rating"
+                                    value="3">
+                                  <label class="star-rating__ico las la-star-of-david" for="star-rating-3"
+                                    title="3 out of 5 stars"></label>
+                                  <input class="star-rating__input" id="star-rating-2" type="radio" name="rating"
+                                    value="2">
+                                  <label class="star-rating__ico las la-star-of-david" for="star-rating-2"
+                                    title="2 out of 5 stars"></label>
+                                  <input class="star-rating__input" id="star-rating-1" type="radio" name="rating"
+                                    value="1">
+                                  <label class="star-rating__ico las la-star-of-david" for="star-rating-1"
+                                    title="1 out of 5 stars"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label for="" class="text-muted">
+                              <small>Your Review</small>
+                            </label>
+                            <textarea name="" id="" cols="" rows="4" class="form-control"
+                              placeholder="Your Review"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <button class=" btn_small btn_bordered">Add Review</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="filterrow mb-3 d-flex justify-content-between align-items-center">
+                        <div class="filter">
+                          <div class="dropdown">
+                            <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Top Ratings
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Recent Ratings</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="average d-flex gap">
+                          <div class="rating">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half"></i>
+                          </div>
+                          <div class="text">
+                            <span class="text-muted">4.5</span>
+                            <span class="text-muted">(20)</span>
+                          </div>
+                        </div>
+                      </div>
 
 
 
+                      <div class="reviews">
+                        <div class="review mb-2">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="content">
+                              <div class="heading d-flex justify-content-between">
+                                <div class="left">
+                                  <div class="name">
+                                    <i class="las la-user"></i>
+                                    <span class="text-muted">John Doe</span>
+                                  </div>
+                                  <div class="rating">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star-half"></i>
+                                  </div>
+                                </div>
+                                <div class="right text-muted small">
+                                  <i class="las la-calendar"></i>
+                                  <span>June 29, 1995</span>
+                                </div>
+                              </div>
 
-            <div class="productDescription mt-5">
-              <h5 class="title text-uppercase spacedText my-3">
-                Description
-              </h5>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum tenetur eaque tempore illo impedit,
-                officia temporibus, cum aliquam non aperiam exercitationem dignissimos ab sed dolores aut. Dolore optio
-                nesciunt necessitatibus.
-                Voluptas blanditiis eveniet laudantium magnam minima maiores voluptate itaque aut quod asperiores, sint
-                sunt deserunt pariatur quo fuga temporibus atque dolor eaque, ipsa quas et! Quibusdam et qui ipsum
-                fugiat.
-                Corrupti dicta tempore repellendus voluptate amet ut ad maiores, fuga perferendis eius vel aliquam
-                expedita voluptatem, nisi pariatur laborum labore quo sunt perspiciatis excepturi, asperiores ipsam?
-                Animi magnam est accusamus?
-                Assumenda ipsam architecto impedit dignissimos et molestias minima eligendi rerum odit quasi nemo labore
-                praesentium corrupti sit maiores officia, in ratione incidunt doloremque accusantium. Nihil voluptas cum
-                corrupti minus eius!
-                Quam rerum odit eveniet eos nisi voluptates adipisci similique nesciunt. Explicabo molestias impedit
-                consectetur? Adipisci amet id animi eum repellendus facere, sunt et, ullam quibusdam enim ipsa nemo. In,
-                et.
-                Praesentium molestiae maiores quisquam repudiandae aspernatur magnam repellendus dolore, deserunt nam
-                deleniti quos veniam ipsa reprehenderit excepturi id magni rerum doloremque dicta. Vitae dolore fugit
-                recusandae exercitationem culpa consequatur libero?
-                Consequuntur ipsum veniam neque harum explicabo nobis modi dolor est nemo aspernatur rem quia fugit iste
-                non voluptate ab culpa mollitia, earum, officiis omnis esse, possimus aperiam quos! Nesciunt, harum!
-                Ducimus omnis nobis enim officia laudantium cumque facere ab quaerat natus. Nobis id beatae excepturi
-                nihil odio esse blanditiis eaque saepe necessitatibus deserunt accusantium repellat, vel tenetur a
-                corrupti sequi.
-                Eius harum nihil dolor illo sint consectetur, molestiae architecto. Ullam ducimus voluptatibus eum
-                laboriosam magni voluptatum, beatae nemo ea aliquid molestiae veniam, maxime totam culpa. Facilis ipsam
-                nobis animi ad.
-                Nulla velit nobis dolor perspiciatis a facilis consequuntur iusto corporis odio sunt, ipsam ipsa veniam
-                voluptas eos vel quis molestias in alias culpa fugit repellendus repudiandae minus impedit. Deleniti,
-                perferendis?
-              </p>
-            </div>
-            <div class="accordion detailCollapse" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                    collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                    this with custom CSS or overriding our default variables. It's also worth noting that just about
-                    any
-                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              <div class="text mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review mb-2">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="content">
+                              <div class="heading d-flex justify-content-between">
+                                <div class="left">
+                                  <div class="name">
+                                    <i class="las la-user"></i>
+                                    <span class="text-muted">John Doe</span>
+                                  </div>
+                                  <div class="rating">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star-half"></i>
+                                  </div>
+                                </div>
+                                <div class="right text-muted small">
+                                  <i class="las la-calendar"></i>
+                                  <span>June 29, 1995</span>
+                                </div>
+                              </div>
+                              <div class="text mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review mb-2">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="content">
+                              <div class="heading d-flex justify-content-between">
+                                <div class="left">
+                                  <div class="name">
+                                    <i class="las la-user"></i>
+                                    <span class="text-muted">John Doe</span>
+                                  </div>
+                                  <div class="rating">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star-half"></i>
+                                  </div>
+                                </div>
+                                <div class="right text-muted small">
+                                  <i class="las la-calendar"></i>
+                                  <span>June 29, 1995</span>
+                                </div>
+                              </div>
+                              <div class="text mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">
+                    <div class="reviewswrapper py-3">
+                      <div class="heading d-flex align-items-center justify-content-between mb-3">
+                        <div class="titlewrapper">
+                          <h4 class="title text-uppercase mb-0">Questions</h4>
+                        </div>
+                        <div class="actions">
+                          <button class="btn btn_small btn_bordered btn-small btn_add_review">
+                            Add
+                          </button>
+                        </div>
+                      </div>
+                      <div class="addreview mb-3">
+                        <form action="" class="formwrapper py-3">
+
+                          <div class="form-group mb-3">
+                            <label for="" class="text-muted">
+                              <small>Your Question</small>
+                            </label>
+                            <textarea name="" id="" cols="" rows="4" class="form-control"
+                              placeholder="Your Question"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <button class=" btn_small btn_bordered">Add Question</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="filterrow mb-3 d-flex justify-content-between align-items-center">
+                        <div class="filter">
+                          <div class="dropdown">
+                            <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Top Questions
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Recent Questions</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="reviews">
+                        <div class="review mb-2">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="content">
+                              <div class="heading d-flex justify-content-between">
+                                <div class="left">
+                                  <div class="name">
+                                    <i class="las la-user"></i>
+                                    <span class="text-muted">John Doe</span>
+                                  </div>
+
+                                </div>
+                                <div class="right text-muted small">
+                                  <i class="las la-calendar"></i>
+                                  <span>June 29, 1995</span>
+                                </div>
+                              </div>
+
+                              <div class="text mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="replyContent  my-2 py-2 px-4">
+                            <div class="icon">
+                              <i class="las la-comment"></i>
+                            </div>
+                            <p class="text-muted mt-2">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi corrupti facilis rem omnis
+                              magnam reprehenderit?
+                            </p>
+                            <div class="info d-flex justify-content-between">
+                              <div class="left">
+                                <i class="las la-user"></i> <span>
+                                  <small>
+                                    Admin
+                                  </small>
+                                </span>
+                              </div>
+                              <div class="right">
+                                <i class="las la-calendar"></i> <span>
+                                  <small>
+                                    23 June 2018
+                                  </small>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review mb-2">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="content">
+                              <div class="heading d-flex justify-content-between">
+                                <div class="left">
+                                  <div class="name">
+                                    <i class="las la-user"></i>
+                                    <span class="text-muted">John Doe</span>
+                                  </div>
+
+                                </div>
+                                <div class="right text-muted small">
+                                  <i class="las la-calendar"></i>
+                                  <span>June 29, 1995</span>
+                                </div>
+                              </div>
+                              <div class="text mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review mb-2">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="content">
+                              <div class="heading d-flex justify-content-between">
+                                <div class="left">
+                                  <div class="name">
+                                    <i class="las la-user"></i>
+                                    <span class="text-muted">John Doe</span>
+                                  </div>
+
+                                </div>
+                                <div class="right text-muted small">
+                                  <i class="las la-calendar"></i>
+                                  <span>June 29, 1995</span>
+                                </div>
+                              </div>
+                              <div class="text mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does
-                    limit
-                    overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does
-                    limit
-                    overflow.
-                  </div>
-                </div>
-              </div>
             </div>
+
+
           </div>
-          <div class="col-sm-5">
+          <div class="col-sm-6">
             <div class="contentwrapper mb-4">
               <div class="upper responsive_product_title">
                 <div class="info text-capitalize">
@@ -309,12 +549,12 @@
                 <div class="action responsive_action mt-3 d-flex justify-content-md-between align-items-center">
 
                   <div class="right">
-                    <button class="btn btn_bordered btn_hovered bg-white">
+                    <button class="btn btn_bordered btn_hovered bg-white text-black">
                       <div class="label">
                         Shop Now
                       </div>
                       <div class="hovered">
-                        I want to buy this Look
+                        Shop this look
                       </div>
                     </button>
                   </div>
@@ -323,342 +563,124 @@
 
 
             </div>
-            <div class="reviewsQuestions">
-              <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
-                <li class="nav-item flex1" role="presentation">
-                  <button class="nav-link active" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
-                    type="button" role="tab" aria-controls="reviews" aria-selected="true">Reviews</button>
-                </li>
-                <li class="nav-item flex1" role="presentation">
-                  <button class="nav-link" id="questions-tab" data-bs-toggle="tab" data-bs-target="#questions"
-                    type="button" role="tab" aria-controls="questions" aria-selected="false">Questions</button>
-                </li>
 
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                  <div class="reviewswrapper py-3">
-                    <div class="heading d-flex align-items-center justify-content-between mb-3">
-                      <div class="titlewrapper">
-                        <h4 class="title text-uppercase mb-0">Customer Reviews</h4>
-                      </div>
-                      <div class="actions">
-                        <button class="btn btn_small btn_bordered btn-small btn_add_review">
-                          Add
-                        </button>
-                      </div>
-                    </div>
-                    <div class="addreview mb-3">
-                      <form action="" class="formwrapper py-3">
-                        <div class="form-group mb-3">
-                          <label for="">
-                            <small class="text-muted">Your Rating</small>
-                          </label>
-
-                          <div class="star-rating">
-                            <div class="star-rating">
-                              <div class="star-rating__wrap">
-                                <input class="star-rating__input" id="star-rating-5" type="radio" name="rating"
-                                  value="5">
-                                <label class="star-rating__ico las la-star-of-david" for="star-rating-5"
-                                  title="5 out of 5 stars"></label>
-                                <input class="star-rating__input" id="star-rating-4" type="radio" name="rating"
-                                  value="4">
-                                <label class="star-rating__ico las la-star-of-david" for="star-rating-4"
-                                  title="4 out of 5 stars"></label>
-                                <input class="star-rating__input" id="star-rating-3" type="radio" name="rating"
-                                  value="3">
-                                <label class="star-rating__ico las la-star-of-david" for="star-rating-3"
-                                  title="3 out of 5 stars"></label>
-                                <input class="star-rating__input" id="star-rating-2" type="radio" name="rating"
-                                  value="2">
-                                <label class="star-rating__ico las la-star-of-david" for="star-rating-2"
-                                  title="2 out of 5 stars"></label>
-                                <input class="star-rating__input" id="star-rating-1" type="radio" name="rating"
-                                  value="1">
-                                <label class="star-rating__ico las la-star-of-david" for="star-rating-1"
-                                  title="1 out of 5 stars"></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group mb-3">
-                          <label for="" class="text-muted">
-                            <small>Your Review</small>
-                          </label>
-                          <textarea name="" id="" cols="" rows="4" class="form-control"
-                            placeholder="Your Review"></textarea>
-                        </div>
-                        <div class="form-group">
-                          <button class=" btn_small btn_bordered">Add Review</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="filterrow mb-3 d-flex justify-content-between align-items-center">
-                      <div class="filter">
-                        <div class="dropdown">
-                          <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Top Ratings
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Recent Ratings</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="average d-flex gap">
-                        <div class="rating">
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star-half"></i>
-                        </div>
-                        <div class="text">
-                          <span class="text-muted">4.5</span>
-                          <span class="text-muted">(20)</span>
-                        </div>
-                      </div>
-                    </div>
+            <div class="product_detailss">
 
 
 
-                    <div class="reviews">
-                      <div class="review mb-2">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="content">
-                            <div class="heading d-flex justify-content-between">
-                              <div class="left">
-                                <div class="name">
-                                  <i class="las la-user"></i>
-                                  <span class="text-muted">John Doe</span>
-                                </div>
-                                <div class="rating">
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star-half"></i>
-                                </div>
-                              </div>
-                              <div class="right text-muted small">
-                                <i class="las la-calendar"></i>
-                                <span>June 29, 1995</span>
-                              </div>
-                            </div>
-
-                            <div class="text mt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="review mb-2">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="content">
-                            <div class="heading d-flex justify-content-between">
-                              <div class="left">
-                                <div class="name">
-                                  <i class="las la-user"></i>
-                                  <span class="text-muted">John Doe</span>
-                                </div>
-                                <div class="rating">
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star-half"></i>
-                                </div>
-                              </div>
-                              <div class="right text-muted small">
-                                <i class="las la-calendar"></i>
-                                <span>June 29, 1995</span>
-                              </div>
-                            </div>
-                            <div class="text mt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="review mb-2">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="content">
-                            <div class="heading d-flex justify-content-between">
-                              <div class="left">
-                                <div class="name">
-                                  <i class="las la-user"></i>
-                                  <span class="text-muted">John Doe</span>
-                                </div>
-                                <div class="rating">
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star"></i>
-                                  <i class="las la-star-half"></i>
-                                </div>
-                              </div>
-                              <div class="right text-muted small">
-                                <i class="las la-calendar"></i>
-                                <span>June 29, 1995</span>
-                              </div>
-                            </div>
-                            <div class="text mt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+              <div class="productDescription mt-5">
+                <h5 class="title text-uppercase spacedText my-3">
+                  Description
+                </h5>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum tenetur eaque tempore illo
+                  impedit,
+                  officia temporibus, cum aliquam non aperiam exercitationem dignissimos ab sed dolores aut. Dolore
+                  optio
+                  nesciunt necessitatibus.
+                  Voluptas blanditiis eveniet laudantium magnam minima maiores voluptate itaque aut quod asperiores,
+                  sint
+                  sunt deserunt pariatur quo fuga temporibus atque dolor eaque, ipsa quas et! Quibusdam et qui ipsum
+                  fugiat.
+                  Corrupti dicta tempore repellendus voluptate amet ut ad maiores, fuga perferendis eius vel aliquam
+                  expedita voluptatem, nisi pariatur laborum labore quo sunt perspiciatis excepturi, asperiores ipsam?
+                  Animi magnam est accusamus?
+                  Assumenda ipsam architecto impedit dignissimos et molestias minima eligendi rerum odit quasi nemo
+                  labore
+                  praesentium corrupti sit maiores officia, in ratione incidunt doloremque accusantium. Nihil voluptas
+                  cum
+                  corrupti minus eius!
+                  Quam rerum odit eveniet eos nisi voluptates adipisci similique nesciunt. Explicabo molestias impedit
+                  consectetur? Adipisci amet id animi eum repellendus facere, sunt et, ullam quibusdam enim ipsa nemo.
+                  In,
+                  et.
+                  Praesentium molestiae maiores quisquam repudiandae aspernatur magnam repellendus dolore, deserunt nam
+                  deleniti quos veniam ipsa reprehenderit excepturi id magni rerum doloremque dicta. Vitae dolore fugit
+                  recusandae exercitationem culpa consequatur libero?
+                  Consequuntur ipsum veniam neque harum explicabo nobis modi dolor est nemo aspernatur rem quia fugit
+                  iste
+                  non voluptate ab culpa mollitia, earum, officiis omnis esse, possimus aperiam quos! Nesciunt, harum!
+                  Ducimus omnis nobis enim officia laudantium cumque facere ab quaerat natus. Nobis id beatae excepturi
+                  nihil odio esse blanditiis eaque saepe necessitatibus deserunt accusantium repellat, vel tenetur a
+                  corrupti sequi.
+                  Eius harum nihil dolor illo sint consectetur, molestiae architecto. Ullam ducimus voluptatibus eum
+                  laboriosam magni voluptatum, beatae nemo ea aliquid molestiae veniam, maxime totam culpa. Facilis
+                  ipsam
+                  nobis animi ad.
+                  Nulla velit nobis dolor perspiciatis a facilis consequuntur iusto corporis odio sunt, ipsam ipsa
+                  veniam
+                  voluptas eos vel quis molestias in alias culpa fugit repellendus repudiandae minus impedit. Deleniti,
+                  perferendis?
+                </p>
+              </div>
+              <div class="accordion detailCollapse" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                      collapse
+                      plugin adds the appropriate classes that we use to style each element. These classes control the
+                      overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                      this with custom CSS or overriding our default variables. It's also worth noting that just about
+                      any
+                      HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">
-                  <div class="reviewswrapper py-3">
-                    <div class="heading d-flex align-items-center justify-content-between mb-3">
-                      <div class="titlewrapper">
-                        <h4 class="title text-uppercase mb-0">Questions</h4>
-                      </div>
-                      <div class="actions">
-                        <button class="btn btn_small btn_bordered btn-small btn_add_review">
-                          Add
-                        </button>
-                      </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                      collapse plugin adds the appropriate classes that we use to style each element. These classes
+                      control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                      that
+                      just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                      limit
+                      overflow.
                     </div>
-                    <div class="addreview mb-3">
-                      <form action="" class="formwrapper py-3">
-
-                        <div class="form-group mb-3">
-                          <label for="" class="text-muted">
-                            <small>Your Question</small>
-                          </label>
-                          <textarea name="" id="" cols="" rows="4" class="form-control"
-                            placeholder="Your Question"></textarea>
-                        </div>
-                        <div class="form-group">
-                          <button class=" btn_small btn_bordered">Add Question</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="filterrow mb-3 d-flex justify-content-between align-items-center">
-                      <div class="filter">
-                        <div class="dropdown">
-                          <button class="btn btn_small dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Top Questions
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Recent Questions</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                    </div>
-
-
-
-                    <div class="reviews">
-                      <div class="review mb-2">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="content">
-                            <div class="heading d-flex justify-content-between">
-                              <div class="left">
-                                <div class="name">
-                                  <i class="las la-user"></i>
-                                  <span class="text-muted">John Doe</span>
-                                </div>
-
-                              </div>
-                              <div class="right text-muted small">
-                                <i class="las la-calendar"></i>
-                                <span>June 29, 1995</span>
-                              </div>
-                            </div>
-
-                            <div class="text mt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
-                            </div>
-                          </div>
-
-                        </div>
-                        <div class="replyContent  my-2 py-2 px-4">
-                          <div class="icon">
-                            <i class="las la-comment"></i>
-                          </div>
-                          <p class="text-muted mt-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi corrupti facilis rem omnis
-                            magnam reprehenderit?
-                          </p>
-                          <div class="info d-flex justify-content-between">
-                            <div class="left">
-                              <i class="las la-user"></i> <span>
-                                <small>
-                                  Admin
-                                </small>
-                              </span>
-                            </div>
-                            <div class="right">
-                              <i class="las la-calendar"></i> <span>
-                                <small>
-                                  23 June 2018
-                                </small>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="review mb-2">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="content">
-                            <div class="heading d-flex justify-content-between">
-                              <div class="left">
-                                <div class="name">
-                                  <i class="las la-user"></i>
-                                  <span class="text-muted">John Doe</span>
-                                </div>
-
-                              </div>
-                              <div class="right text-muted small">
-                                <i class="las la-calendar"></i>
-                                <span>June 29, 1995</span>
-                              </div>
-                            </div>
-                            <div class="text mt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="review mb-2">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="content">
-                            <div class="heading d-flex justify-content-between">
-                              <div class="left">
-                                <div class="name">
-                                  <i class="las la-user"></i>
-                                  <span class="text-muted">John Doe</span>
-                                </div>
-
-                              </div>
-                              <div class="right text-muted small">
-                                <i class="las la-calendar"></i>
-                                <span>June 29, 1995</span>
-                              </div>
-                            </div>
-                            <div class="text mt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt id sunt velit
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                      collapse plugin adds the appropriate classes that we use to style each element. These classes
+                      control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                      that
+                      just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                      limit
+                      overflow.
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
+
+
 
             <div class="buttonwrappe">
               <button class="btn btn_p btn_bordered">Size Chart</button>

@@ -1313,7 +1313,7 @@ footer {
     overflow: hidden;
     .btn_addtocart {
       position: absolute;
-      top: 100%;
+      bottom: -100px;
       right: 0;
       width: 100% !important;
 
@@ -1332,7 +1332,7 @@ footer {
   &:hover {
     .btn_addtocart {
       opacity: 1;
-      top: calc(100% - 40px);
+      bottom: 0;
       visibility: visible;
       pointer-events: auto;
 

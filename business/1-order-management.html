@@ -56,7 +56,7 @@
             </div>
             <div class="leftmenu mt-3 scroller">
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item noChild active">
+                    <div class="accordion-item noChild">
                         <a href="index.html">
                             <div class="accordion-header" id="">
                                 <div class="accordion-button">
@@ -66,7 +66,7 @@
                         </a>
 
                     </div>
-                    <div class="accordion-item noChild">
+                    <div class="accordion-item noChild active">
                         <a href="1-order-management.html">
                             <div class="accordion-header" id="">
                                 <div class="accordion-button">
@@ -261,20 +261,20 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="tab-content mt-3" id="myTabContent">
+                        <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-
                                 <div class="actionToggler">
-
                                     <div class="actions d-flex gap my-3">
-                                        <button class="action btn btn_a" data-bs-toggle="tooltip"
-                                            data-bs-placement="top" title="Request Pickup">
+                                        <button class="action btn btn_a btn_with_tooltip" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <div class="custom_tooltip">
+                                                Request Pickup
+                                            </div>
                                             <i class="las la-truck-pickup"></i>
                                         </button>
                                         <button class="action btn btn_a" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Drop Items">
-                                            <i class="las la-truck-pickup"></i>
+                                            <i class="las la-truck-pickup flipX"></i>
                                         </button>
                                         <button class="action btn btn_a" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Pause Processing">
@@ -309,30 +309,12 @@
                                             <td>
                                                 <input type="checkbox" name="" class="selector" id="">
                                             </td>
-                                            <td>
-                                                <img src="https://picsum.photos/id/10/50/50" alt="">
+                                            <td class="imageHover">
+                                                <img src="https://picsum.photos/id/11/50/50" alt="" class="thumbnail">
+                                                <img src="https://picsum.photos/id/11/500/500" class="original" alt="">
                                             </td>
                                             <td>
-                                                Blue Skirt
-                                            </td>
-                                            <td>Zara</td>
-                                            <td>XL</td>
-                                            <td>2</td>
-                                            <td>Rs. 4600</td>
-                                            <td>June 12, 2022</td>
-                                            <td>XASAJKSBIO</td>
-                                            <td>sadnklasdadnkl</td>
-                                        </tr>
-                                        <tr class="small dataRow">
-                                            <td>
-                                                <input type="checkbox" name="" class="selector" id="">
-
-                                            </td>
-                                            <td>
-                                                <img src="https://picsum.photos/id/10/50/50" alt="">
-                                            </td>
-                                            <td>
-                                                Blue Skirt
+                                                <a href="#"> Blue Skirt</a>
                                             </td>
                                             <td>Zara</td>
                                             <td>XL</td>
@@ -345,13 +327,13 @@
                                         <tr class="small dataRow">
                                             <td>
                                                 <input type="checkbox" name="" class="selector" id="">
-
+                                            </td>
+                                            <td class="imageHover">
+                                                <img src="https://picsum.photos/id/10/50/50" alt="" class="thumbnail">
+                                                <img src="https://picsum.photos/id/10/500/500" class="original" alt="">
                                             </td>
                                             <td>
-                                                <img src="https://picsum.photos/id/10/50/50" alt="">
-                                            </td>
-                                            <td>
-                                                Blue Skirt
+                                                <a href="#"> Blue Skirt</a>
                                             </td>
                                             <td>Zara</td>
                                             <td>XL</td>
@@ -364,13 +346,13 @@
                                         <tr class="small dataRow">
                                             <td>
                                                 <input type="checkbox" name="" class="selector" id="">
-
+                                            </td>
+                                            <td class="imageHover">
+                                                <img src="https://picsum.photos/id/12/50/50" alt="" class="thumbnail">
+                                                <img src="https://picsum.photos/id/12/500/500" class="original" alt="">
                                             </td>
                                             <td>
-                                                <img src="https://picsum.photos/id/10/50/50" alt="">
-                                            </td>
-                                            <td>
-                                                Blue Skirt
+                                                <a href="#"> Blue Skirt</a>
                                             </td>
                                             <td>Zara</td>
                                             <td>XL</td>
@@ -380,11 +362,27 @@
                                             <td>XASAJKSBIO</td>
                                             <td>sadnklasdadnkl</td>
                                         </tr>
-
+                                        <tr class="small dataRow">
+                                            <td>
+                                                <input type="checkbox" name="" class="selector" id="">
+                                            </td>
+                                            <td class="imageHover">
+                                                <img src="https://picsum.photos/id/13/50/50" alt="" class="thumbnail">
+                                                <img src="https://picsum.photos/id/13/500/500" class="original" alt="">
+                                            </td>
+                                            <td>
+                                                <a href="#"> Blue Skirt</a>
+                                            </td>
+                                            <td>Zara</td>
+                                            <td>XL</td>
+                                            <td>2</td>
+                                            <td>Rs. 4600</td>
+                                            <td>June 12, 2022</td>
+                                            <td>XASAJKSBIO</td>
+                                            <td>sadnklasdadnkl</td>
+                                        </tr>
                                     </tbody>
                                 </table>
-
-
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
                             </div>
@@ -397,6 +395,44 @@
         </div>
     </main>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Request Pickup</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="name" placeholder="Date" required>
+                            <label for="name" class="form-label">Date</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="time" class="form-control" id="name" placeholder="Date" required>
+                            <label for="name" class="form-label">Time</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected disabled>Drop Location</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Select Municipality</label>
+                        </div>
+                        <div class="modal-footer p-0 m-0 d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn_a">Save changes</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -407,6 +443,7 @@
     <script>
         $(document).ready(function () {
             $('#myTable').DataTable({
+                "dom": '<f<t>ip>',
                 "scrollX": true,
                 select: {
                     style: 'multi',

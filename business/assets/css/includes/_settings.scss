@@ -18,8 +18,51 @@ a {
   color: $p;
 }
 
+.flipX {
+  transform: scaleX(-1);
+}
 .gap {
   gap: 16px;
+}
+
+.btn_with_tooltip {
+  position: relative;
+  .custom_tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 150px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    animation: fadeInUp 0.5s ease;
+    visibility: hidden;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #000 transparent;
+      visibility: hidden;
+    }
+  }
+  &:hover {
+    .custom_tooltip {
+      opacity: 1 !important;
+      visibility: visible !important;
+      &:after {
+        visibility: visible !important;
+      }
+    }
+  }
 }
 .gap_small {
   gap: 8px;
@@ -75,4 +118,17 @@ a {
 ::selection {
   background-color: $a;
   color: #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.dataTables_info {
+  color: #fff !important;
 }

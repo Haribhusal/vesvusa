@@ -19,8 +19,59 @@ a {
   color: #2f3131;
 }
 
+.flipX {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .gap {
   gap: 16px;
+}
+
+.btn_with_tooltip {
+  position: relative;
+}
+
+.btn_with_tooltip .custom_tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 1;
+  min-width: 150px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: fadeInUp 0.5s ease;
+          animation: fadeInUp 0.5s ease;
+  visibility: hidden;
+}
+
+.btn_with_tooltip .custom_tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
+  visibility: hidden;
+}
+
+.btn_with_tooltip:hover .custom_tooltip {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.btn_with_tooltip:hover .custom_tooltip:after {
+  visibility: visible !important;
 }
 
 .gap_small {
@@ -87,6 +138,28 @@ a {
 ::selection {
   background-color: #e95f71;
   color: #fff;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.dataTables_info {
+  color: #fff !important;
 }
 
 .btn_p {
@@ -271,8 +344,23 @@ header .headerwrapper .right img {
   display: none;
 }
 
+.mainBusiness .main .content table.dataTable thead th,
+.mainBusiness .main .content table.dataTable thead td {
+  padding: 10px;
+}
+
 .mainBusiness .main .content .dataTables_wrapper {
   color: #fff !important;
+}
+
+.mainBusiness .main .content .dataTables_wrapper .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainBusiness .main .content .dataTables_wrapper input {
@@ -295,11 +383,27 @@ header .headerwrapper .right img {
 
 .mainBusiness .main .content table.display {
   position: relative;
+  color: #fff !important;
+}
+
+.mainBusiness .main .content table.display a {
+  color: #fff;
+}
+
+.mainBusiness .main .content table.display a:hover {
+  color: #e95f71;
 }
 
 .mainBusiness .main .content table.display .dataTables_length {
   position: absolute;
   right: 0 !important;
+}
+
+.mainBusiness .main .content table.display input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 5px !important;
 }
 
 .mainBusiness .main .content table.display .selected {
@@ -321,6 +425,7 @@ header .headerwrapper .right img {
 .mainBusiness .main .content .nav-tabs .nav-link {
   border-radius: 0px;
   color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .mainBusiness .main .content .nav-tabs .active {
@@ -448,6 +553,79 @@ header .headerwrapper .right img {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline-color: transparent;
+}
+
+.modal .modal-content {
+  background-color: #2f3131;
+}
+
+.modal .modal-content .modal-header {
+  background-color: #2f3131;
+  border-bottom: none;
+}
+
+.modal .modal-content .modal-footer {
+  background-color: #2f3131;
+  border-top: none;
+}
+
+.modal .modal-content .modal-body {
+  border: none;
+}
+
+.actionToggler .actions .action i {
+  font-size: 30px;
+}
+
+.imageHover {
+  position: relative;
+}
+
+.imageHover .original {
+  position: absolute;
+  top: 8px;
+  left: calc(100% - 50px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 200px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  z-index: 9999;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.imageHover:hover .original {
+  opacity: 1;
+  visibility: visible;
+  top: 8px;
+  left: 100%;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 .login {

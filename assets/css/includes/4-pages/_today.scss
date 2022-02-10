@@ -1,8 +1,33 @@
 .today {
+  .masonryWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .masonryItem {
+      background-color: rgba(#fff, 0.1);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > a {
+        display: block;
+        height: 100%;
+        article {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          figure {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
   .todayProduct {
-    border-radius: 10px;
     position: relative;
-    margin-bottom: 25px;
+
     &:hover {
       .info {
         .btn_p {
@@ -22,11 +47,11 @@
       border-bottom-right-radius: 10px;
 
       .btn_p {
-        padding: 4px 10px !important;
+        padding: 10px 15px !important;
         text-transform: capitalize;
         font-size: 14px !important;
         background-color: $a;
-        border-radius: 8px;
+        border-radius: 4px;
         &:hover {
           color: #fff;
         }
@@ -36,7 +61,7 @@
     figure {
       position: relative;
       &::before {
-        background-color: rgba($p, 0.8);
+        background-color: rgba(#000, 0.5);
         height: 100%;
         width: 100%;
         top: 0;
@@ -88,6 +113,10 @@
     }
   }
   .ads {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
     .info {
       background-color: #fff !important;
       color: $p !important;
@@ -103,7 +132,6 @@
   }
   .withList {
     padding: 16px;
-    background-color: rgba(#000, 0.2);
     .info {
       position: relative;
       border-radius: 10px !important;
@@ -134,8 +162,14 @@
           background-color: $p;
 
           .btn_p {
+            padding: 10px 15px !important;
+            text-transform: capitalize;
             font-size: 14px !important;
-            padding: 3px 10px !important;
+            background-color: $a;
+            border-radius: 4px;
+            &:hover {
+              color: #fff;
+            }
           }
           .top {
             i {
@@ -154,12 +188,11 @@
     }
   }
   article.post {
-    margin-top: 25px;
-
     .btn_p {
-      background-color: $a;
-      padding: 5px 15px !important;
+      padding: 10px 15px !important;
       text-transform: capitalize;
+      font-size: 14px !important;
+      background-color: $a;
       border-radius: 4px;
       &:hover {
         color: #fff;
@@ -169,7 +202,6 @@
     .info {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
-      background-color: rgba(#000, 0.2);
     }
     figure {
       img {
@@ -179,6 +211,19 @@
         height: 200px;
         object-fit: cover;
       }
+    }
+  }
+}
+
+.ads {
+  .btn_p {
+    padding: 10px 15px !important;
+    text-transform: capitalize;
+    font-size: 14px !important;
+    background-color: $a;
+    border-radius: 4px !important;
+    &:hover {
+      color: #fff;
     }
   }
 }

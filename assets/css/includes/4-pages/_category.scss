@@ -18,6 +18,49 @@
       }
     }
   }
+
+  .hugeItems {
+    position: relative;
+
+    .nav-tabs {
+      height: 65px;
+      z-index: 999;
+      overflow: hidden;
+      padding-right: 50px;
+    }
+
+    .toggler {
+      position: absolute;
+      top: 30px;
+      right: 0px;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      // background-color: #fff;
+      z-index: 999;
+      color: #fff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: rgba(#fff, 0.1);
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .activeMore {
+    .activeIcon {
+      background-color: $a;
+      transform: rotate(180deg);
+    }
+    .nav-tabs {
+      height: auto !important;
+    }
+  }
   .catwrapper {
     .nav {
       display: grid;

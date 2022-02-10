@@ -5211,6 +5211,55 @@ main.homepage .popup .shade3 {
   border-radius: 100px;
 }
 
+.category .hugeItems {
+  position: relative;
+}
+
+.category .hugeItems .nav-tabs {
+  height: 65px;
+  z-index: 999;
+  overflow: hidden;
+  padding-right: 50px;
+}
+
+.category .hugeItems .toggler {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  z-index: 999;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category .hugeItems .toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.category .hugeItems .toggler i {
+  font-size: 20px;
+}
+
+.category .activeMore .activeIcon {
+  background-color: #e95f71;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.category .activeMore .nav-tabs {
+  height: auto !important;
+}
+
 .category .catwrapper .nav {
   display: -ms-grid;
   display: grid;
@@ -5539,10 +5588,57 @@ main.homepage .popup .shade3 {
   border: 1px dashed rgba(255, 255, 255, 0.3);
 }
 
-.today .todayProduct {
+.today .masonryWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.today .masonryWrapper .masonryItem {
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.today .masonryWrapper .masonryItem > a {
+  display: block;
+  height: 100%;
+}
+
+.today .masonryWrapper .masonryItem > a article {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.today .masonryWrapper .masonryItem > a article figure {
+  width: 100% !important;
+}
+
+.today .todayProduct {
   position: relative;
-  margin-bottom: 25px;
 }
 
 .today .todayProduct:hover .info .btn_p {
@@ -5562,11 +5658,11 @@ main.homepage .popup .shade3 {
 }
 
 .today .todayProduct .info .btn_p {
-  padding: 4px 10px !important;
+  padding: 10px 15px !important;
   text-transform: capitalize;
   font-size: 14px !important;
   background-color: #e95f71;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .today .todayProduct .info .btn_p:hover {
@@ -5578,7 +5674,7 @@ main.homepage .popup .shade3 {
 }
 
 .today .todayProduct figure::before {
-  background-color: rgba(47, 49, 49, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   top: 0;
@@ -5637,6 +5733,22 @@ main.homepage .popup .shade3 {
   min-height: 300px;
 }
 
+.today .ads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .today .ads .info {
   background-color: #fff !important;
   color: #2f3131 !important;
@@ -5658,7 +5770,6 @@ main.homepage .popup .shade3 {
 
 .today .withList {
   padding: 16px;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .today .withList .info {
@@ -5701,8 +5812,15 @@ main.homepage .popup .shade3 {
 }
 
 .today .withList .item .pdetails .shop .btn_p {
+  padding: 10px 15px !important;
+  text-transform: capitalize;
   font-size: 14px !important;
-  padding: 3px 10px !important;
+  background-color: #e95f71;
+  border-radius: 4px;
+}
+
+.today .withList .item .pdetails .shop .btn_p:hover {
+  color: #fff;
 }
 
 .today .withList .item .pdetails .shop .top i {
@@ -5717,14 +5835,14 @@ main.homepage .popup .shade3 {
 }
 
 .today article.post {
-  margin-top: 25px;
   border-radius: 10px;
 }
 
 .today article.post .btn_p {
-  background-color: #e95f71;
-  padding: 5px 15px !important;
+  padding: 10px 15px !important;
   text-transform: capitalize;
+  font-size: 14px !important;
+  background-color: #e95f71;
   border-radius: 4px;
 }
 
@@ -5735,7 +5853,6 @@ main.homepage .popup .shade3 {
 .today article.post .info {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .today article.post figure img {
@@ -5745,6 +5862,18 @@ main.homepage .popup .shade3 {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.ads .btn_p {
+  padding: 10px 15px !important;
+  text-transform: capitalize;
+  font-size: 14px !important;
+  background-color: #e95f71;
+  border-radius: 4px !important;
+}
+
+.ads .btn_p:hover {
+  color: #fff;
 }
 
 .brandpage .share .icons i {

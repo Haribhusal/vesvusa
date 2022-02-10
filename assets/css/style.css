@@ -5677,6 +5677,7 @@ main.homepage .popup .shade3 {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
+  border-radius: 10px;
   top: 0;
   left: 0;
   content: "";
@@ -5783,7 +5784,12 @@ main.homepage .popup .shade3 {
 }
 
 .today .withList .item img {
-  width: 100px !important;
+  width: 80px !important;
+  height: 80px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .today .withList .item:hover .shop {
@@ -5828,10 +5834,6 @@ main.homepage .popup .shade3 {
   width: 30px;
   display: inline-block;
   line-height: 30px;
-}
-
-.today .withList .item img {
-  height: 100px !important;
 }
 
 .today article.post {

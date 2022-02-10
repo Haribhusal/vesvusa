@@ -5214,8 +5214,8 @@ main.homepage .popup .shade3 {
 .category .catwrapper .nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
   border: none !important;
   gap: 15px;
 }
@@ -5232,6 +5232,13 @@ main.homepage .popup .shade3 {
   }
 }
 
+.category .catwrapper .nav .nav-item {
+  width: 100% !important;
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 !important;
+          flex: 1 !important;
+}
+
 @media (max-width: 425px) {
   .category .catwrapper .nav .nav-item {
     width: 200px !important;
@@ -5239,13 +5246,42 @@ main.homepage .popup .shade3 {
 }
 
 .category .catwrapper .nav .nav-item .nav-link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   color: #fff;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0px !important;
   border: none;
   margin: 0px !important;
   border: 2px solid transparent !important;
   padding: 0px !important;
+}
+
+.category .catwrapper .nav .nav-item .nav-link .catitem {
+  width: 100% !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category .catwrapper .nav .nav-item .nav-link img {
+  height: 100% !important;
+  max-height: 60px !important;
+  width: 50px !important;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .category .catwrapper .nav .nav-item .active {
@@ -5260,7 +5296,7 @@ main.homepage .popup .shade3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 8px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -5281,7 +5317,8 @@ main.homepage .popup .shade3 {
 }
 
 .category .catwrapper .catItemWrapper .subcategory .subItem .title {
-  padding: 10px 35px;
+  padding: 5px 35px;
+  font-size: 14px;
   padding-left: 15px;
   cursor: pointer;
   width: auto !important;
@@ -5297,11 +5334,11 @@ main.homepage .popup .shade3 {
 .category .catwrapper .catItemWrapper .subcategory .subItem i {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin-top: -5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   right: 10px;
+  font-size: 12px;
 }
 
 .category .catwrapper .catItemWrapper .subcategory .subItem .subSub {
@@ -5351,7 +5388,7 @@ main.homepage .popup .shade3 {
 }
 
 .category .catwrapper .catItemWrapper .subcategory .subItem:hover .subSub a .item {
-  padding: 10px;
+  padding: 5px 10px;
   display: block;
   border-radius: 0px;
   border: 1px solid transparent;
@@ -5368,6 +5405,10 @@ main.homepage .popup .shade3 {
 .category .catwrapper .catitem {
   position: relative;
   background: linear-gradient(-135deg, #2f3131, #e95f71);
+}
+
+.category .catwrapper .catitem .info .title {
+  font-size: 15px !important;
 }
 
 @media (max-width: 425px) {

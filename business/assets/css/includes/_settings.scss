@@ -204,3 +204,52 @@ table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc {
   background: none !important;
 }
+
+aside {
+  .accordion-item {
+    .submenu {
+      padding: 0px;
+      a {
+        padding: 15px 30px;
+        display: block;
+        color: #fff;
+        background-color: rgba(#000, 0.1);
+        &:hover {
+          background-color: rgba(#000, 0.3);
+        }
+      }
+    }
+  }
+}
+
+.table {
+  color: #fff;
+  thead {
+    tr {
+      background-color: transparent !important;
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+  tr {
+    border: none !important;
+    background-color: rgba(#000, 0.1) !important;
+    &:hover {
+      background-color: rgba(#000, 0.2) !important;
+    }
+    td {
+      border: none !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border: none !important;
+  color: #fff !important;
+  &:focus {
+    border: none !important;
+    color: #fff !important;
+  }
+}

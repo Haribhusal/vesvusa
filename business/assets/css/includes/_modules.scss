@@ -407,3 +407,49 @@ header {
     opacity: 1;
   }
 }
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: rgba(#fff, 0.1) !important;
+  opacity: 1;
+}
+
+.darkCard {
+  background-color: rgba(#000, 0.1);
+  border: 1px solid rgba(#fff, 0.1);
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  color: #fff !important;
+}
+
+.hasPopup {
+  text-decoration: underline;
+}
+
+.mainBusiness {
+  .menuList {
+    margin-bottom: 30px;
+    .listItemm {
+      padding: 10px 30px;
+      background-color: rgba(#fff, 0.1);
+      a {
+        color: #fff !important;
+      }
+    }
+    .active {
+      background-color: rgba($a, 1);
+      a {
+        color: #fff !important;
+      }
+    }
+  }
+}

@@ -243,46 +243,196 @@
             </div>
 
         </aside>
-        <div class="main">
+        <div class="main p-4">
+            <div class="menuList d-flex gap">
+                <div class="listItemm active">
+                    <a href="#">
+                        All List
+                    </a>
+                </div>
+                <div class="listItemm">
+                    <a href="#">
+                        Process Support
+                    </a>
+                </div>
+                <div class="listItemm">
+                    <a href="#">
+                        Register Support
+                    </a>
+                </div>
+            </div>
 
-        </div>
+            <div class="searchform">
+                <form action="" class="formwrapper d-flex gap align-items-end">
+                    <div class="form-group">
+                        <label for="" class="small text-muted">
+                            Search by Date (From)
+                        </label>
+                        <input type="date" class="form-control" placeholder="Search by Date (From)">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="small text-muted">
+                            To
+                        </label>
+                        <input type="date" class="form-control" placeholder="To">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="small text-muted">Medium</label>
+                        <select name="" class="form-control" id="">
+                            <option value="1">Facebook</option>
+                            <option value="1">Facebook</option>
+                            <option value="1">Facebook</option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button class="btn btn_dim ">Search</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="customerDetails darkCard  p-4 my-4 rounded">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5 class="title">Support Flow</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        Date
+                                    </td>
+                                    <td>
+                                        Customer ID
+                                    </td>
+                                    <td>
+                                        Action Token
+                                    </td>
+                                    <td>
+                                        Details
+                                    </td>
+                                    <td>Attachments</td>
+                                    <td>No of Days</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        12/12/2019
+                                    </td>
+                                    <td>
+                                        12332
+                                    </td>
+                                    <td>Closed</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">lorem
+                                        ipsum ...</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">
+                                        wow.jpg
+                                    </td>
+                                    <td>
+                                        5
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12/12/2019
+                                    </td>
+                                    <td>
+                                        12332
+                                    </td>
+                                    <td>Closed</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">lorem
+                                        ipsum ...</td>
+                                    <td class="hasPopup" class="" data-bs-toggle="modal" data-bs-target="#viewDetails">
+                                        wow.jpg
+                                    </td>
+                                    <td>
+                                        5
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12/12/2019
+                                    </td>
+                                    <td>
+                                        12332
+                                    </td>
+                                    <td>Closed</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails"> lorem
+                                        ipsum ...</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">
+                                        wow.jpg
+                                    </td>
+                                    <td>
+                                        5
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12/12/2019
+                                    </td>
+                                    <td>
+                                        12332
+                                    </td>
+                                    <td>Closed</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">lorem
+                                        ipsum ...</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">
+                                        wow.jpg
+                                    </td>
+                                    <td>
+                                        5
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12/12/2019
+                                    </td>
+                                    <td>
+                                        12332
+                                    </td>
+                                    <td>Closed</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">lorem
+                                        ipsum ...</td>
+                                    <td class="hasPopup" data-bs-toggle="modal" data-bs-target="#viewDetails">
+                                        wow.jpg
+                                    </td>
+                                    <td>
+                                        5
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
     </main>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="viewDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Request Pickup</h5>
-                </div>
                 <div class="modal-body">
-                    <form action="#">
-                        <div class="form-floating mb-3">
-                            <input type="date" class="form-control" id="name" placeholder="Date" required>
-                            <label for="name" class="form-label">Date</label>
+                    <div class="either">
+                        <div class="image">
+                            <img src="https://picsum.photos/id/100/500/400" class="img-fluid" alt="">
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="time" class="form-control" id="name" placeholder="Date" required>
-                            <label for="name" class="form-label">Time</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option selected disabled>Drop Location</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <label for="floatingSelect">Select Municipality</label>
-                        </div>
-                        <div class="modal-footer p-0 m-0 d-flex justify-content-between">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn_a">Save changes</button>
-                        </div>
-
-                    </form>
+                    </div>
+                    <div class="or">
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo deleniti
+                            veritatis nesciunt minima pariatur, officiis neque natus. Numquam sapiente consectetur, qui
+                            eum soluta iure similique quos incidunt magni eveniet.
+                        </p>
+                    </div>
                 </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
@@ -293,6 +443,12 @@
     <!-- thispage js -->
 
     <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.table').DataTable();
+        });
+    </script>
 </body>
 
 </html>

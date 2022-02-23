@@ -243,6 +243,57 @@ table.dataTable thead .sorting_desc {
   background: none !important;
 }
 
+aside .accordion-item .submenu {
+  padding: 0px;
+}
+
+aside .accordion-item .submenu a {
+  padding: 15px 30px;
+  display: block;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+aside .accordion-item .submenu a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.table {
+  color: #fff;
+}
+
+.table thead tr {
+  background-color: transparent !important;
+}
+
+.table thead tr:hover {
+  background-color: transparent !important;
+}
+
+.table tr {
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.table tr td {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border: none !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_length select:focus {
+  border: none !important;
+  color: #fff !important;
+}
+
 .btn_p {
   padding: 10px 20px;
   background-color: #fff;
@@ -707,6 +758,54 @@ header .headerwrapper .right img {
     left: 0;
     opacity: 1;
   }
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  opacity: 1;
+}
+
+.darkCard {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  color: #fff !important;
+}
+
+.hasPopup {
+  text-decoration: underline;
+}
+
+.mainBusiness .menuList {
+  margin-bottom: 30px;
+}
+
+.mainBusiness .menuList .listItemm {
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mainBusiness .menuList .listItemm a {
+  color: #fff !important;
+}
+
+.mainBusiness .menuList .active {
+  background-color: #e95f71;
+}
+
+.mainBusiness .menuList .active a {
+  color: #fff !important;
 }
 
 .login {

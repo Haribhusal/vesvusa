@@ -162,6 +162,87 @@ a {
   color: #fff !important;
 }
 
+.dataTables_length {
+  left: 60%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  color: #fff !important;
+}
+
+select option {
+  background: #2f3131;
+  color: #fff !important;
+}
+
+.mainBusiness input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid rgba(233, 95, 113, 0.3);
+  background-color: rgba(233, 95, 113, 0.1);
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mainBusiness input[type="checkbox"]::before {
+  position: absolute;
+  height: 5px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  content: "";
+  top: 5px;
+  left: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: none;
+  width: 0px;
+}
+
+.mainBusiness input[type="checkbox"]:checked {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #e95f71;
+}
+
+.mainBusiness input[type="checkbox"]:checked::before {
+  display: block;
+  width: 12px;
+}
+
+.mainBusiness .tab-content {
+  position: relative;
+}
+
+.mainBusiness .tab-content .actionToggler {
+  position: absolute;
+  z-index: 99;
+  left: 40px;
+}
+
+.mainBusiness .tab-content .actionToggler .actions {
+  margin: 0 !important;
+}
+
+.mainBusiness .tab-content .actionToggler .actions button {
+  padding: 0px !important;
+  color: #e95f71 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  background: none !important;
+}
+
 .btn_p {
   padding: 10px 20px;
   background-color: #fff;
@@ -274,9 +355,8 @@ header .headerwrapper .right img {
           flex: 10;
 }
 
-.mainBusiness aside,
-.mainBusiness .main {
-  padding: 20px;
+.mainBusiness .main .tab-content {
+  padding: 30px;
 }
 
 .mainBusiness .scroller {
@@ -425,13 +505,14 @@ header .headerwrapper .right img {
 .mainBusiness .main .content .nav-tabs .nav-link {
   border-radius: 0px;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 40px;
 }
 
 .mainBusiness .main .content .nav-tabs .active {
-  background-color: #e95f71;
   color: #fff;
-  border-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .stats .infowrapper {

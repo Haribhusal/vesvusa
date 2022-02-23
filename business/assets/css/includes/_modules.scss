@@ -93,10 +93,12 @@ header {
   }
   .main {
     flex: 10;
+    .tab-content {
+      padding: 30px;
+    }
   }
   aside,
   .main {
-    padding: 20px;
   }
   .scroller {
     overflow-y: auto;
@@ -221,12 +223,14 @@ header {
         .nav-link {
           border-radius: 0px;
           color: #fff;
-          background-color: rgba($color: #fff, $alpha: 0.1);
+          background-color: rgba($color: #fff, $alpha: 0);
+          border: 1px solid rgba(#fff, 0.2);
+          padding: 10px 40px;
         }
         .active {
-          background-color: $a;
+          // background-color: $a;
           color: #fff;
-          border-color: transparent;
+          border-bottom-color: transparent;
         }
       }
     }

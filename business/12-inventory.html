@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <!-- this page CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Order Management</title>
+</head>
+
+<body>
+    <header class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerwrapper d-flex justify-content-between  align-items-center">
+                        <div class="left">
+                            <a href="#">
+                                <img src="https://bflhouse.com/frontend/assets/images/vesvusa-icon-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="right">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <img src="https://picsum.photos/id/10/100/100" alt="">
+                                    Hanuman
+                                    Suppliers
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mainBusiness d-flex justify-content-between">
+        <aside>
+            <div class="heading small">
+                Welcome Back, Hanuman Suppliers!
+            </div>
+            <div class="leftmenu mt-3 scroller">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item noChild">
+                        <a href="index.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Dashboard
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="accordion-item noChild active">
+                        <a href="1-order-management.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Order Management
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="accordion-item noChild">
+                        <a href="2-account-finance.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Accounts &amp; Finance
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="accordion-item noChild">
+                        <a href="3-warehouse.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Warehouse
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="accordion-item noChild">
+                        <a href="2-logistics.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Logistics
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="4-packaging.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Packaging
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="5-delivery.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Delivery
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="accordion-item noChild">
+                        <a href="6-product-management.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Product Management
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="las la-chart-line"></i> Configurations
+                            </div>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a href="7-configurations.html">Config</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="8-promotions.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Promotions
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="9-homepage-management.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Home Page Management
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="10-customer-support.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Customer Support
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="11-mobile-app-management.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Mobile App Management
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="accordion-item noChild">
+                        <a href="12-inventory.html">
+                            <div class="accordion-header" id="">
+                                <div class="accordion-button">
+                                    <i class="las la-chart-line"></i> Inventory
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="las la-chart-line"></i>More
+                            </div>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                submenu 3
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </aside>
+        <div class="main">
+            <div class="content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Search</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Purchase</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Sale</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Return</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">History</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        <div class="inputarea mb-4">
+                            <form action="" class="searchform">
+
+
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <label for="" class="text-muted small">Search Type</label>
+                                            <select name="" class="form-control" id="">
+                                                <option value="1">
+                                                    Product SKU
+                                                </option>
+                                                <option value="1">
+                                                    Product SKU
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <label for="" class="text-muted small">Enter Product ID</label>
+                                            <input type="text" class="form-control" placeholder="Enter Product ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 d-flex align-items-end">
+                                        <button class="btn btn_primary"
+                                            style="background-color: #E95F71; border-radius: 100px;">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="resulttable">
+                            <table style="width: 100%; margin: 30px 0;">
+                                <thead style="background-color: #E95F71;">
+                                    <tr class="small">
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>Brand</th>
+                                        <th>Variation</th>
+                                        <th>Quantity</th>
+                                        <th>Amount</th>
+                                        <th>Date &amp; Time</th>
+                                        <th>Order ID</th>
+                                        <th>SKU</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="background-color: rgba(233,95,113, 0.7);">
+                                    <tr class="small dataRow">
+
+                                        <td class="imageHover">
+                                            <img src="https://picsum.photos/id/11/50/50" alt="" class="thumbnail">
+                                            <img src="https://picsum.photos/id/11/500/500" class="original" alt="">
+                                        </td>
+                                        <td>
+                                            <a href="#" style="color: #fff;"> Blue Skirt</a>
+                                        </td>
+                                        <td>Zara</td>
+                                        <td>XL</td>
+                                        <td>2</td>
+                                        <td>Rs. 4600</td>
+                                        <td>June 12, 2022</td>
+                                        <td>XASAJKSBIO</td>
+                                        <td>sadnklasdadnkl</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="trans">
+                            <h5 class="title heading mb-3">
+                                Transaction
+                            </h5>
+                            <table style="width:100%" class="display">
+                                <thead>
+                                    <tr class="small">
+
+                                        <th>Particular Action</th>
+                                        <th>Qty</th>
+                                        <th>Closing Stock</th>
+                                        <th>Date & Time</th>
+                                        <th>Variation</th>
+                                        <th>Employee</th>
+                                        <th>Remarks</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="small dataRow">
+
+                                        <td>
+                                            Opening
+                                        </td>
+                                        <td>
+                                            +22
+                                        </td>
+                                        <td>122</td>
+                                        <td> 01/09/2022 <br />
+                                            09:30 PM
+                                        </td>
+                                        <td>Small</td>
+                                        <td>Gururam</td>
+                                        <td>From Order ID added</td>
+
+                                    </tr>
+                                    <tr class="small dataRow">
+
+                                        <td>
+                                            Opening
+                                        </td>
+                                        <td>
+                                            +22
+                                        </td>
+                                        <td>122</td>
+                                        <td> 01/09/2022 <br />
+                                            09:30 PM
+                                        </td>
+                                        <td>Small</td>
+                                        <td>Gururam</td>
+                                        <td>From Order ID added</td>
+
+                                    </tr>
+                                    <tr class="small dataRow">
+
+                                        <td>
+                                            Opening
+                                        </td>
+                                        <td>
+                                            +22
+                                        </td>
+                                        <td>122</td>
+                                        <td> 01/09/2022 <br />
+                                            09:30 PM
+                                        </td>
+                                        <td>Small</td>
+                                        <td>Gururam</td>
+                                        <td>From Order ID added</td>
+
+                                    </tr>
+                                    <tr class="small dataRow">
+
+                                        <td>
+                                            Opening
+                                        </td>
+                                        <td>
+                                            +22
+                                        </td>
+                                        <td>122</td>
+                                        <td> 01/09/2022 <br />
+                                            09:30 PM
+                                        </td>
+                                        <td>Small</td>
+                                        <td>Gururam</td>
+                                        <td>From Order ID added</td>
+
+                                    </tr>
+                                    <tr class="small dataRow">
+
+                                        <td>
+                                            Opening
+                                        </td>
+                                        <td>
+                                            +22
+                                        </td>
+                                        <td>122</td>
+                                        <td> 01/09/2022 <br />
+                                            09:30 PM
+                                        </td>
+                                        <td>Small</td>
+                                        <td>Gururam</td>
+                                        <td>From Order ID added</td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="home-tab">
+
+                        <div class="inputarea mb-4">
+                            <form action="" class="searchform">
+
+
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <label for="" class="text-muted small">Search Type</label>
+                                            <select name="" class="form-control" id="">
+                                                <option value="1">
+                                                    Product SKU
+                                                </option>
+                                                <option value="1">
+                                                    Product SKU
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <label for="" class="text-muted small">Enter Product ID</label>
+                                            <input type="text" class="form-control" placeholder="Enter Product ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 d-flex align-items-end">
+                                        <button class="btn btn_primary"
+                                            style="background-color: #E95F71; border-radius: 100px;">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="resulttable">
+                            <table style="width: 100%; margin: 30px 0;">
+                                <thead style="background-color: #E95F71;">
+                                    <tr class="small">
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>Brand</th>
+                                        <th>Variation</th>
+                                        <th>Quantity</th>
+                                        <th>Amount</th>
+                                        <th>Date &amp; Time</th>
+                                        <th>Order ID</th>
+                                        <th>SKU</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="background-color: rgba(233,95,113, 0.7);">
+                                    <tr class="small dataRow">
+
+                                        <td class="imageHover">
+                                            <img src="https://picsum.photos/id/11/50/50" alt="" class="thumbnail">
+                                            <img src="https://picsum.photos/id/11/500/500" class="original" alt="">
+                                        </td>
+                                        <td>
+                                            <a href="#" style="color: #fff;"> Blue Skirt</a>
+                                        </td>
+                                        <td>Zara</td>
+                                        <td>XL</td>
+                                        <td>2</td>
+                                        <td>Rs. 4600</td>
+                                        <td>June 12, 2022</td>
+                                        <td>XASAJKSBIO</td>
+                                        <td>sadnklasdadnkl</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="trans">
+                            <h5 class=" heading mb-3 text-uppercase">
+                                Add purchase to inventory
+                            </h5>
+
+                            <div class="inputarea mb-4">
+                                <form action="" class="searchform">
+
+
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+
+                                                <label for="" class="text-muted small">Quantity</label>
+                                                <input type="text" class="form-control" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label for="" class="text-muted small">Quantity</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">Small</option>
+                                                    <option value="1">Small</option>
+                                                    <option value="1">Small</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+
+                                                <label for="" class="text-muted small">Particular Action</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">Purchase Offline</option>
+                                                    <option value="1">Others</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+
+                                                <label for="" class="text-muted small">Remarks</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <input type="text" class="form-control" placeholder="Remarks">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+
+                                                <button class="btn btn_primary"
+                                                    style="background-color: #E95F71; color: #fff;">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Request Pickup</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="name" placeholder="Date" required>
+                            <label for="name" class="form-label">Date</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="time" class="form-control" id="name" placeholder="Date" required>
+                            <label for="name" class="form-label">Time</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected disabled>Drop Location</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Select Municipality</label>
+                        </div>
+                        <div class="modal-footer p-0 m-0 d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn_a">Save changes</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- thispage js -->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                "dom": "fltip",
+                "scrollX": true,
+                scrollX: false,
+                "pageLength": 50,
+                select: {
+                    style: 'multi',
+                    selector: 'td:first-child'
+                },
+                language: {
+                    searchPlaceholder: "Search Order"
+                }
+            });
+        });
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        $('.actionToggler .actions button').slideUp();
+        $('.selector').on('change', function () {
+            $('.actionToggler .actions button').slideDown();
+        })
+    </script>
+    <script>
+        $('.allRowsSelector').on('change', function () {
+            $('.actionToggler .actions button').slideDown();
+
+            var checkboxes = $(this).closest('table').find(':checkbox');
+            if (this.checked) {
+                checkboxes.prop('checked', true);
+                $('.dataRow').addClass('selected');
+                $('.dataRow').find('input[type="checkbox"]').prop('checked', true);
+            } else {
+                checkboxes.prop('checked', false);
+                $('.dataRow').removeClass('selected');
+                $('.dataRow').find('input[type="checkbox"]').prop('checked', false);
+            }
+        });
+        var rowCheckbox = $('.selector');
+        rowCheckbox.map((item) => {
+            rowCheckbox[item].addEventListener('change', function () {
+                if (this.checked) {
+                    $(this).closest('tr').addClass('selected');
+                } else {
+                    $(this).closest('tr').removeClass('selected');
+                }
+            });
+        })
+        rowCheckbox.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    $(this).closest('tr').addClass('selected');
+                    $(this).closest('tr').find('input[type="checkbox"]').prop('checked', true);
+                } else {
+                    $(this).closest('tr').removeClass('selected');
+                    $(this).closest('tr').find('input[type="checkbox"]').prop('checked', false);
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

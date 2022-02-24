@@ -307,10 +307,16 @@ function hasScrolled() {
   if (st > lastScrollTop && st > navbarHeight) {
     // Scroll Down
     $("header").removeClass("nav-down").addClass("nav-up");
-  } else {
+    $(".bottomNavigation")
+      .removeClass("mobile-menu-down")
+      .addClass("mobile-menu-up");
+  } else {                           
     // Scroll Up
     if (st + $(window).height() < $(document).height()) {
       $("header").removeClass("nav-up").addClass("nav-down");
+      $(".bottomNavigation")
+        .removeClass("mobile-menu-up")
+        .addClass("mobile-menu-down");
     }
   }
 

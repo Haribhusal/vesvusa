@@ -1345,3 +1345,13 @@ footer {
     }
   }
 }
+
+.mobile-menu-up {
+  display: none;
+}
+
+.mobile-menu-down {
+  display: block;
+  position: relative;
+  z-index: 9999 !important;
+}

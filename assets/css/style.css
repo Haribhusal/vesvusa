@@ -1484,6 +1484,16 @@ article .share-icons a {
   padding-right: 5px;
 }
 
+.mobile-menu-up {
+  display: none;
+}
+
+.mobile-menu-down {
+  display: block;
+  position: relative;
+  z-index: 9999 !important;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

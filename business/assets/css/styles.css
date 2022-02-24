@@ -168,6 +168,12 @@ a {
           transform: translateX(-50%);
   position: absolute;
   color: #fff !important;
+  top: -10px;
+}
+
+.dataTables_filter {
+  top: -10px !important;
+  position: relative;
 }
 
 select option {
@@ -258,30 +264,53 @@ aside .accordion-item .submenu a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.table {
+.table,
+.display {
   color: #fff;
 }
 
-.table thead tr {
-  background-color: transparent !important;
+.table thead tr,
+.display thead tr {
+  background-color: rgba(233, 95, 113, 0.5) !important;
 }
 
-.table thead tr:hover {
-  background-color: transparent !important;
+.table thead tr:hover,
+.display thead tr:hover {
+  background-color: rgba(233, 95, 113, 0.5) !important;
 }
 
-.table tr {
-  border: none !important;
+.table thead tr th,
+.display thead tr th {
+  padding: 10px 15px;
+}
+
+.table tbody tr,
+.display tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.table tr:hover {
+.table tbody tr:hover,
+.display tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
-.table tr td {
-  border: none !important;
+.table tbody tr td,
+.display tbody tr td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 10px 15px !important;
   background-color: transparent !important;
+}
+
+.table tbody tr td button:hover,
+.display tbody tr td button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table tbody tr td i,
+.display tbody tr td i {
+  font-size: 20px !important;
+  color: #e95f71 !important;
 }
 
 .dataTables_wrapper .dataTables_length select {
@@ -787,6 +816,11 @@ header .headerwrapper .right img {
   text-decoration: underline;
 }
 
+aside .heading {
+  padding: 16px 30px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .mainBusiness .menuList {
   margin-bottom: 30px;
 }
@@ -794,10 +828,16 @@ header .headerwrapper .right img {
 .mainBusiness .menuList .listItemm {
   padding: 10px 30px;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .mainBusiness .menuList .listItemm a {
   color: #fff !important;
+}
+
+.mainBusiness .menuList .listItemm:hover {
+  background-color: #e95f71 !important;
 }
 
 .mainBusiness .menuList .active {

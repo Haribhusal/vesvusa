@@ -434,6 +434,10 @@ header {
 .hasPopup {
   text-decoration: underline;
 }
+aside .heading {
+  padding: 16px 30px !important;
+  border-bottom: 1px solid rgba(#fff, 0.1);
+}
 
 .mainBusiness {
   .menuList {
@@ -441,10 +445,15 @@ header {
     .listItemm {
       padding: 10px 30px;
       background-color: rgba(#fff, 0.1);
+      transition: all 0.5s ease;
       a {
         color: #fff !important;
       }
+      &:hover {
+        background-color: $a !important;
+      }
     }
+
     .active {
       background-color: rgba($a, 1);
       a {

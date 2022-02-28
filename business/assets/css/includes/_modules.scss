@@ -99,6 +99,7 @@ header {
   }
   aside,
   .main {
+    display: block;
   }
   .scroller {
     overflow-y: auto;
@@ -443,7 +444,7 @@ aside .heading {
   .menuList {
     margin-bottom: 30px;
     .listItemm {
-      padding: 10px 30px;
+      padding: 5px 30px;
       background-color: rgba(#fff, 0.1);
       transition: all 0.5s ease;
       a {
@@ -458,6 +459,55 @@ aside .heading {
       background-color: rgba($a, 1);
       a {
         color: #fff !important;
+      }
+    }
+  }
+  .submenuWrapper {
+    .listItemm {
+      padding: 10px 0px !important;
+      background-color: transparent;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        background: transparent !important;
+        cursor: pointer;
+        border-bottom: 2px solid rgba(#fff, 0.3) !important;
+        a {
+          color: $a !important;
+        }
+      }
+    }
+    .active {
+      border-bottom: 2px solid $a;
+    }
+  }
+}
+
+.previewBox {
+  position: relative;
+  flex-direction: column;
+  padding: 30px;
+
+  gap: 10px;
+  .skeleton {
+    height: 30px;
+    background-color: rgba(#fff, 0.1);
+    width: 80%;
+  }
+
+  .skeleton-text {
+    height: 30px;
+  }
+  .skeleton-button {
+    height: 30px;
+    width: 100px;
+  }
+  .skeleton-paragraph {
+    height: 90px;
+    .line {
+      border-bottom: 2px solid $p;
+      height: 30px;
+      &:last-child {
+        border: none;
       }
     }
   }

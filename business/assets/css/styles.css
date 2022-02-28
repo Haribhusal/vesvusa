@@ -323,6 +323,100 @@ aside .accordion-item .submenu a:hover {
   color: #fff !important;
 }
 
+.pageManagement .listing .items .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.pageManagement .listing .items .item img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.pageManagement .listing .items .item .info {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  background-color: #2f3131;
+  padding: 15px;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pageManagement .listing .items .item .info h3 {
+  font-size: 20px;
+}
+
+.pageManagement .listing .items .item .info p {
+  margin-bottom: 0px;
+}
+
+.pageManagement .listing .items .item .actions {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pageManagement .listing .items .item .actions button {
+  padding: 5px 10px;
+  background-color: #e95f71;
+}
+
+.pageManagement .listing .items .item .actions button:hover {
+  background-color: #2f3131;
+}
+
+.pageManagement .listing .items .item:hover .info {
+  bottom: 0;
+}
+
+.pageManagement .listing .items .item:hover .actions {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  right: 10px;
+}
+
+.grid {
+  display: -ms-grid !important;
+  display: grid !important;
+  gap: 16px;
+}
+
+.grid-5 {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-3 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid-1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 .btn_p {
   padding: 10px 20px;
   background-color: #fff;
@@ -437,6 +531,11 @@ header .headerwrapper .right img {
 
 .mainBusiness .main .tab-content {
   padding: 30px;
+}
+
+.mainBusiness aside,
+.mainBusiness .main {
+  display: block;
 }
 
 .mainBusiness .scroller {
@@ -826,7 +925,7 @@ aside .heading {
 }
 
 .mainBusiness .menuList .listItemm {
-  padding: 10px 30px;
+  padding: 5px 30px;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -846,6 +945,64 @@ aside .heading {
 
 .mainBusiness .menuList .active a {
   color: #fff !important;
+}
+
+.mainBusiness .submenuWrapper .listItemm {
+  padding: 10px 0px !important;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.mainBusiness .submenuWrapper .listItemm:hover {
+  background: transparent !important;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.mainBusiness .submenuWrapper .listItemm:hover a {
+  color: #e95f71 !important;
+}
+
+.mainBusiness .submenuWrapper .active {
+  border-bottom: 2px solid #e95f71;
+}
+
+.previewBox {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  gap: 10px;
+}
+
+.previewBox .skeleton {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 80%;
+}
+
+.previewBox .skeleton-text {
+  height: 30px;
+}
+
+.previewBox .skeleton-button {
+  height: 30px;
+  width: 100px;
+}
+
+.previewBox .skeleton-paragraph {
+  height: 90px;
+}
+
+.previewBox .skeleton-paragraph .line {
+  border-bottom: 2px solid #2f3131;
+  height: 30px;
+}
+
+.previewBox .skeleton-paragraph .line:last-child {
+  border: none;
 }
 
 .login {

@@ -273,43 +273,43 @@
                 </div>
             </div>
             <div class="menuList d-flex gap flex-wrap submenuWrapper">
-                <div class="listItemm">
-                    <a href="#">
+                <div class="listItemm ">
+                    <a href="14-page-management-preview.html">
                         Preview
                     </a>
                 </div>
                 <div class="listItemm">
-                    <a href="#">
+                    <a href="14-page-management-banner.html">
                         1. Banner
                     </a>
                 </div>
                 <div class="listItemm active">
-                    <a href="#">
+                    <a href="14-page-management-top-picks.html">
                         2. Top Picks
                     </a>
                 </div>
                 <div class="listItemm">
-                    <a href="#">
+                    <a href="14-page-management-product-video.html">
                         3. Product Video
                     </a>
                 </div>
                 <div class="listItemm">
-                    <a href="#">
+                    <a href="14-page-management-news.html">
                         4. News and Events
                     </a>
                 </div>
                 <div class="listItemm">
-                    <a href="#">
+                    <a href="14-page-management-comfort.html">
                         5. Comfort
                     </a>
                 </div>
                 <div class="listItemm">
-                    <a href="#">
+                    <a href="14-page-management-product-video-walk.html">
                         6. Collection Video
                     </a>
                 </div>
                 <div class="listItemm">
-                    <a href="#">
+                    <a href="14-page-management-brands.html">
                         7. Brands
                     </a>
                 </div>
@@ -536,9 +536,9 @@
                         <div class="col-sm-6">
                             <div class="form-group mb-3">
                                 <label for="" class="text-muted small">
-                                    Date Upto
+                                    Start Time
                                 </label>
-                                <input type="date" class="form-control" placeholder="">
+                                <input type="time" class="form-control" placeholder="">
 
                             </div>
                         </div>
@@ -547,16 +547,38 @@
                         <div class="col-sm-6">
                             <div class="form-group mb-3">
                                 <label for="" class="text-muted small">
+                                    Date To
+                                </label>
+                                <input type="date" class="form-control" placeholder="">
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="text-muted small">
+                                    End Time
+                                </label>
+                                <input type="time" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group orFile mb-3">
+                                <label for="" class="text-muted small">
                                     Product SKU Code
                                 </label>
-                                <select name="" class="form-control" id="">
-                                    <option value="1">
-                                        Code 1
-                                    </option>
-                                    <option value="1">
-                                        Code 2
-                                    </option>
-                                </select>
+                                <input type="text" class="form-control" placeholder="Select Products">
+                                <div class="fileInput">
+                                    <label for="inputCsv">
+                                        <span class="small text-muted">Or Upload Excel File</span> <i
+                                            class="las la-file-excel"></i>
+                                        <input type="file" id="inputCsv">
+                                    </label>
+                                </div>
+
+
                             </div>
                         </div>
 
@@ -569,6 +591,33 @@
                                 <input type="file" class="form-control" placeholder="">
 
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5 class="title">Selected Products</h5>
+                            <table id="myTable" class="display " style="width:100%">
+
+                                <tbody>
+                                    <tr class="small dataRow">
+
+                                        <td class="imageHover">
+                                            <img src="https://picsum.photos/id/11/50/50" alt="" class="thumbnail">
+                                            <img src="https://picsum.photos/id/11/500/500" class="original" alt="">
+                                        </td>
+                                        <td>
+                                            <a href="#" class="" style="color: #fff;"> Blue Skirt</a>
+                                        </td>
+                                        <td>Zara</td>
+                                        <td>XL</td>
+
+                                        <td>Rs. 4600</td>
+                                        <td>June 12, 2022</td>
+                                        <td>XASAJKSBIO</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div class="row">

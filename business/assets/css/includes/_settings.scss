@@ -97,7 +97,7 @@ a {
   }
 }
 .form-control {
-  background-color: rgba(#fff, 0.1);
+  background-color: rgba(#fff, 0.05);
   border: none;
   color: #fff;
   &::-webkit-outer-spin-button,
@@ -280,7 +280,72 @@ aside {
 
 .pageManagement {
   .listing {
+    .brandImage {
+      height: 150px !important;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .newsImage {
+      width: 100%;
+    }
+    .singleItem {
+      position: relative;
+      .actions {
+        right: 15px;
+        top: 15px;
+        .btn {
+          background-color: $a;
+        }
+      }
+      img {
+        flex: 1;
+        width: 400px;
+        object-fit: cover;
+        object-position: center center;
+      }
+      .info {
+        flex: 4;
+        background-color: $a;
+        padding: 30px;
+        .buttonwrapper {
+          button {
+            color: $p;
+            text-transform: uppercase;
+          }
+        }
+        .buttons {
+          button {
+            padding: 10px !important;
+            background-color: transparent;
+          }
+        }
+      }
+      .actions {
+        position: absolute;
+      }
+    }
+    .walkVideo {
+      .actions {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        .btn {
+          background-color: $a;
+        }
+      }
+      .info {
+        background-color: transparent;
+      }
+    }
     .items {
+      .newsItem {
+        border: 1px solid rgba(#fff, 0.1);
+        padding: 20px;
+        .info {
+          padding: 30px;
+        }
+      }
       .item {
         position: relative;
         overflow: hidden;
@@ -356,4 +421,38 @@ aside {
 }
 .grid-1 {
   grid-template-columns: 1fr;
+}
+
+.orFile {
+  position: relative;
+  .fileInput {
+    cursor: pointer;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    top: 0;
+    label {
+      cursor: pointer;
+    }
+    i {
+      color: $a;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    input {
+      display: none;
+    }
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  margin: 0px;
+  margin-right: 0px !important;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  margin: 0px;
+  margin-right: 0px !important;
 }

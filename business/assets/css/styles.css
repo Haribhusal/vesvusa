@@ -111,7 +111,7 @@ a {
 }
 
 .form-control {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   border: none;
   color: #fff;
 }
@@ -323,6 +323,88 @@ aside .accordion-item .submenu a:hover {
   color: #fff !important;
 }
 
+.pageManagement .listing .brandImage {
+  height: 150px !important;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.pageManagement .listing .newsImage {
+  width: 100%;
+}
+
+.pageManagement .listing .singleItem {
+  position: relative;
+}
+
+.pageManagement .listing .singleItem .actions {
+  right: 15px;
+  top: 15px;
+}
+
+.pageManagement .listing .singleItem .actions .btn {
+  background-color: #e95f71;
+}
+
+.pageManagement .listing .singleItem img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.pageManagement .listing .singleItem .info {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-color: #e95f71;
+  padding: 30px;
+}
+
+.pageManagement .listing .singleItem .info .buttonwrapper button {
+  color: #2f3131;
+  text-transform: uppercase;
+}
+
+.pageManagement .listing .singleItem .info .buttons button {
+  padding: 10px !important;
+  background-color: transparent;
+}
+
+.pageManagement .listing .singleItem .actions {
+  position: absolute;
+}
+
+.pageManagement .listing .walkVideo .actions {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.pageManagement .listing .walkVideo .actions .btn {
+  background-color: #e95f71;
+}
+
+.pageManagement .listing .walkVideo .info {
+  background-color: transparent;
+}
+
+.pageManagement .listing .items .newsItem {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.pageManagement .listing .items .newsItem .info {
+  padding: 30px;
+}
+
 .pageManagement .listing .items .item {
   position: relative;
   overflow: hidden;
@@ -415,6 +497,46 @@ aside .accordion-item .submenu a:hover {
 .grid-1 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+}
+
+.orFile {
+  position: relative;
+}
+
+.orFile .fileInput {
+  cursor: pointer;
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.orFile .fileInput label {
+  cursor: pointer;
+}
+
+.orFile .fileInput i {
+  color: #e95f71;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.orFile .fileInput input {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin: 0px;
+  margin-right: 0px !important;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin: 0px;
+  margin-right: 0px !important;
 }
 
 .btn_p {
